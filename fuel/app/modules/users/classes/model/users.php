@@ -5,10 +5,19 @@ class Model_Users extends \Model_Crud {
 	protected static $_table_name = 'users';
 
 /**
-* Получение информации о пользователе по токену
-* return array(...) или null если пользователь не найден
+* РџРѕРёСЃРє РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ РїРѕ С‚РѕРєРµРЅСѓ
+* return array(...) РёР»Рё null РµСЃР»Рё РЅРµ РЅР°Р№РґРµС‚
 */
     public static function GetUserByToken($token){
-		return Model_Users::find_one_by('token',$token); // вернёт null если не найдет
+		return Model_Users::find_one_by('token',$token);
 	}
+	
+/**
+* РџРѕРїС‹С‚РєР° РІРѕР№С‚Рё РЅР° СЃР°Р№С‚. Р’РµСЂРЅС‘С‚ С‚РѕРєРµРЅ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ РёР»Рё null РµСЃР»Рё РЅРµ РїРѕР»СѓС‡РёС‚СЊСЃСЏ РІРѕР№С‚Рё
+*/ 
+   public static function Login($login, $password){
+   //TODO: Р”РѕРґРµР»Р°С‚СЊ РїСЂРѕРІРµСЂРєСѓ РїРѕ Р‘Р”, РІС…РѕРґ/РѕС€РёР±РєСѓ
+   	return false;
+   }
+   
 }

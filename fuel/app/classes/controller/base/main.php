@@ -15,11 +15,13 @@ class Controller_Base_Main extends Controller_Template
     protected $_extraCss = array();
     protected $_extraJs = array();
     protected $_user = null;
+	protected $_modules = array();
 
     public function  before(){
         parent::before();
         Config::load($this->_baseConfigFile,'baseConfig'); // Подгрузка файла основных настроек системы
-		$this->_user = $this->GetModule('users','main')->Init(); // Инициализация пользователи из модуля users
+		$this->_modules["users"] = $this->GetModule('users','main');
+		$this->_user = $this->_modules["users"]->Init(); // Инициализация пользователи из модуля users
         $this->LoadLang();
     }
 
@@ -87,6 +89,5 @@ class Controller_Base_Main extends Controller_Template
 			if($exit)
             	exit;
     }
-	
 	
 }

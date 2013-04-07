@@ -7,7 +7,7 @@ class Controller_Base_Controlpanel extends Controller_Base_Main
 		parent::before();
 		
 		// Если пользователь не авторизован вывод 404 ошибки
-		if($this->_user == null){
+		if($this->_user == null || $this->_user["level"] <= 1){
 			$this->ShowErrorPage("404");
 		}
 			

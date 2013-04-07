@@ -1,7 +1,7 @@
 <?php
 namespace Users;
 
-class Controller_Main extends \Controller{
+class Controller_Main extends \Controller_Base_Module{
 
 	function __construct(){
 		\Config::load("users::base.ini", "base");
@@ -18,4 +18,12 @@ class Controller_Main extends \Controller{
 	else
 		return null;
    }
+   
+ /**
+ * Запрос формы для входа на сайт
+ */
+   public function GetLoginForm(){
+   	return \View::forge("Users::loginform");
+   }
+
 }
