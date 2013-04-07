@@ -1,0 +1,27 @@
+@import "reset.css";
+
+.clear{
+clear:both;
+}
+
+#wrapper{
+width: 1051px;
+margin: 0 auto; 
+}
+#head{
+height:100px;
+background-color:#ddd;
+}
+#content{
+width: 650px;
+background-color:#eee;
+float:left;
+}
+#sitebar{
+width: 401px;
+float:left;
+background-color:#a9a9a9;
+}
+#footer{
+background-color:#ffcccc;
+}
