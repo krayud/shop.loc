@@ -13,11 +13,11 @@ class Model_Users extends \Model_Crud {
 	}
 	
 /**
-* Попытка войти на сайт. Вернёт токен пользователя или null если не получиться войти
+* Попытка войти на сайт для ajax запроса. Вернёт токен пользователя или null если не получиться войти
 */ 
    public static function Login($login, $password){
    //TODO: Доделать проверку по БД, вход/ошибку
    	return false;
    }
-   
+
 }

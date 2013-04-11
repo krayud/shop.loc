@@ -6,7 +6,9 @@
 </head>
 <body>
 <div id="wrapper">
-	<div id="head">head</div>
+	<div id="head"></div>
+	<div id="userPanel"><? if(isset($pageContent)) echo $userPanel?></div>
+	<div class="clear"></div>
 	<div id="center">
 		<div id="content">
 			<? if(isset($pageContent)) echo $pageContent?>

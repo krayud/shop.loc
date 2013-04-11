@@ -14,15 +14,15 @@ class Controller_Base_Main extends Controller_Template
     protected $_lang;
     protected $_extraCss = array();
     protected $_extraJs = array();
-    protected $_user = null;
 	protected $_modules = array();
 
     public function  before(){
         parent::before();
         Config::load($this->_baseConfigFile,'baseConfig'); // Подгрузка файла основных настроек системы
-		$this->_modules["users"] = $this->GetModule('users','main');
-		$this->_user = $this->_modules["users"]->Init(); // Инициализация пользователи из модуля users
         $this->LoadLang();
+		//Загрузка модулей и их инициализация
+		$this->_modules["users"] = $this->GetModule('users','main'); //Создание объекта типа users
+		$this->_modules["users"]->Init(); //Инициализация
     }
 
     public function after($response){
