@@ -7,8 +7,8 @@ class Controller_Base_Main extends Controller_Template
 
     //PRIVATE
     private $_baseConfigFile = 'base.ini';
-    private $_generalCss = array('bootstrap');
-    private $_generalJs = array('jquery', 'bootstrap');
+    private $_generalCss = null; // Стили одинаковые для ВСЕХ страниц
+    private $_generalJs = array('main','jquery/jquery');// Скрипты одинаковые для ВСЕХ страниц
 
     //PROTECTED
     protected $_lang;

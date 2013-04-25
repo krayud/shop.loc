@@ -1,0 +1,37 @@
+#dialog-modal-login input[type=text], #dialog-modal-login input[type=password], 
+#dialog-modal-reg input[type=text], #dialog-modal-reg input[type=password]{
+padding:5px;
+width:186px;
+border:1px solid #e5e5e5;
+}
+
+#reg-btn, #login-btn{
+width:100%;
+padding:5px 3px 5px 3px; 
+margin-top:10px;
+border:0px solid;
+color:#fff;
+background-color:#928e8f;
+cursor:pointer;
+}
+
+#reg-btn:hover, #login-btn:hover{
+background-color:#ff3359;
+color:#fff;
+}
+#reg-btn:active, #login-btn:active{
+background-color:#928e8f;
+color:#fff;
+}
+
+
+#dialog-modal-login, #dialog-modal-reg label{
+font-size:9pt;
+color:#777;
+}
+
+#dialog-modal-login form, #dialog-modal-reg form{
+width:200px;
+margin:0px auto;
+}
+
