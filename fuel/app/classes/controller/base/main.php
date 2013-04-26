@@ -7,20 +7,22 @@ class Controller_Base_Main extends Controller_Template
 
     //PRIVATE
     private $_baseConfigFile = 'base.ini';
-    private $_generalCss = array('bootstrap');
-    private $_generalJs = array('jquery', 'bootstrap');
+    private $_generalCss = null; // Стили одинаковые для ВСЕХ страниц
+    private $_generalJs = array('main','jquery/jquery');// Скрипты одинаковые для ВСЕХ страниц
 
     //PROTECTED
     protected $_lang;
     protected $_extraCss = array();
     protected $_extraJs = array();
-    protected $_user = null;
+	protected $_modules = array();
 
     public function  before(){
         parent::before();
         Config::load($this->_baseConfigFile,'baseConfig'); // Подгрузка файла основных настроек системы
-		$this->_user = $this->GetModule('users','main')->Init(); // Инициализация пользователи из модуля users
         $this->LoadLang();
+		//Загрузка модулей и их инициализация
+		$this->_modules["users"] = $this->GetModule('users','main'); //Создание объекта типа users
+		$this->_modules["users"]->Init(); //Инициализация
     }
 
     public function after($response){
@@ -87,6 +89,5 @@ class Controller_Base_Main extends Controller_Template
 			if($exit)
             	exit;
     }
-	
 	
 }
