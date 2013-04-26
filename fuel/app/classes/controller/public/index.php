@@ -5,9 +5,9 @@ class Controller_Public_Index extends Controller_Base_Public
 
     public function action_index()
     {
-		if(!$this->_user)
-			echo "Пользователь не авторизован";
         $this->template->pageTitle = "Главная страница";
-        $this->template->pageContent = "Контент";
+		$this->template->userPanel = $this->_modules["users"]->GetUserPanel();
+        $this->template->pageContent = "Содержание страницы";
+		$this->template->auto_filter(false);
     }
 }
