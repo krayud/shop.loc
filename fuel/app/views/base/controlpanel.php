@@ -2,28 +2,48 @@
 <html>
 <head>
 	<title><?=$pageTitle;?></title>
-	<? 
-		require_once("helpers/cssjsattach.php"); 
-	?>
+	<?require_once("helpers/cssjsattach.php");?>
 </head>
 <body>
-<body>
-	<div id="head">
-	Панель управления!!!!
-	</div>
+	<div class="container">
 	
-	<div id="middle">
-		<div id="bar">
-			Меню кабинета
+		<div class="row">
+		  <div class="span12" id="head">
+				<div id="logo"></div>
+				<div id="head-block">
+					  <a href="<?=Uri::Base(false)?>">На сайт</a>
+					  <a href="#">Ссылка</a>
+					  <a href="#">Ссылка</a>
+					  <a href="#">Ссылка</a>
+				</div>
+				<div class="clear"></div>
+		  </div>
 		</div>
-		<div id="center">
-			<? echo $pageContent;?>
+		
+		<div class="row">
+		  <div class="span3" id="sitebar">
+		  
+			<ul class="nav nav-list">
+			  <li class="nav-header">List header</li>
+			  <li><a href="#">Home</a></li>
+			   <li class="divider"></li>
+			  <li class="nav-header">List header</li>
+			  <li><a href="#">Home</a></li>
+			</ul>
+			
+		  </div>
+			<div class="span9" id="content">
+				<div class="alert alert-success">
+				  <? echo $pageContent;?>
+				</div>
+			</div>
 		</div>
+		
+		<div class="row">
+		  <div class="span12" id="footer"><small>LDcms - панель управления</small></div>
+		</div>
+		
 	</div>
-	<div class="clear"></div>
-	
-	<div id="footer">
-	Футер
-	</div>
+
 </body>
 </html>

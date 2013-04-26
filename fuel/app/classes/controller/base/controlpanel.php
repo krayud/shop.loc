@@ -5,12 +5,12 @@ class Controller_Base_Controlpanel extends Controller_Base_Main
 	
 	public function before(){
 		parent::before();
-		
 		// Если пользователь не авторизован вывод 404 ошибки
-		if($this->_user == null || $this->_user["level"] <= 1){
+		if($this->_userInfo == null || $this->_userInfo["level"] < 2){
 			$this->ShowErrorPage("404");
 		}
-			
+		array_push($this->_extraCss, "bootstrap", "cp/main");	//Стили только для страниц панели управления
+		array_push($this->_extraJs, "bootstrap");	//Скрипты только для страниц панели управления
 	}
 	
 }

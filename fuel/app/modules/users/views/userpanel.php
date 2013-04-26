@@ -1,6 +1,6 @@
 <li class="first"><a href="#"><?=$userInfo["email"];?></a></li>
 <li><? if($userInfo["level"] >= 2) {?>
-		<a href="#">Панель управления</a>
+		<a href="<?=Uri::base(false);?>cp">Панель управления</a>
 	<?}?>		
 </li>
 <li>

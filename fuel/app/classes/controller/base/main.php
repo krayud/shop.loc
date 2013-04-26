@@ -8,10 +8,11 @@ class Controller_Base_Main extends Controller_Template
     //PRIVATE
     private $_baseConfigFile = 'base.ini';
     private $_generalCss = null; // Стили одинаковые для ВСЕХ страниц
-    private $_generalJs = array('main','jquery/jquery');// Скрипты одинаковые для ВСЕХ страниц
+    private $_generalJs = array('main',"jquery/jquery");// Скрипты одинаковые для ВСЕХ страниц
 
     //PROTECTED
     protected $_lang;
+	protected $_userInfo = null;
     protected $_extraCss = array();
     protected $_extraJs = array();
 	protected $_modules = array();
@@ -23,6 +24,7 @@ class Controller_Base_Main extends Controller_Template
 		//Загрузка модулей и их инициализация
 		$this->_modules["users"] = $this->GetModule('users','main'); //Создание объекта типа users
 		$this->_modules["users"]->Init(); //Инициализация
+		$this->_userInfo = $this->_modules["users"]->GetUserInfo();
     }
 
     public function after($response){
