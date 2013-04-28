@@ -1,5 +1,5 @@
 <li class="first"><a id="open-loginDialog-btn" href="" title="Войти на сайт">Вход</a></li>
-<li><a id="open-regDialog-btn" href="" title="Зарегестрироваться на сайте" >Регистрация</a></li>
+<li><a id="open-regDialog-btn" href="" title="Зарегистрироваться на сайте" >Регистрация</a></li>
 
 <div id="dialog-modal-login" title="Вход на сайт">
 	<form name="login-form" action="<?=Uri::base(false);?>users/ajax/auth">
@@ -19,7 +19,7 @@
 	  	<input id="reg-password" type="password" value=""/><br/>
 	  <label for="reg-password-re">Повтор пароля</label><br/>
 	  	<input id="reg-password-re" type="password" value=""/><br/>
-	  <center><input id="reg-btn" type="submit" value="Зарегестрироваться" /></center>
+	  <center><input id="reg-btn" type="submit" value="Зарегистрироваться" /></center>
 	</form>
 </div>
 

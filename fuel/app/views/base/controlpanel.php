@@ -34,7 +34,8 @@
 		  </div>
 			<div class="span9" id="content">
 				<div class="alert alert-success">
-				  <? echo $pageContent;?>
+				  <button type="button" class="close" data-dismiss="alert">×</button>
+				   <? echo $pageContent;?>
 				</div>
 			</div>
 		</div>

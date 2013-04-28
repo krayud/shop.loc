@@ -1,6 +1,7 @@
-<li class="first"><a href="#"><?=$userInfo["email"];?></a></li>
+<li class="first"><a href="#">Сообщения</a></li>
+<li><a href="#">Личный кабинет</a></li>
 <li><? if($userInfo["level"] >= 2) {?>
-		<a href="<?=Uri::base(false);?>cp">Панель управления</a>
+		<a href="<?=Uri::base(false);?>cp"> Панель управления</a>
 	<?}?>		
 </li>
 <li>

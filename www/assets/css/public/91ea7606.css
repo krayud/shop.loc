@@ -67,3 +67,11 @@ h2 {
     font-family: HeliosExtThin; 
     src: url(http://marinamendelson.artdimension.ru/img_files/helioset.ttf);
    }
+   
+.upperCase{
+font-family: Tahoma;
+    font-size: 0.9em;
+    line-height: 1.45em;
+    padding: 0;
+    text-transform: uppercase;
+}
