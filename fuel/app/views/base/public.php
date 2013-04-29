@@ -2,7 +2,7 @@
 <html>
 <head>
 <? require_once("helpers/cssjsattach.php"); ?>
-	<title><? if(isset($pageTitle)) echo $pageTitle;?></title>
+	<title><? if(isset($pageInfo["title"])) echo $pageInfo["title"];?></title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <meta name="robots" content="INDEX,FOLLOW">
@@ -248,66 +248,14 @@ h2 {
         <div class="main-container col2-layout">
 
 
-            <div class="grid_9 col-main "><br><br>
-                                <article>
-<header><br>
-<span style="font-size: 30px; font-family: HeliosExtThin; ">ОРГАНИЗАЦИЯ СВАДЕБ В ТОМСКЕ</span><br><br>
-
-</header>
-
-</article>
-
-
-
-
-<br><br>
-<div style="padding-left:120px; padding-right:120px; "> <center>
-<p><img width="200" vspace="10" hspace="10" height="326" align="left" src="http://idealnaya-svadba.com.ua/files/data/image/olga_main.png" title="Ольга Ермилова хозяйка агентства Идеальная Свадьба" alt="Ольга Ермилова хозяйка агентства Идеальная Свадьба" /><i>Будем знакомы, я - <a href="/olga_ermilova/">Ольга Ермилова</a>, хозяйка агентства Идеальная Свадьба</i>&nbsp;</p>
-<div><strong>Организация свадеб &ndash; моё призвание.</strong></div>
-<div>&nbsp;</div>
-<div>И для того, чтобы Ты смогла лично в этом убедиться, я рекомендую Тебе <a href="http://idealnaya-svadba.com.ua/nashi_svadby/">посмотреть свадьбы</a>, организованные нашим агентством, а так же <a href="http://idealnaya-svadba.com.ua/reviews/">почитать отзывы</a> тех, кто уже сделал выбор в нашу пользу.</div>
-<div>&nbsp;</div>
-<div>В этом году нам исполнится 5 лет. И, конечно, в связи с этим мы подготовили для Тебя невероятную <a href="http://idealnaya-svadba.com.ua/podarki_vsem/podarki.html">программу подарков</a>.</div>
-<div>&nbsp;</div>
-<div>Мы подарим Тебе любую услугу от наших партнёров.</div>
-<div>&nbsp;</div>
-<div>Да, да &ndash; просто подарим! Все подробности найдёшь,&nbsp;перейдя на <a href="http://idealnaya-svadba.com.ua/podarki_vsem/podarki.html">эту страницу</a>!&nbsp;&nbsp;</div>
-
-<div>&nbsp;</div>
-<div>
-<div>Наверное, Ты уже заметила, что лицом Идеальной Свадьбы являются очень красивые невесты.</div>
-<div>&nbsp;</div>
-<div>Все они не только реальные невесты нашего свадебного агентства, но и наши друзья!</div>
-<div>&nbsp;</div>
-<div><strong>Посмотри этот ролик, в котором они делятся впечатлениями от своих свадеб</strong></div>
+<div class="grid_9 col-main "><br><br>
+	<div style="padding-left:120px; padding-right:120px; margin-top:30px; "> 
+		<? if($pageInfo["content_title"] != null)
+			echo "<div class='page-content-title'>".$pageInfo['content_title']."</div>";
+		echo $pageInfo["content"];
+		?>
+	</div>
 </div>
-<div>&nbsp;</div>
-<p><iframe width="600" height="338" frameborder="0" src="http://player.vimeo.com/video/39369203?title=0&amp;byline=0&amp;portrait=0&amp;color=f00078" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe></p>
-<p>Понимаю, что с организацией свадьбы Ты столкнулась впервые и не совсем понимаешь с чего Тебе начать и как выбрать своего идеального организатора.&nbsp;</p>
-<div>Предлагаю Тебе познакомиться с нашей работой поближе и лично увидеть, как выглядит работа свадебного организатора в день свадьбы&nbsp;&nbsp;</div>
-<div>&nbsp;</div>
-<p><iframe width="610" height="343" frameborder="0" src="http://player.vimeo.com/video/45263537?title=0&amp;byline=0&amp;portrait=0&amp;color=f00078" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe></p>
-<p>Мало? Посмотри еще видео о работе нашего <a href="http://idealnaya-svadba.com.ua/svadebnoe_agentstvo.html">свадебного агентства</a></p>
-<p><a href="http://idealnaya-svadba.com.ua/svadebnoe_agentstvo.html"><img width="600" height="231" src="http://idealnaya-svadba.com.ua/files/data/image/cont_b_img.jpg" title="организация свадьбы" ilo-full-src="http://test12.whiteweb.com.ua/files/data/image/cont_b_img.jpg" alt="организация свадьбы" /></a></p>
-<p>Идеальная Свадьба &ndash; это прежде всего <a href="http://idealnaya-svadba.com.ua/team/">наша команда</a>.</p>
-<div><strong>Мы любим своё дело, и мы отлично его делаем.</strong></div>
-<div>&nbsp;</div>
-<div>На нашем сайте Ты найдёшь ответы на все свои вопросы, познакомишься со <a href="http://idealnaya-svadba.com.ua/svadebnoe_agentstvo.html">стоимостью наших услуг</a>, почитаешь <a href="http://idealnaya-svadba.com.ua/sovety_k_svadbe">полезные советы</a>, а так же подписавшись на рассылку, сможешь получить видео <a href="http://idealnaya-svadba.com.ua/biblioteka.html">семинар для невест</a> лично от меня.</div>
-<div>&nbsp;</div>
-<div><strong>Если Ты находишься далеко</strong> - узнай, как легко и просто с нашей помощью <a href="http://idealnaya-svadba.com.ua/organizovat_svadbu_v_kieve.html">организовать свадьбу в Киеве</a>.</div>
-<div>&nbsp;</div>
-<div>Так что располагайся поудобнее и давай знакомиться ближе!</div>
-<div>&nbsp;</div>
-<div><strong>А лучше просто запишись на первую встречу и ты уже никогда не захочешь от нас уходить!</strong></div>
-<div>&nbsp;</div>
-<p><span style="font-size: medium;">Хозяйка агентства &nbsp;</span><a href="/olga_ermilova/"><em><span style="font-size: medium;">Ольга Ермилова</span></em></a></p>
-<p><span style="font-size: medium;">Киев, Михайловский переулок, 17 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;+38 067 717 3344</span></p>
-<p>&nbsp;</p>
-
-</div>
-
-            </div>
-
 
 <aside class="grid_3 sidebar sidebar-right">
 

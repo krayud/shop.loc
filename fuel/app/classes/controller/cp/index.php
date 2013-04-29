@@ -1,6 +1,6 @@
 <?php
 
-class Controller_Cp_Index extends Controller_Base_Controlpanel
+class Controller_Cp_Index extends Controller_Cp_Main
 {
 	public function action_index()
 	{

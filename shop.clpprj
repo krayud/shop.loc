@@ -44,6 +44,15 @@
 			<error val="36;243;37;243;901;2;"/>
 			<error val="35;281;36;281;901;2;"/>
 		</errfile>
+		<errfile name="C:\WebServers\home\shop.loc\fuel\app\views\base\public.php">
+			<error val="196;284;215;284;2002;1;"/>
+			<error val="174;284;196;284;2002;1;"/>
+			<error val="149;284;174;284;2002;1;"/>
+			<error val="196;288;215;288;2002;1;"/>
+			<error val="174;288;196;288;2002;1;"/>
+			<error val="149;288;174;288;2002;1;"/>
+			<error val="195;290;272;290;2002;1;"/>
+		</errfile>
 	</errors>
 	<codestructure version="4.4">
 		<phptree>
@@ -219,7 +228,7 @@
 					</treenode>
 				</treenode>
 			</treenode>
-			<treenode node="helpers/cssjsattach.php;PHP:PHP Include;C:\WebServers\home\shop.loc\fuel\app\views\base\public.php;f17;3;40;3;;C:\WebServers\home\shop.loc\fuel\app\views\base\controlpanel.php;f16;5;39;5;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="helpers/cssjsattach.php;PHP:PHP Include;C:\WebServers\home\shop.loc\fuel\app\views\base\public.php;f17;3;40;3;;C:\WebServers\home\shop.loc\fuel\app\views\base\controlpanel.php;f17;4;40;4;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="HTTP_URL_JOIN_PATH;PHP:PHP Word;C:\WebServers\home\shop.loc\fuel\core\base.php;f9;264;27;264;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
@@ -1967,17 +1976,29 @@
 					</treenode>
 				</treenode>
 			</treenode>
-			<treenode node="Controller_Base_Public;PHP:Class Name;C:\WebServers\home\shop.loc\fuel\app\classes\controller\base\public.php;f0;1;1;13;;;;vpos;;vController_Base_Main;;c;;r;;d0,2;;b0,0;;m">
-				<treenode node="before;PHP:Function Name;C:\WebServers\home\shop.loc\fuel\app\classes\controller\base\public.php;f8;5;2;12;;;;vpos;;v;;r;;d25,5;;b1,0;;m">
-					<treenode node="this;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\classes\controller\base\public.php;f13;7;18;7;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
-					</treenode>
+			<treenode node="Controller_Base_Public;PHP:Class Name;C:\WebServers\home\shop.loc\fuel\app\classes\controller\base\public.php;f0;1;1;16;;;;vpos;;vController_Base_Main;;c;;r;;d0,2;;b0,0;;m">
+				<treenode node="before;PHP:Function Name;C:\WebServers\home\shop.loc\fuel\app\classes\controller\base\public.php;f8;5;2;15;;;;vpos;;v;;r;;d25,5;;b1,0;;m">
 				</treenode>
 				<treenode node="template;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\classes\controller\base\public.php;f8;3;17;3;;;;vpos;;v;;r;;d-1,-1;;b1,0;;m">
 				</treenode>
 			</treenode>
-			<treenode node="Controller_Cp_Index;PHP:Class Name;C:\WebServers\home\shop.loc\fuel\app\classes\controller\cp\index.php;f0;2;1;9;;;;vpos;;vController_Base_Controlpanel;;c;;r;;d0,3;;b0,0;;m">
-				<treenode node="action_index;PHP:Function Name;C:\WebServers\home\shop.loc\fuel\app\classes\controller\cp\index.php;f8;4;2;8;;;;vpos;;v;;r;;d1,5;;b1,0;;m">
+			<treenode node="Controller_Cp_Index;PHP:Class Name;C:\WebServers\home\shop.loc\fuel\app\classes\controller\cp\index.php;f0;2;1;10;;;;vpos;;vController_Base_Controlpanel;;c;;r;;d0,3;;b0,0;;m">
+				<treenode node="action_index;PHP:Function Name;C:\WebServers\home\shop.loc\fuel\app\classes\controller\cp\index.php;f8;4;2;9;;;;vpos;;v;;r;;d1,5;;b1,0;;m">
 					<treenode node="this;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\classes\controller\cp\index.php;f2;6;7;6;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+			</treenode>
+			<treenode node="Controller_Cp_Main;PHP:Class Name;C:\WebServers\home\shop.loc\fuel\app\classes\controller\cp\main.php;f0;2;1;13;;;;vpos;;vController_Base_Controlpanel;;c;;r;;d0,3;;b0,0;;m">
+				<treenode node="before;PHP:Function Name;C:\WebServers\home\shop.loc\fuel\app\classes\controller\cp\main.php;f8;4;2;12;;;;vpos;;v;;r;;d25,4;;b1,0;;m">
+					<treenode node="barModules;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\classes\controller\cp\main.php;f2;8;13;8;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\classes\controller\cp\main.php;f2;11;7;11;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+			</treenode>
+			<treenode node="Controller_Cp_Page;PHP:Class Name;C:\WebServers\home\shop.loc\fuel\app\classes\controller\cp\page.php;f0;2;1;9;;;;vpos;;vController_Cp_Main;;c;;r;;d0,3;;b0,0;;m">
+				<treenode node="action_new;PHP:Function Name;C:\WebServers\home\shop.loc\fuel\app\classes\controller\cp\page.php;f8;4;2;8;;;;vpos;;v;;r;;d1,5;;b1,0;;m">
+					<treenode node="this;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\classes\controller\cp\page.php;f2;6;7;6;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
 				</treenode>
 			</treenode>
@@ -1985,9 +2006,13 @@
 			</treenode>
 			<treenode node="Controller_Main;PHP:Class Name;C:\WebServers\home\shop.loc\fuel\app\modules\users\classes\controller\main.php;f0;3;29;3;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="Controller_Public_Index;PHP:Class Name;C:\WebServers\home\shop.loc\fuel\app\classes\controller\public\index.php;f0;2;1;12;;;;vpos;;vController_Base_Public;;c;;r;;d0,3;;b0,0;;m">
-				<treenode node="action_index;PHP:Function Name;C:\WebServers\home\shop.loc\fuel\app\classes\controller\public\index.php;f11;5;5;11;;;;vpos;;v;;r;;d4,6;;b1,0;;m">
-					<treenode node="this;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\classes\controller\public\index.php;f8;7;13;7;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="Controller_Public_Static;PHP:Class Name;C:\WebServers\home\shop.loc\fuel\app\classes\controller\public\static.php;f0;2;1;19;;;;vpos;;vController_Base_Public;;c;;r;;d0,3;;b0,0;;m">
+				<treenode node="action_page;PHP:Function Name;C:\WebServers\home\shop.loc\fuel\app\classes\controller\public\static.php;f11;5;5;18;;;;vpos;;v;;r;;d4,6;;b1,0;;mpageName;;p">
+					<treenode node="pageInfo;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\classes\controller\public\static.php;f2;12;11;12;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="pageName;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\classes\controller\public\static.php;f32;5;41;5;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\classes\controller\public\static.php;f3;14;8;14;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
 				</treenode>
 			</treenode>
@@ -8203,6 +8228,8 @@
 				<treenode node="_soft_delete_cached;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\packages\orm\classes\model\soft.php;f18;35;38;35;;;;vpos;;v;;r;;d-1,-1;;b2,5;;m">
 				</treenode>
 			</treenode>
+			<treenode node="Model_Static;PHP:Class Name;C:\WebServers\home\shop.loc\fuel\app\classes\model\Codelobster0.php;f0;1;26;1;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
 			<treenode node="Model_Users;PHP:Class Name;C:\WebServers\home\shop.loc\fuel\app\modules\users\classes\model\users.php;f0;3;25;3;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="Module;PHP:Class Name;C:\WebServers\home\shop.loc\fuel\core\classes\module.php;f0;26;1;161;;;;vpos;;v;;r;;d0,27;;b0,0;;m">
@@ -13636,9 +13663,23 @@
 				</treenode>
 			</treenode>
 			<treenode node="Authorization;PHP:Function Name;C:\WebServers\home\shop.loc\fuel\app\modules\users\classes\model\users.php;f17;37;4;64;;;;vpos;;v;;r;;d58,37;;b1,5;;mlogin;;ppassword;;p">
-				<treenode node="login;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\modules\users\classes\model\users.php;f40;37;46;37;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				<treenode node="answerArray;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\classes\model\Codelobster0.php;f4;39;16;39;;C:\WebServers\home\shop.loc\fuel\app\modules\users\classes\model\users.php;f4;39;16;39;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 				</treenode>
-				<treenode node="password;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\modules\users\classes\model\users.php;f48;37;57;37;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				<treenode node="cookieName;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\classes\model\Codelobster0.php;f2;46;13;46;;C:\WebServers\home\shop.loc\fuel\app\modules\users\classes\model\users.php;f2;46;13;46;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="cookieTime;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\classes\model\Codelobster0.php;f2;47;13;47;;C:\WebServers\home\shop.loc\fuel\app\modules\users\classes\model\users.php;f2;47;13;47;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="CookieToken;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\classes\model\Codelobster0.php;f2;51;14;51;;C:\WebServers\home\shop.loc\fuel\app\modules\users\classes\model\users.php;f2;51;14;51;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="login;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\classes\model\Codelobster0.php;f40;37;46;37;;C:\WebServers\home\shop.loc\fuel\app\modules\users\classes\model\users.php;f40;37;46;37;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="md5Password;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\classes\model\Codelobster0.php;f4;38;16;38;;C:\WebServers\home\shop.loc\fuel\app\modules\users\classes\model\users.php;f4;38;16;38;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="newToken;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\classes\model\Codelobster0.php;f2;49;11;49;;C:\WebServers\home\shop.loc\fuel\app\modules\users\classes\model\users.php;f2;49;11;49;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="password;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\classes\model\Codelobster0.php;f48;37;57;37;;C:\WebServers\home\shop.loc\fuel\app\modules\users\classes\model\users.php;f48;37;57;37;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="user;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\classes\model\Codelobster0.php;f4;40;9;40;;C:\WebServers\home\shop.loc\fuel\app\modules\users\classes\model\users.php;f4;40;9;40;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 				</treenode>
 			</treenode>
 			<treenode node="before;PHP:Function Name;C:\WebServers\home\shop.loc\fuel\core\classes\controller\template.php;f8;34;2;43;;C:\WebServers\home\shop.loc\fuel\core\classes\controller\rest.php;f8;56;2;67;;C:\WebServers\home\shop.loc\fuel\core\classes\controller\hybrid.php;f8;34;2;47;;;;vpos;;v;;r;;d1,35;;b1,0;;m">
@@ -13977,12 +14018,20 @@
 			</treenode>
 			<treenode node="get_user_id;PHP:Function Name;C:\WebServers\home\shop.loc\fuel\packages\auth\classes\auth\login\simpleauth.php;f8;443;2;451;;C:\WebServers\home\shop.loc\fuel\packages\auth\classes\auth\login\driver.php;f17;223;39;223;;;;vpos;;v;;r;;d1,444;;b1,0;;m">
 			</treenode>
+			<treenode node="GetAdminBlockData;PHP:Function Name;C:\WebServers\home\shop.loc\fuel\app\modules\users\classes\model\users.php;f15;69;2;75;;C:\WebServers\home\shop.loc\fuel\app\classes\model\Codelobster0.php;f16;18;3;25;;;;vpos;;v;;r;;d44,18;;b1,5;;m">
+				<treenode node="data;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\modules\users\classes\model\users.php;f2;70;7;70;;C:\WebServers\home\shop.loc\fuel\app\classes\model\Codelobster0.php;f3;19;8;19;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+			</treenode>
 			<treenode node="getLogger;PHP:Function Name;C:\WebServers\home\shop.loc\fuel\packages\log\Psr\Log\Test\LoggerInterfaceTest.php;f13;16;33;16;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="getLogs;PHP:Function Name;C:\WebServers\home\shop.loc\fuel\packages\log\Psr\Log\Test\LoggerInterfaceTest.php;f13;25;31;25;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
+			<treenode node="GetPageInfo;PHP:Function Name;C:\WebServers\home\shop.loc\fuel\app\classes\model\Codelobster0.php;f16;9;3;11;;;;vpos;;v;;r;;d46,9;;b1,5;;mpageUri;;p">
+				<treenode node="pageUri;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\classes\model\Codelobster0.php;f37;9;45;9;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+			</treenode>
 			<treenode node="GetUserByToken;PHP:Function Name;C:\WebServers\home\shop.loc\fuel\app\modules\users\classes\model\users.php;f18;10;2;12;;;;vpos;;v;;r;;d49,10;;b1,5;;mtoken;;p">
-				<treenode node="token;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\modules\users\classes\model\users.php;f42;10;48;10;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				<treenode node="token;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\classes\model\Codelobster0.php;f42;10;48;10;;C:\WebServers\home\shop.loc\fuel\app\modules\users\classes\model\users.php;f42;10;48;10;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 				</treenode>
 			</treenode>
 			<treenode node="GetUserInfo;PHP:Function Name;C:\WebServers\home\shop.loc\fuel\app\modules\users\classes\controller\main.php;f8;26;2;28;;;;vpos;;v;;r;;d30,26;;b1,0;;m">
@@ -14510,9 +14559,13 @@
 				</treenode>
 			</treenode>
 			<treenode node="Registration;PHP:Function Name;C:\WebServers\home\shop.loc\fuel\app\modules\users\classes\model\users.php;f17;17;4;31;;;;vpos;;v;;r;;d57,17;;b1,5;;mlogin;;ppassword;;p">
-				<treenode node="login;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\modules\users\classes\model\users.php;f39;17;45;17;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				<treenode node="answerArray;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\classes\model\Codelobster0.php;f4;18;16;18;;C:\WebServers\home\shop.loc\fuel\app\modules\users\classes\model\users.php;f4;18;16;18;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 				</treenode>
-				<treenode node="password;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\modules\users\classes\model\users.php;f47;17;56;17;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				<treenode node="login;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\classes\model\Codelobster0.php;f39;17;45;17;;C:\WebServers\home\shop.loc\fuel\app\modules\users\classes\model\users.php;f39;17;45;17;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="newUser;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\classes\model\Codelobster0.php;f3;20;11;20;;C:\WebServers\home\shop.loc\fuel\app\modules\users\classes\model\users.php;f3;20;11;20;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="password;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\classes\model\Codelobster0.php;f47;17;56;17;;C:\WebServers\home\shop.loc\fuel\app\modules\users\classes\model\users.php;f47;17;56;17;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 				</treenode>
 			</treenode>
 			<treenode node="relations;PHP:Function Name;C:\WebServers\home\shop.loc\fuel\packages\orm\classes\model.php;f15;363;2;399;;;;vpos;;v;;r;;d1,364;;b1,5;;mspecific;;p">
@@ -14877,7 +14930,7 @@
 			</treenode>
 			<treenode node="_table;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\core\classes\database\query\builder\update.php;f11;17;18;17;;C:\WebServers\home\shop.loc\fuel\core\classes\database\query\builder\join.php;f11;19;18;19;;C:\WebServers\home\shop.loc\fuel\core\classes\database\query\builder\insert.php;f11;17;18;17;;C:\WebServers\home\shop.loc\fuel\core\classes\database\query\builder\delete.php;f11;17;18;17;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
 			</treenode>
-			<treenode node="_table_name;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\modules\users\classes\model\users.php;f18;4;30;4;;;;vpos;;v;;r;;d-1,-1;;b2,5;;m">
+			<treenode node="_table_name;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\modules\users\classes\model\users.php;f18;4;30;4;;C:\WebServers\home\shop.loc\fuel\app\classes\model\Codelobster0.php;f18;2;30;2;;;;vpos;;v;;r;;d-1,-1;;b2,5;;m">
 			</treenode>
 			<treenode node="_table_names_cached;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\packages\orm\classes\model.php;f18;82;38;82;;;;vpos;;v;;r;;d-1,-1;;b2,5;;m">
 			</treenode>
@@ -14921,6 +14974,8 @@
 			</treenode>
 			<treenode node="backtrace;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\core\views\errors\php_fatal_error.php;f11;49;21;49;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
+			<treenode node="barModules;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\views\base\controlpanel.php;f13;26;24;26;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
 			<treenode node="bm;PHP:Var Name;C:\WebServers\home\shop.loc\www\index.php;f0;75;3;75;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="config;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\packages\auth\classes\auth\login\simpleauth.php;f11;52;18;52;;C:\WebServers\home\shop.loc\fuel\packages\auth\classes\auth\login\driver.php;f11;57;18;57;;C:\WebServers\home\shop.loc\fuel\packages\auth\classes\auth\group\simplegroup.php;f11;25;18;25;;C:\WebServers\home\shop.loc\fuel\core\classes\cache\storage\redis.php;f11;27;18;27;;C:\WebServers\home\shop.loc\fuel\core\classes\cache\storage\memcached.php;f11;27;18;27;;C:\WebServers\home\shop.loc\fuel\core\classes\cache\storage\file.php;f11;32;18;32;;C:\WebServers\home\shop.loc\fuel\core\classes\cache\storage\apc.php;f11;27;18;27;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
@@ -14936,6 +14991,8 @@
 			<treenode node="controller_name;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\packages\oil\views\scaffolding\orm\actions\view.php;f50;0;66;0;;C:\WebServers\home\shop.loc\fuel\packages\oil\views\scaffolding\orm\actions\edit.php;f50;0;66;0;;C:\WebServers\home\shop.loc\fuel\packages\oil\views\scaffolding\orm\actions\delete.php;f50;0;66;0;;C:\WebServers\home\shop.loc\fuel\packages\oil\views\scaffolding\orm\controller.php;f28;2;44;2;;C:\WebServers\home\shop.loc\fuel\packages\oil\views\scaffolding\crud\actions\view.php;f50;0;66;0;;C:\WebServers\home\shop.loc\fuel\packages\oil\views\scaffolding\crud\actions\edit.php;f50;0;66;0;;C:\WebServers\home\shop.loc\fuel\packages\oil\views\scaffolding\crud\controller.php;f28;2;44;2;;C:\WebServers\home\shop.loc\fuel\packages\oil\views\admin\orm\controller.php;f28;2;44;2;;C:\WebServers\home\shop.loc\fuel\packages\oil\views\admin\crud\controller.php;f28;2;44;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="controller_parent;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\packages\oil\views\scaffolding\orm\controller.php;f92;2;110;2;;C:\WebServers\home\shop.loc\fuel\packages\oil\views\scaffolding\crud\controller.php;f92;2;110;2;;C:\WebServers\home\shop.loc\fuel\packages\oil\views\admin\orm\controller.php;f92;2;110;2;;C:\WebServers\home\shop.loc\fuel\packages\oil\views\admin\crud\controller.php;f92;2;110;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="controlPanelFolder;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\config\routes.php;f0;3;19;3;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="core_path;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\core\bootstrap_phpunit.php;f0;13;10;13;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
@@ -14987,6 +15044,8 @@
 			</treenode>
 			<treenode node="hasher;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\packages\auth\classes\auth\login\driver.php;f9;62;16;62;;;;vpos;;v;;r;;d-1,-1;;b3,0;;m">
 			</treenode>
+			<treenode node="header;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\views\base\cp\sitebar.php;f26;0;33;0;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
 			<treenode node="http_status;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\core\classes\controller\rest.php;f11;35;23;35;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
 			</treenode>
 			<treenode node="id;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\core\views\errors\php_fatal_error.php;f3;48;6;48;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
@@ -15011,6 +15070,10 @@
 			</treenode>
 			<treenode node="line_num;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\core\views\errors\php_fatal_error.php;f62;41;71;41;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
+			<treenode node="link;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\views\base\cp\sitebar.php;f18;2;23;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="links;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\views\base\cp\sitebar.php;f8;2;14;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
 			<treenode node="loaded_files;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\packages\parser\classes\view.php;f18;22;31;22;;;;vpos;;v;;r;;d-1,-1;;b2,5;;m">
 			</treenode>
 			<treenode node="logger;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\packages\log\Psr\Log\LoggerAwareTrait.php;f14;10;21;10;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
@@ -15029,6 +15092,8 @@
 			</treenode>
 			<treenode node="model_name;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\packages\oil\views\scaffolding\orm\actions\view.php;f66;2;77;2;;C:\WebServers\home\shop.loc\fuel\packages\oil\views\scaffolding\orm\actions\index.php;f57;0;68;0;;C:\WebServers\home\shop.loc\fuel\packages\oil\views\scaffolding\orm\actions\edit.php;f59;2;70;2;;C:\WebServers\home\shop.loc\fuel\packages\oil\views\scaffolding\orm\actions\delete.php;f56;2;67;2;;C:\WebServers\home\shop.loc\fuel\packages\oil\views\scaffolding\orm\actions\create.php;f27;2;38;2;;C:\WebServers\home\shop.loc\fuel\packages\oil\views\scaffolding\orm\model.php;f23;4;34;4;;C:\WebServers\home\shop.loc\fuel\packages\oil\views\scaffolding\crud\actions\view.php;f59;2;70;2;;C:\WebServers\home\shop.loc\fuel\packages\oil\views\scaffolding\crud\actions\index.php;f57;0;68;0;;C:\WebServers\home\shop.loc\fuel\packages\oil\views\scaffolding\crud\actions\edit.php;f52;2;63;2;;C:\WebServers\home\shop.loc\fuel\packages\oil\views\scaffolding\crud\actions\delete.php;f56;0;67;0;;C:\WebServers\home\shop.loc\fuel\packages\oil\views\scaffolding\crud\actions\create.php;f27;2;38;2;;C:\WebServers\home\shop.loc\fuel\packages\oil\views\scaffolding\crud\model.php;f23;2;34;2;;C:\WebServers\home\shop.loc\fuel\packages\oil\views\admin\orm\actions\view.php;f59;0;70;0;;C:\WebServers\home\shop.loc\fuel\packages\oil\views\admin\orm\actions\index.php;f57;0;68;0;;C:\WebServers\home\shop.loc\fuel\packages\oil\views\admin\orm\actions\edit.php;f52;0;63;0;;C:\WebServers\home\shop.loc\fuel\packages\oil\views\admin\orm\actions\delete.php;f56;0;67;0;;C:\WebServers\home\shop.loc\fuel\packages\oil\views\admin\orm\actions\create.php;f27;2;38;2;;C:\WebServers\home\shop.loc\fuel\packages\oil\views\admin\orm\model.php;f23;2;34;2;;C:\WebServers\home\shop.loc\fuel\packages\oil\views\admin\crud\actions\view.php;f59;0;70;0;;C:\WebServers\home\shop.loc\fuel\packages\oil\views\admin\crud\actions\index.php;f57;0;68;0;;C:\WebServers\home\shop.loc\fuel\packages\oil\views\admin\crud\actions\edit.php;f52;0;63;0;;C:\WebServers\home\shop.loc\fuel\packages\oil\views\admin\crud\actions\delete.php;f56;0;67;0;;C:\WebServers\home\shop.loc\fuel\packages\oil\views\admin\crud\actions\create.php;f27;2;38;2;;C:\WebServers\home\shop.loc\fuel\packages\oil\views\admin\crud\model.php;f23;2;34;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
+			<treenode node="module;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\views\base\controlpanel.php;f28;26;35;26;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
 			<treenode node="no_data_status;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\core\classes\controller\rest.php;f11;25;26;25;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
 			</treenode>
 			<treenode node="no_method_status;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\core\classes\controller\rest.php;f11;20;28;20;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
@@ -15041,7 +15106,7 @@
 			</treenode>
 			<treenode node="package_path;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\core\bootstrap_phpunit.php;f0;12;13;12;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="pageContent;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\views\base\controlpanel.php;f11;19;23;19;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="pageContent;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\views\base\public.php;f5;264;17;264;;C:\WebServers\home\shop.loc\fuel\app\views\base\controlpanel.php;f15;34;27;34;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="pageTitle;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\views\base\public.php;f20;4;30;4;;C:\WebServers\home\shop.loc\fuel\app\views\base\controlpanel.php;f11;3;21;3;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
@@ -15052,6 +15117,8 @@
 			<treenode node="plural_name;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\packages\oil\views\scaffolding\orm\views\actions\index.php;f37;0;49;0;;C:\WebServers\home\shop.loc\fuel\packages\oil\views\scaffolding\orm\actions\index.php;f20;0;32;0;;C:\WebServers\home\shop.loc\fuel\packages\oil\views\scaffolding\orm\actions\edit.php;f47;43;59;43;;C:\WebServers\home\shop.loc\fuel\packages\oil\views\scaffolding\orm\actions\create.php;f53;30;65;30;;C:\WebServers\home\shop.loc\fuel\packages\oil\views\scaffolding\crud\views\actions\index.php;f37;0;49;0;;C:\WebServers\home\shop.loc\fuel\packages\oil\views\scaffolding\crud\actions\index.php;f20;0;32;0;;C:\WebServers\home\shop.loc\fuel\packages\oil\views\scaffolding\crud\actions\edit.php;f47;31;59;31;;C:\WebServers\home\shop.loc\fuel\packages\oil\views\scaffolding\crud\actions\create.php;f53;28;65;28;;C:\WebServers\home\shop.loc\fuel\packages\oil\views\admin\orm\views\actions\index.php;f37;0;49;0;;C:\WebServers\home\shop.loc\fuel\packages\oil\views\admin\orm\actions\index.php;f20;0;32;0;;C:\WebServers\home\shop.loc\fuel\packages\oil\views\admin\orm\actions\edit.php;f47;36;59;36;;C:\WebServers\home\shop.loc\fuel\packages\oil\views\admin\orm\actions\create.php;f53;30;65;30;;C:\WebServers\home\shop.loc\fuel\packages\oil\views\admin\crud\views\actions\index.php;f37;0;49;0;;C:\WebServers\home\shop.loc\fuel\packages\oil\views\admin\crud\actions\index.php;f20;0;32;0;;C:\WebServers\home\shop.loc\fuel\packages\oil\views\admin\crud\actions\edit.php;f47;29;59;29;;C:\WebServers\home\shop.loc\fuel\packages\oil\views\admin\crud\actions\create.php;f53;28;65;28;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="preserve_resource;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\core\classes\request\curl.php;f11;9;29;9;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+			</treenode>
+			<treenode node="publicFolder;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\config\routes.php;f0;2;13;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="record;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\core\classes\session\db.php;f11;24;18;24;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
 			</treenode>
@@ -15099,7 +15166,7 @@
 			</treenode>
 			<treenode node="user;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\packages\auth\classes\auth\login\simpleauth.php;f11;36;16;36;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
 			</treenode>
-			<treenode node="userInfo;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\modules\users\views\userpanel.php;f33;0;42;0;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="userInfo;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\modules\users\views\userpanel.php;f10;2;19;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="userPanel;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\views\base\public.php;f5;147;15;147;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
@@ -15117,6 +15184,644 @@
 			</treenode>
 		</phptree>
 		<jstree>
+			<treenode node=".position;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f1;1050;1;1098;;;;vpos;;v;;r;;d13,1050;;b0,0;;m">
+				<treenode node="getScrollInfo;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f1;1073;2;1084;;;;vpos;;v;;r;;d35,1073;;b0,0;;mwithin;;p">
+					<treenode node="hasOverflowX;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f3;1076;15;1076;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="hasOverflowY;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f3;1078;15;1078;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="height;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f3;1082;9;1082;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="overflowX;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f6;1074;15;1074;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="overflowY;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f3;1075;12;1075;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="width;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f3;1081;8;1081;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="within;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f26;1073;32;1073;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="getWithinInfo;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f1;1085;2;1097;;;;vpos;;v;;r;;d36,1085;;b0,0;;melement;;p">
+					<treenode node="element;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f26;1085;33;1085;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="height;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f3;1095;9;1095;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="isWindow;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f3;1087;11;1087;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="left;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f39;1091;43;1091;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="offset;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f3;1091;9;1091;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="scrollLeft;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f3;1092;13;1092;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="scrollTop;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f3;1093;12;1093;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="top;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f48;1091;51;1091;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="width;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f3;1094;8;1094;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="window;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f36;1086;42;1086;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="withinElement;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f6;1086;19;1086;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="scrollbarWidth;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f1;1051;2;1072;;;;vpos;;v;;r;;d28,1051;;b0,0;;m">
+					<treenode node="cachedScrollbarWidth;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f7;1052;27;1052;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="div;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f3;1056;6;1056;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="innerDiv;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f3;1057;11;1057;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="undefined;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f32;1052;41;1052;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="w1;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f6;1055;8;1055;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="w2;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f10;1055;12;1055;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+			</treenode>
+			<treenode node=".ui.position;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f1;1295;1;1454;;;;vpos;;v;;r;;d16,1295;;b0,0;;m">
+				<treenode node="fit;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f1;1296;2;1371;;;;vpos;;v;;r;;d6,1296;;b0,0;;m">
+					<treenode node="left;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f2;1297;3;1333;;;;vpos;;v;;r;;d35,1297;;b0,0;;mposition;;pdata;;p">
+						<treenode node="collisionPosLeft;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f4;1301;20;1301;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="data;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f28;1297;32;1297;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="newOverRight;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f4;1304;16;1304;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="outerWidth;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f4;1300;14;1300;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="overLeft;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f4;1302;12;1302;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="overRight;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f4;1303;13;1303;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="position;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f18;1297;26;1297;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="within;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f7;1298;13;1298;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="withinOffset;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f4;1299;16;1299;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+					</treenode>
+					<treenode node="top;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f2;1334;3;1370;;;;vpos;;v;;r;;d34,1334;;b0,0;;mposition;;pdata;;p">
+						<treenode node="collisionPosTop;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f4;1338;19;1338;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="data;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f27;1334;31;1334;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="newOverBottom;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f4;1341;17;1341;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="outerHeight;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f4;1337;15;1337;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="overBottom;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f4;1340;14;1340;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="overTop;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f4;1339;11;1339;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="position;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f17;1334;25;1334;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="within;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f7;1335;13;1335;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="withinOffset;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f4;1336;16;1336;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+					</treenode>
+				</treenode>
+				<treenode node="flip;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f1;1372;2;1443;;;;vpos;;v;;r;;d7,1372;;b0,0;;m">
+					<treenode node="left;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f2;1373;3;1407;;;;vpos;;v;;r;;d35,1373;;b0,0;;mposition;;pdata;;p">
+						<treenode node="atOffset;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f4;1386;12;1386;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="collisionPosLeft;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f4;1378;20;1378;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="data;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f28;1373;32;1373;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="myOffset;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f4;1381;12;1381;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="newOverLeft;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f4;1393;15;1393;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="newOverRight;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f4;1392;16;1392;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="offset;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f4;1391;10;1391;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="offsetLeft;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f4;1377;14;1377;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="outerWidth;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f4;1376;14;1376;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="overLeft;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f4;1379;12;1379;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="overRight;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f4;1380;13;1380;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="position;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f18;1373;26;1373;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="within;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f7;1374;13;1374;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="withinOffset;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f4;1375;16;1375;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+					</treenode>
+					<treenode node="top;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f2;1408;3;1442;;;;vpos;;v;;r;;d34,1408;;b0,0;;mposition;;pdata;;p">
+						<treenode node="atOffset;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f4;1422;12;1422;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="collisionPosTop;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f4;1413;19;1413;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="data;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f27;1408;31;1408;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="myOffset;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f4;1417;12;1417;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="newOverBottom;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f4;1429;17;1429;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="newOverTop;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f4;1428;14;1428;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="offset;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f4;1427;10;1427;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="offsetTop;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f4;1412;13;1412;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="outerHeight;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f4;1411;15;1411;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="overBottom;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f4;1415;14;1415;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="overTop;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f4;1414;11;1414;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="position;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f17;1408;25;1408;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="top;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f4;1416;7;1416;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="within;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f7;1409;13;1409;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="withinOffset;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f4;1410;16;1410;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+					</treenode>
+				</treenode>
+				<treenode node="flipfit;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f1;1444;2;1453;;;;vpos;;v;;r;;d10,1444;;b0,0;;m">
+					<treenode node="left;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f2;1445;3;1448;;;;vpos;;v;;r;;d19,1445;;b0,0;;m">
+					</treenode>
+					<treenode node="top;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f2;1449;3;1452;;;;vpos;;v;;r;;d18,1449;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="fit;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f1;1296;4;1296;;;;vposfit;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="flip;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f1;1372;5;1372;;;;vposflip;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="flipfit;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f1;1444;8;1444;;;;vposflipfit;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node=".Widget.prototype;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f1;551;1;823;;;;vpos;;v;;r;;d21,551;;b0,0;;m">
+				<treenode node="_createWidget;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f1;561;2;598;;;;vpos;;v;;r;;d45,561;;b0,0;;moptions;;pelement;;p">
+					<treenode node="remove;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f4;581;5;585;;;;vpos;;v;;r;;d30,581;;b0,0;;mevent;;p">
+						<treenode node="element;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f27;582;34;582;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="event;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f22;581;27;581;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+					</treenode>
+					<treenode node="document;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f8;587;16;587;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="element;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f35;561;42;561;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="options;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f26;561;33;561;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="uuid;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f14;564;18;564;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="window;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f8;592;14;592;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="_focusable;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f1;783;2;793;;;;vpos;;v;;r;;d33,783;;b0,0;;melement;;p">
+					<treenode node="focusin;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f3;786;4;788;;;;vpos;;v;;r;;d30,786;;b0,0;;mevent;;p">
+						<treenode node="event;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f22;786;27;786;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+					</treenode>
+					<treenode node="focusout;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f3;789;4;791;;;;vpos;;v;;r;;d31,789;;b0,0;;mevent;;p">
+						<treenode node="event;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f23;789;28;789;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+					</treenode>
+					<treenode node="element;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f23;783;30;783;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="_hoverable;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f1;771;2;781;;;;vpos;;v;;r;;d33,771;;b0,0;;melement;;p">
+					<treenode node="mouseenter;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f3;774;4;776;;;;vpos;;v;;r;;d33,774;;b0,0;;mevent;;p">
+						<treenode node="event;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f25;774;30;774;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+					</treenode>
+					<treenode node="mouseleave;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f3;777;4;779;;;;vpos;;v;;r;;d33,777;;b0,0;;mevent;;p">
+						<treenode node="event;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f25;777;30;777;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+					</treenode>
+					<treenode node="element;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f23;771;30;771;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="_trigger;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f1;795;2;822;;;;vpos;;v;;r;;d41,795;;b0,0;;mtype;;pevent;;pdata;;p">
+					<treenode node="callback;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f3;797;11;797;;;;vpos.Widget.prototype;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="data;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f34;795;38;795;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="element;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f22;806;29;806;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="event;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f27;795;32;795;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="orig;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f12;796;16;796;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="prop;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f6;796;10;796;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="type;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f21;795;25;795;;;;vpos_trigger;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="options;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f1;555;2;560;;;;vpos;;v;;r;;d10,555;;b0,0;;m">
+					<treenode node="create;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f2;559;8;559;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="disabled;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f2;556;10;556;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="_delay;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f1;762;2;769;;;;vpos;;v;;r;;d36,762;;b0,0;;mhandler;;pdelay;;p">
+					<treenode node="handlerProxy;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f28;762;3;766;;;;vpos;;v;;r;;d26,763;;b0,0;;m">
+						<treenode node="handler;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f19;764;26;764;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="instance;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f42;764;50;764;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+					</treenode>
+					<treenode node="delay;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f28;762;33;762;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="handler;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f19;762;26;762;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="handlerProxy;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f21;768;33;768;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="instance;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f6;767;14;767;;;;vpos.Widget.prototype;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="_off;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f1;757;2;760;;;;vpos;;v;;r;;d38,757;;b0,0;;melement;;peventName;;p">
+					<treenode node="element;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f17;757;24;757;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="eventName;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f26;757;35;757;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="_on;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f1;704;2;755;;;;vpos;;v;;r;;d59,704;;b0,0;;msuppressDisabledCheck;;pelement;;phandlers;;p">
+					<treenode node="handlerProxy;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f48;704;4;738;;;;vpos;;v;;r;;d27,727;;b0,0;;m">
+						<treenode node="handler;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f20;736;27;736;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="instance;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f8;732;16;732;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="suppressDisabledCheck;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f10;731;31;731;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+					</treenode>
+					<treenode node="delegateElement;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f6;705;21;705;;;;vpos.Widget.prototype;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="element;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f39;704;46;704;;;;vpos.Widget.prototype;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="event;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f30;726;35;726;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="eventName;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f4;747;13;747;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="handler;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f37;726;44;726;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="handlerProxy;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f4;742;16;742;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="handlers;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f48;704;56;704;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="instance;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f3;706;11;706;;;;vpos.Widget.prototype;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="match;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f7;746;12;746;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="selector;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f4;748;12;748;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="suppressDisabledCheck;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f16;704;37;704;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="_setOption;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f1;683;2;695;;;;vpos;;v;;r;;d36,683;;b0,0;;mkey;;pvalue;;p">
+					<treenode node="key;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f23;683;26;683;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="value;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f28;683;33;683;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="_setOptions;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f1;674;2;682;;;;vpos;;v;;r;;d34,674;;b0,0;;moptions;;p">
+					<treenode node="key;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f6;675;9;675;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="options;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f24;674;31;674;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="destroy;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f1;604;2;628;;;;vpos;;v;;r;;d21,604;;b0,0;;m">
+				</treenode>
+				<treenode node="disable;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f1;700;2;702;;;;vpos;;v;;r;;d21,700;;b0,0;;m">
+				</treenode>
+				<treenode node="enable;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f1;697;2;699;;;;vpos;;v;;r;;d20,697;;b0,0;;m">
+				</treenode>
+				<treenode node="option;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f1;635;2;673;;;;vpos;;v;;r;;d32,635;;b0,0;;mkey;;pvalue;;p">
+					<treenode node="options;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f3;648;15;648;;;;vpos;;v;;r;;d13,648;;b0,0;;m">
+					</treenode>
+					<treenode node="curOption;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f3;638;12;638;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="i;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f3;639;4;639;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="key;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f19;635;22;635;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="options;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f6;636;13;636;;;;vposoptions;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="parts;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f3;637;8;637;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="undefined;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f19;658;28;658;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="value;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f24;635;29;635;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="widget;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f1;631;2;633;;;;vpos;;v;;r;;d20,631;;b0,0;;m">
+				</treenode>
+				<treenode node="_create;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f1;601;8;601;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="_destroy;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f1;629;9;629;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="_getCreateEventData;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f1;600;20;600;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="_getCreateOptions;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f1;599;18;599;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="_init;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f1;602;6;602;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="bindings;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f7;571;15;571;;;;vpos.Widget.prototype;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="defaultElement;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f1;554;15;554;;;;vposString;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="element;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f7;563;14;563;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="eventNamespace;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f7;565;21;565;;;;vposString;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="focusable;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f7;573;16;573;;;;vpos.Widget.prototype;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="hoverable;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f7;572;16;572;;;;vpos.Widget.prototype;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="options;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f1;555;8;555;;;;vposoptions;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="uuid;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f7;564;11;564;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="widgetEventPrefix;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f1;553;18;553;;;;vposString;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="widgetFullName;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f25;579;39;579;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="widgetName;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f1;552;11;552;;;;vposString;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="focusable;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f0;126;1;145;;;;vpos;;v;;r;;d48,126;;b0,0;;melement;;pisTabIndexNotNaN;;p">
+				<treenode node="element;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f20;126;27;126;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="img;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f19;127;22;127;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="isTabIndexNotNaN;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f29;126;45;126;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="map;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f5;127;8;127;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="mapName;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f10;127;17;127;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="nodeName;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f2;128;10;128;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="position;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f5;1100;1;1293;;;;vpos;;v;;r;;d36,1100;;b0,0;;moptions;;p">
+				<treenode node="collisionPosition;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f2;1223;3;1226;;;;vpos;;v;;r;;d22,1223;;b0,0;;m">
+					<treenode node="marginLeft;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f3;1224;13;1224;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="marginTop;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f3;1225;12;1225;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="offsets;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f2;1114;14;1114;;;;vpos;;v;;r;;d12,1114;;b0,0;;m">
+				</treenode>
+				<treenode node="targetOffset;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f2;1119;66;1128;;;;vpos;;v;;r;;d17,1128;;b0,0;;m">
+					<treenode node="left;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f27;1119;31;1119;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="target;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f24;1123;30;1123;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="targetElem;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f24;1128;34;1128;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="top;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f19;1119;22;1119;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="using;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f3;1253;4;1288;;;;vpos;;v;;r;;d29,1253;;b0,0;;mprops;;p">
+					<treenode node="feedback;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f5;1258;6;1275;;;;vpos;;v;;r;;d16,1258;;b0,0;;m">
+						<treenode node="element;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f6;1266;7;1272;;;;vpos;;v;;r;;d15,1266;;b0,0;;m">
+							<treenode node="elem;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f16;1267;20;1267;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+							</treenode>
+							<treenode node="element;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f7;1267;14;1267;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+							</treenode>
+							<treenode node="elemHeight;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f15;1271;25;1271;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+							</treenode>
+							<treenode node="elemWidth;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f14;1270;23;1270;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+							</treenode>
+							<treenode node="height;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f7;1271;13;1271;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+							</treenode>
+							<treenode node="left;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f7;1268;11;1268;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+							</treenode>
+							<treenode node="position;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f13;1268;21;1268;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+							</treenode>
+							<treenode node="top;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f7;1269;10;1269;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+							</treenode>
+							<treenode node="width;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f7;1270;12;1270;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+							</treenode>
+						</treenode>
+						<treenode node="target;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f6;1259;7;1265;;;;vpos;;v;;r;;d14,1259;;b0,0;;m">
+							<treenode node="element;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f7;1260;14;1260;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+							</treenode>
+							<treenode node="height;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f7;1264;13;1264;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+							</treenode>
+							<treenode node="left;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f7;1261;11;1261;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+							</treenode>
+							<treenode node="target;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f16;1260;22;1260;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+							</treenode>
+							<treenode node="targetHeight;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f15;1264;27;1264;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+							</treenode>
+							<treenode node="targetOffset;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f13;1261;25;1261;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+							</treenode>
+							<treenode node="targetWidth;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f14;1263;25;1263;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+							</treenode>
+							<treenode node="top;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f7;1262;10;1262;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+							</treenode>
+							<treenode node="width;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f7;1263;12;1263;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+							</treenode>
+						</treenode>
+						<treenode node="bottom;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f16;1274;22;1274;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="element;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f6;1266;13;1266;;;;vposelement;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="horizontal;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f6;1273;16;1273;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="left;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f39;1273;43;1273;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="right;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f18;1273;23;1273;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="target;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f6;1259;12;1259;;;;vpostarget;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="top;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f37;1274;40;1274;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="vertical;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f6;1274;14;1274;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+					</treenode>
+					<treenode node="bottom;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f5;1257;11;1257;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="elemHeight;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f35;1257;45;1257;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="elemWidth;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f34;1255;43;1255;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="feedback;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f5;1258;13;1258;;;;vposfeedback;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="left;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f8;1254;12;1254;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="options;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f4;1287;11;1287;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="position;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f35;1254;43;1254;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="props;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f21;1253;26;1253;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="right;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f5;1255;10;1255;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="targetHeight;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f20;1257;32;1257;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="targetOffset;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f15;1254;27;1254;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="targetWidth;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f20;1255;31;1255;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="top;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f5;1256;8;1256;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="_position;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f9;1102;18;1102;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="at;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f5;1240;7;1240;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="atOffset;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f5;1108;13;1108;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="basePosition;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f56;1108;68;1108;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="collision;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f2;1113;11;1113;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="collisionHeight;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f3;1198;18;1198;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="collisionPosition;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f6;1191;23;1191;;;;vposcollisionPosition;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="collisionWidth;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f3;1197;17;1197;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="dir;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f42;1228;45;1228;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="elem;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f3;1192;7;1192;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="elemHeight;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f3;1194;13;1194;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="elemWidth;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f3;1193;12;1193;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="horizontalOffset;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f3;1141;19;1141;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="i;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f39;1228;40;1228;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="marginLeft;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f3;1195;13;1195;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="marginTop;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f3;1196;12;1196;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="my;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f5;1239;7;1239;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="myOffset;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f3;1200;11;1200;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="offset;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f5;1238;11;1238;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="offsets;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f2;1114;9;1114;;;;vposoffsets;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="options;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f26;1100;33;1100;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="pos;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f6;1140;9;1140;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="position;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f3;1199;11;1199;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="rhorizontal;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f9;1145;20;1145;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="roffset;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f21;1155;28;1155;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="rposition;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f3;1164;12;1164;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="rvertical;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f4;1147;13;1147;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="scrollInfo;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f2;1111;12;1111;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="target;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f2;1109;8;1109;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="targetElem;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f2;1112;12;1112;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="targetHeight;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f28;1108;40;1108;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="targetOffset;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f42;1108;54;1108;;;;vpostargetOffset;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="targetWidth;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f15;1108;26;1108;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="using;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f25;1191;30;1191;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="verticalOffset;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f3;1142;17;1142;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="within;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f2;1110;8;1110;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="testElementStyle;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f1;1464;2;1471;;;;vpos;;v;;r;;d20,1464;;b0,0;;m">
+				<treenode node="background;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f2;1470;12;1470;;;;vposString;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="border;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f2;1468;8;1468;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="height;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f2;1467;8;1467;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="margin;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f2;1469;8;1469;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="visibility;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f2;1465;12;1465;;;;vposString;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="width;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f2;1466;7;1466;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="widget;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f2;366;1;474;;;;vpos;;v;;r;;d45,366;;b0,0;;mname;;pbase;;p">
+				<treenode node="_super;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f8;416;6;418;;;;vpos;;v;;r;;d28,416;;b0,0;;m">
+					<treenode node="base;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f13;417;17;417;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="prop;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f29;417;33;417;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="_superApply;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f5;419;6;421;;;;vpos;;v;;r;;d36,419;;b0,0;;margs;;p">
+					<treenode node="args;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f29;419;33;419;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="base;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f13;420;17;420;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="prop;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f29;420;33;420;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="__super;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f9;423;16;423;;;;vposwidget;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="__superApply;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f6;424;18;424;;;;vposwidget;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="_childConstructors;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f2;405;20;405;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="_createWidget;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f13;387;26;387;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="_proto;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f2;402;8;402;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="_super;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f10;427;16;427;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="_superApply;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f10;428;21;428;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="base;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f27;366;31;366;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="basePrototype;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f49;367;62;367;;;;vposbase;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="child;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f63;459;68;459;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="childPrototype;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f7;460;21;460;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="elem;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f53;379;57;379;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="element;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f59;385;66;385;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="existingConstructor;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f15;367;34;367;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="fullName;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f5;367;13;367;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="i;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f60;459;61;459;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="name;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f21;366;25;366;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="namespace;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f2;368;11;368;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="options;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f50;385;57;385;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="prop;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f30;413;34;413;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="returnValue;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f6;425;17;425;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="value;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f36;413;41;413;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="version;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f2;399;9;399;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="Widget;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f2;548;48;548;;;;vpos;;v.Widget.prototype;;c;;r;;d46,548;;b0,0;;m">
+				<treenode node="_getCreateOptions;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f20;863;37;863;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+			</treenode>
 			<treenode node=".fn.affix.defaults;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\bootstrap.js;f3;2243;3;2245;;;;vpos;;v;;r;;d24,2243;;b0,0;;m">
 				<treenode node="offset;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\bootstrap.js;f4;2244;10;2244;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 				</treenode>
@@ -15715,6 +16420,28 @@
 				<treenode node="T;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery.js;f10778;3;10779;3;;C:\WebServers\home\shop.loc\www\assets\js\jquery.js;f10778;3;10779;3;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 				</treenode>
 			</treenode>
+			<treenode node="bridge;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f9;502;1;546;;;;vpos;;v;;r;;d43,502;;b0,0;;mname;;pobject;;p">
+				<treenode node="args;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f3;506;7;506;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="fullName;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f5;503;13;503;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="instance;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f5;517;13;517;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="isMethodCall;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f6;505;18;505;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="methodValue;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f8;516;19;516;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="name;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f28;502;32;502;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="object;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f34;502;40;502;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="options;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f26;504;33;504;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="returnValue;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f3;507;14;507;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="undefined;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f53;526;62;526;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+			</treenode>
 			<treenode node="Builder;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\public\4379948d.js;f4;6980;1;7108;;;;vpos;;v;;r;;d14,6980;;b0,0;;m">
 				<treenode node="ATTR_MAP;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\public\4379948d.js;f2;7055;3;7058;;;;vpos;;v;;r;;d12,7055;;b0,0;;m">
 				</treenode>
@@ -16063,6 +16790,16 @@
 				<treenode node="paused;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\bootstrap.js;f19;301;25;301;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 				</treenode>
 				<treenode node="sliding;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\bootstrap.js;f15;321;22;321;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="cleanData;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f2;356;1;364;;;;vpos;;v;;r;;d32,356;;b0,0;;melems;;p">
+				<treenode node="e;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f11;361;12;361;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="elem;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f18;357;22;357;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="elems;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f24;356;29;356;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="i;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f11;357;12;357;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 				</treenode>
 			</treenode>
 			<treenode node="clear;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\public\4379948d.js;f0;1095;3;1098;;;;vpos;;v;;r;;d19,1095;;b0,0;;m">
@@ -16869,7 +17606,7 @@
 				<treenode node="stop;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\public\4379948d.js;f4;5485;8;5485;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 				</treenode>
 			</treenode>
-			<treenode node="extend;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\public\4379948d.js;f0;193;5;5538;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery.js;f2545;2;2966;2;;C:\WebServers\home\shop.loc\www\assets\js\jquery.js;f2545;2;2966;2;;;;vpos;;v;;r;;d44,5517;;b0,0;;mdestination;;psource;;pevent;;pelement;;p">
+			<treenode node="extend;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\public\4379948d.js;f0;193;5;5538;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery.js;f2545;2;2966;2;;C:\WebServers\home\shop.loc\www\assets\js\jquery.js;f2545;2;2966;2;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f9;476;1;500;;;;vpos;;v;;r;;d44,5517;;b0,0;;mdestination;;psource;;pevent;;pelement;;p">
 				<treenode node="e;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery.js;f2913;2;2917;2;;C:\WebServers\home\shop.loc\www\assets\js\jquery.js;f2913;2;2917;2;;;;vpos;;v;;r;;d2915,2;;b0,0;;m">
 				</treenode>
 				<treenode node="a;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery.js;f2577;2;2578;2;;C:\WebServers\home\shop.loc\www\assets\js\jquery.js;f2577;2;2578;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
@@ -16891,6 +17628,14 @@
 				<treenode node="Event;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\public\4379948d.js;f20;5525;25;5525;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 				</treenode>
 				<treenode node="i;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery.js;f2573;2;2574;2;;C:\WebServers\home\shop.loc\www\assets\js\jquery.js;f2573;2;2574;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="input;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f5;477;10;477;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="inputIndex;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f2;478;12;478;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="inputLength;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f2;479;13;479;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="key;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f2;480;5;480;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 				</treenode>
 				<treenode node="l;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery.js;f2602;2;2603;2;;C:\WebServers\home\shop.loc\www\assets\js\jquery.js;f2602;2;2603;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 				</treenode>
@@ -16920,9 +17665,13 @@
 				</treenode>
 				<treenode node="t;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery.js;f2944;2;2945;2;;C:\WebServers\home\shop.loc\www\assets\js\jquery.js;f2944;2;2945;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 				</treenode>
-				<treenode node="target;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\public\4379948d.js;f8;5528;14;5528;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				<treenode node="target;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\public\4379948d.js;f8;5528;14;5528;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f28;476;34;476;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 				</treenode>
 				<treenode node="u;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery.js;f2598;2;2599;2;;C:\WebServers\home\shop.loc\www\assets\js\jquery.js;f2598;2;2599;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="undefined;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f63;485;72;485;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="value;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f2;481;7;481;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 				</treenode>
 			</treenode>
 			<treenode node="find;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\public\4379948d.js;f0;3935;1;4153;;;;vpos;;v;;r;;d44,4123;;b0,0;;melements;;pexpression;;pindex;;pexpr;;pcontext;;pisXML;;p">
@@ -17241,6 +17990,16 @@
 				<treenode node="width;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\public\4379948d.js;f15;3663;20;3663;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 				</treenode>
 			</treenode>
+			<treenode node="getOffsets;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f0;1040;1;1045;;;;vpos;;v;;r;;d46,1040;;b0,0;;moffsets;;pwidth;;pheight;;p">
+				<treenode node="height;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f37;1040;43;1040;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="offsets;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f21;1040;28;1040;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="rpercent;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f35;1042;43;1042;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="width;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f30;1040;35;1040;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+			</treenode>
 			<treenode node="handle;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery.js;f24952;2;25065;2;;C:\WebServers\home\shop.loc\www\assets\js\jquery.js;f24952;2;25065;2;;;;vpos;;v;;r;;d24970,2;;b0,0;;me;;p">
 				<treenode node="b;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery.js;f24985;2;24986;2;;C:\WebServers\home\shop.loc\www\assets\js\jquery.js;f24985;2;24986;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 				</treenode>
@@ -17495,6 +18254,12 @@
 				<treenode node="u;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery.js;f13893;2;13894;2;;C:\WebServers\home\shop.loc\www\assets\js\jquery.js;f13893;2;13894;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 				</treenode>
 			</treenode>
+			<treenode node="parseCss;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f0;1046;1;1048;;;;vpos;;v;;r;;d39,1046;;b0,0;;melement;;pproperty;;p">
+				<treenode node="element;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f19;1046;26;1046;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="property;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f28;1046;36;1046;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+			</treenode>
 			<treenode node="partition;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\public\4379948d.js;f0;961;3;969;;;;vpos;;v;;r;;d40,961;;b0,0;;miterator;;pcontext;;p">
 				<treenode node="context;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\public\4379948d.js;f31;961;38;961;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 				</treenode>
@@ -17541,7 +18306,7 @@
 				<treenode node="scrollTop;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\public\4379948d.js;f31;5456;40;5456;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 				</treenode>
 			</treenode>
-			<treenode node="position;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f5;1100;1;1293;;;;vpos;;v;;r;;d36,1100;;b0,0;;moptions;;p">
+			<treenode node="position;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f5;1100;1;1293;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f7;1500;3;1527;;;;vpos;;v;;r;;d36,1100;;b0,0;;moptions;;p">
 				<treenode node="collisionPosition;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f2;1223;3;1226;;;;vpos;;v;;r;;d22,1223;;b0,0;;m">
 					<treenode node="marginLeft;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f3;1224;13;1224;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
@@ -17646,9 +18411,9 @@
 					<treenode node="top;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f5;1256;8;1256;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
 				</treenode>
-				<treenode node="_position;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f9;1102;18;1102;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				<treenode node="_position;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f9;1102;18;1102;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f11;1502;20;1502;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 				</treenode>
-				<treenode node="at;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f5;1240;7;1240;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				<treenode node="at;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f5;1240;7;1240;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f4;1505;6;1505;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 				</treenode>
 				<treenode node="atOffset;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f5;1108;13;1108;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 				</treenode>
@@ -17682,11 +18447,11 @@
 				</treenode>
 				<treenode node="myOffset;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f3;1200;11;1200;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 				</treenode>
-				<treenode node="offset;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f5;1238;11;1238;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				<treenode node="offset;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f5;1238;11;1238;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f7;1504;13;1504;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 				</treenode>
 				<treenode node="offsets;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f2;1114;9;1114;;;;vposoffsets;;v;;r;;d-1,-1;;b0,0;;m">
 				</treenode>
-				<treenode node="options;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f26;1100;33;1100;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				<treenode node="options;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f26;1100;33;1100;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f28;1500;35;1500;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 				</treenode>
 				<treenode node="pos;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f6;1140;9;1140;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 				</treenode>
@@ -19473,6 +20238,10 @@
 				<treenode node="options;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\public\4379948d.js;f17;6145;24;6145;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 				</treenode>
 				<treenode node="v;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\public\4379948d.js;f20;6154;21;6154;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="visible;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f0;147;1;152;;;;vpos;;v;;r;;d28,147;;b0,0;;melement;;p">
+				<treenode node="element;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f18;147;25;147;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 				</treenode>
 			</treenode>
 			<treenode node="W;JS:Function Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery.js;f15897;2;16164;2;;C:\WebServers\home\shop.loc\www\assets\js\jquery.js;f15897;2;16164;2;;;;vpos;;v;;r;;d15914,2;;b0,0;;me;;pn;;pr;;p">
@@ -21481,7 +22250,7 @@
 			</treenode>
 			<treenode node="_;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery.js;f7579;2;7580;2;;C:\WebServers\home\shop.loc\www\assets\js\jquery.js;f7579;2;7580;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="_cleanData;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f1;355;11;355;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="_cleanData;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f1;355;11;355;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f1;355;11;355;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="_default;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery.js;f25729;4;25737;4;;C:\WebServers\home\shop.loc\www\assets\js\jquery.js;f25729;4;25737;4;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
@@ -21507,7 +22276,7 @@
 			</treenode>
 			<treenode node="_isButtonForWebKit;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\public\4379948d.js;f16;5399;34;5399;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="_position;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f1;1038;10;1038;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="_position;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f1;1038;10;1038;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f1;1038;10;1038;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="_toString;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\public\4379948d.js;f6;161;15;161;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
@@ -21579,7 +22348,7 @@
 			</treenode>
 			<treenode node="Bn;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery.js;f16147;4;16149;4;;C:\WebServers\home\shop.loc\www\assets\js\jquery.js;f16147;4;16149;4;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="body;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery.js;f26077;3;26081;3;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f5;179;9;179;;C:\WebServers\home\shop.loc\www\assets\js\jquery.js;f26077;3;26081;3;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="body;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery.js;f26077;3;26081;3;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f5;179;9;179;;C:\WebServers\home\shop.loc\www\assets\js\jquery.js;f26077;3;26081;3;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f5;179;9;179;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="BOOLEAN_CLASS;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\public\4379948d.js;f6;169;19;169;;;;vposString;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
@@ -21607,7 +22376,7 @@
 			</treenode>
 			<treenode node="CACHE;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\public\4379948d.js;f6;5614;11;5614;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="cachedScrollbarWidth;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f4;1029;24;1029;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="cachedScrollbarWidth;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f4;1029;24;1029;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f4;1029;24;1029;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="cacheLength;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery.js;f11919;3;11930;3;;C:\WebServers\home\shop.loc\www\assets\js\jquery.js;f11919;3;11930;3;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
@@ -21675,7 +22444,7 @@
 			</treenode>
 			<treenode node="display;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery.js;f1377;4;1384;4;;C:\WebServers\home\shop.loc\www\assets\js\jquery.js;f1377;4;1384;4;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="div;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\public\4379948d.js;f10;2871;13;2871;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery.js;f25032;3;25035;3;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f2;180;5;180;;C:\WebServers\home\shop.loc\www\assets\js\jquery.js;f25032;3;25035;3;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="div;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\public\4379948d.js;f10;2871;13;2871;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery.js;f25032;3;25035;3;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f2;180;5;180;;C:\WebServers\home\shop.loc\www\assets\js\jquery.js;f25032;3;25035;3;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f2;180;5;180;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="Dn;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery.js;f8991;4;8993;4;;C:\WebServers\home\shop.loc\www\assets\js\jquery.js;f8991;4;8993;4;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
@@ -21683,7 +22452,7 @@
 			</treenode>
 			<treenode node="docEl;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\public\4379948d.js;f6;5351;11;5351;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="document;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\public\4379948d.js;f14;1824;22;1824;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f12;179;20;179;;C:\WebServers\home\shop.loc\www\assets\js\bootstrap.js;f17;34;25;34;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="document;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\public\4379948d.js;f14;1824;22;1824;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f12;179;20;179;;C:\WebServers\home\shop.loc\www\assets\js\bootstrap.js;f17;34;25;34;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f12;179;20;179;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="done;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\public\4379948d.js;f1;3974;5;3974;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
@@ -21833,7 +22602,7 @@
 			</treenode>
 			<treenode node="HTMLOBJECTELEMENT_PROTOTYPE_BUGGY;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\public\4379948d.js;f6;2909;39;2909;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="i;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\public\4379948d.js;f25;1161;26;1161;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery.js;f25;2;26;2;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f67;1458;68;1458;;C:\WebServers\home\shop.loc\www\assets\js\jquery.js;f25;2;26;2;;C:\WebServers\home\shop.loc\www\assets\js\bootstrap.min.js;f579;5;580;5;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="i;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\public\4379948d.js;f25;1161;26;1161;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery.js;f25;2;26;2;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f67;1458;68;1458;;C:\WebServers\home\shop.loc\www\assets\js\jquery.js;f25;2;26;2;;C:\WebServers\home\shop.loc\www\assets\js\bootstrap.min.js;f579;5;580;5;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f67;1458;68;1458;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="I;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery.js;f17641;2;17642;2;;C:\WebServers\home\shop.loc\www\assets\js\jquery.js;f17641;2;17642;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
@@ -21897,7 +22666,7 @@
 			</treenode>
 			<treenode node="jquery;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery.js;f905;2;911;2;;C:\WebServers\home\shop.loc\www\assets\js\jquery.js;f905;2;911;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="jQuery;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery.js;f24255;3;24261;3;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f4;350;10;350;;C:\WebServers\home\shop.loc\www\assets\js\jquery.js;f24255;3;24261;3;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="jQuery;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery.js;f24255;3;24261;3;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f4;350;10;350;;C:\WebServers\home\shop.loc\www\assets\js\jquery.js;f24255;3;24261;3;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f4;350;10;350;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="JSON;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\public\4379948d.js;f15;175;19;175;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
@@ -21905,7 +22674,7 @@
 			</treenode>
 			<treenode node="K;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\public\4379948d.js;f6;3954;7;3954;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery.js;f17916;2;17917;2;;C:\WebServers\home\shop.loc\www\assets\js\jquery.js;f17916;2;17917;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="key;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f19;252;22;252;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="key;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f19;252;22;252;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f19;252;22;252;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="keyboard;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\bootstrap.min.js;f12273;5;12281;5;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
@@ -21957,7 +22726,7 @@
 			</treenode>
 			<treenode node="MOUSEENTER_MOUSELEAVE_EVENTS_SUPPORTED;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\public\4379948d.js;f6;5352;44;5352;;;;vposString;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="mouseHandled;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f4;871;16;871;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="mouseHandled;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f4;871;16;871;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f4;871;16;871;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="mouseHooks;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery.js;f29645;2;29655;2;;C:\WebServers\home\shop.loc\www\assets\js\jquery.js;f29645;2;29655;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
@@ -21979,7 +22748,7 @@
 			</treenode>
 			<treenode node="NATIVE_JSON_STRINGIFY_SUPPORT;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\public\4379948d.js;f6;174;35;174;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="navigator;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\public\4379948d.js;f54;2740;63;2740;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f37;269;46;269;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="navigator;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\public\4379948d.js;f54;2740;63;2740;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f37;269;46;269;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f37;269;46;269;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="needsContext;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery.js;f4272;3;4284;3;;C:\WebServers\home\shop.loc\www\assets\js\jquery.js;f4272;3;4284;3;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
@@ -22021,7 +22790,7 @@
 			</treenode>
 			<treenode node="offsetBottom;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\bootstrap.js;f8;2203;20;2203;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="offsetLeft;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f55;1458;65;1458;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="offsetLeft;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f55;1458;65;1458;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f55;1458;65;1458;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="offsetTop;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\bootstrap.js;f8;2204;17;2204;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
@@ -22119,7 +22888,7 @@
 			</treenode>
 			<treenode node="removeBackdrop;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\bootstrap.min.js;f11242;5;11256;5;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="removeData;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f30;251;40;251;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="removeData;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f30;251;40;251;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f30;251;40;251;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="replaceArrow;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\bootstrap.min.js;f15520;5;15532;5;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
@@ -22131,27 +22900,27 @@
 			</treenode>
 			<treenode node="results;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\public\4379948d.js;f37;1068;44;1068;;;;vposArray;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="rhorizontal;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f1;1033;12;1033;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="rhorizontal;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f1;1033;12;1033;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f1;1033;12;1033;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="Right;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery.js;f1132;4;1137;4;;C:\WebServers\home\shop.loc\www\assets\js\jquery.js;f1132;4;1137;4;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="Rn;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery.js;f16981;4;16983;4;;C:\WebServers\home\shop.loc\www\assets\js\jquery.js;f16981;4;16983;4;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="roffset;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f1;1035;8;1035;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="roffset;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f1;1035;8;1035;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f1;1035;8;1035;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="root;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\public\4379948d.js;f5;4724;9;4724;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="rpercent;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f1;1037;9;1037;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="rpercent;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f1;1037;9;1037;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f1;1037;9;1037;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="rposition;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f1;1036;10;1036;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="rposition;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f1;1036;10;1036;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f1;1036;10;1036;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="rr;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery.js;f25348;4;25350;4;;C:\WebServers\home\shop.loc\www\assets\js\jquery.js;f25348;4;25350;4;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="rt;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery.js;f24675;2;24677;2;;C:\WebServers\home\shop.loc\www\assets\js\jquery.js;f24675;2;24677;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="runiqueId;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f1;8;10;8;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="runiqueId;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f1;8;10;8;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f1;8;10;8;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="rvertical;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f1;1034;10;1034;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="rvertical;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f1;1034;10;1034;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f1;1034;10;1034;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="s;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery.js;f62;2;63;2;;C:\WebServers\home\shop.loc\www\assets\js\jquery.js;f62;2;63;2;;C:\WebServers\home\shop.loc\www\assets\js\bootstrap.min.js;f3600;5;3601;5;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
@@ -22245,11 +23014,11 @@
 			</treenode>
 			<treenode node="Template;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\public\4379948d.js;f4;781;12;781;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="testElement;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f5;1458;16;1458;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="testElement;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f5;1458;16;1458;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f5;1458;16;1458;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="testElementParent;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f18;1458;35;1458;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="testElementParent;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f18;1458;35;1458;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f18;1458;35;1458;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="testElementStyle;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f37;1458;53;1458;;;;vpostestElementStyle;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="testElementStyle;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f37;1458;53;1458;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f37;1458;53;1458;;;;vpostestElementStyle;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="textarea;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\public\4379948d.js;f4;5237;12;5237;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery.js;f7223;4;7231;4;;C:\WebServers\home\shop.loc\www\assets\js\jquery.js;f7223;4;7231;4;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
@@ -22297,15 +23066,15 @@
 			</treenode>
 			<treenode node="U;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery.js;f17659;2;17660;2;;C:\WebServers\home\shop.loc\www\assets\js\jquery.js;f17659;2;17660;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="uaMatch;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f5;269;12;269;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="uaMatch;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f5;269;12;269;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f5;269;12;269;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="Un;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery.js;f18395;4;18397;4;;C:\WebServers\home\shop.loc\www\assets\js\jquery.js;f18395;4;18397;4;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="undefined;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f14;5;23;5;;C:\WebServers\home\shop.loc\www\assets\js\bootstrap.js;f33;44;42;44;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="undefined;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f14;5;23;5;;C:\WebServers\home\shop.loc\www\assets\js\bootstrap.js;f33;44;42;44;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f14;5;23;5;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="UNDEFINED_TYPE;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\public\4379948d.js;f6;163;20;163;;;;vposString;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="uuid;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f4;7;8;7;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="uuid;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f4;7;8;7;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f4;7;8;7;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="v;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\public\4379948d.js;f12;2688;13;2688;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery.js;f173;2;174;2;;C:\WebServers\home\shop.loc\www\assets\js\jquery.js;f173;2;174;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
@@ -22367,6 +23136,9 @@
 	</codestructure><dplmenupath>
 	</dplmenupath><smartyassings>
 	</smartyassings><todoblock>
+		<todofile name="C:\WebServers\home\shop.loc\fuel\app\classes\controller\public\static.php">
+			<todo name="TODO: обработать $pageName, выборка данных для страницы $pageName" pos="3;11"/>
+		</todofile>
 		<todofile name="C:\WebServers\home\shop.loc\fuel\packages\oil\classes\cell.php">
 			<todo name="TODO Make this magic" pos="3;241"/>
 		</todofile>
@@ -22396,6 +23168,22 @@
 			<todo name="TODO: pull out $.Widget's handling for the disabled option into" pos="3;3333"/>
 			<todo name="TODO: move to stylesheet" pos="18;3624"/>
 		</todofile>
+		<todofile name="C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js">
+			<todo name="TODO: determine which cases actually cause this to happen" pos="3;330"/>
+			<todo name="TODO: remove support for widgetEventPrefix" pos="3;441"/>
+			<todo name="TODO remove widgetBaseClass, see #8155" pos="3;449"/>
+			<todo name="TODO remove dual storage" pos="4;577"/>
+			<todo name="TODO remove dual storage" pos="4;611"/>
+			<todo name="TODO: make sure destroying one instance of mouse doesn't mess with" pos="2;901"/>
+			<todo name="TODO : What's going on here?" pos="5;2443"/>
+			<todo name="TODO: What's that good for? There's not anything to be executed left" pos="5;2484"/>
+			<todo name="TODO: make renderAxis a prototype function" pos="3;2491"/>
+			<todo name="TODO: Unwrap at same DOM position" pos="3;2540"/>
+			<todo name="TODO: Don't modify option" pos="24;2814"/>
+			<todo name="TODO pass through original event correctly (just as 2nd argument doesn't work)" pos="7;3326"/>
+			<todo name="TODO: pull out $.Widget's handling for the disabled option into" pos="3;3333"/>
+			<todo name="TODO: move to stylesheet" pos="18;3624"/>
+		</todofile>
 		<todofile name="C:\WebServers\home\shop.loc\www\assets\js\public\4379948d.js">
 			<todo name="TODO: improve sanity check" pos="35;9996"/>
 			<todo name="TODO: javascript cookies have different domain and path than php cookies" pos="5;10496"/>
@@ -22406,12 +23194,15 @@
 	<filescache>
 		<file name="C:\WebServers\home\shop.loc\www\assets\js\public\4379948d.js" crc="1300471961"/>
 		<file name="C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery.js" crc="1005439900"/>
+		<file name="C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js" crc="1291601997"/>
 		<file name="C:\WebServers\home\shop.loc\www\assets\js\main.js" crc="2054283574"/>
 		<file name="C:\WebServers\home\shop.loc\www\assets\js\bootstrap.js" crc="-1346062946"/>
 		<file name="C:\WebServers\home\shop.loc\www\assets\css\public\main.css" crc="938061841"/>
-		<file name="C:\WebServers\home\shop.loc\www\assets\css\public\91ea7606.css" crc="-1486397951"/>
+		<file name="C:\WebServers\home\shop.loc\www\assets\css\public\91ea7606.css" crc="-626489502"/>
 		<file name="C:\WebServers\home\shop.loc\www\assets\css\public\7431cbeb.css" crc="-594876214"/>
 		<file name="C:\WebServers\home\shop.loc\www\assets\css\modules\users\forms.css" crc="1743194693"/>
+		<file name="C:\WebServers\home\shop.loc\www\assets\css\jquery\jquery-ui.css" crc="-302349153"/>
+		<file name="C:\WebServers\home\shop.loc\www\assets\css\cp\main.css" crc="1806676195"/>
 		<file name="C:\WebServers\home\shop.loc\www\assets\css\bootstrap.css" crc="-1356185839"/>
 		<file name="C:\WebServers\home\shop.loc\www\index.php" crc="-1959055324"/>
 		<file name="C:\WebServers\home\shop.loc\www\.htaccess" crc="-775717149"/>
@@ -22875,26 +23666,33 @@
 		<file name="C:\WebServers\home\shop.loc\fuel\core\base.php" crc="1914469855"/>
 		<file name="C:\WebServers\home\shop.loc\fuel\app\views\errors\404.php" crc="-1170621022"/>
 		<file name="C:\WebServers\home\shop.loc\fuel\app\views\base\helpers\cssjsattach.php" crc="-1092910450"/>
-		<file name="C:\WebServers\home\shop.loc\fuel\app\views\base\public.php" crc="548027667"/>
-		<file name="C:\WebServers\home\shop.loc\fuel\app\views\base\controlpanel.php" crc="-2112377400"/>
+		<file name="C:\WebServers\home\shop.loc\fuel\app\views\base\cp\sitebar.php" crc="-66102549"/>
+		<file name="C:\WebServers\home\shop.loc\fuel\app\views\base\public.php" crc="659792481"/>
+		<file name="C:\WebServers\home\shop.loc\fuel\app\views\base\controlpanel.php" crc="641954061"/>
 		<file name="C:\WebServers\home\shop.loc\fuel\app\tasks\robots.php" crc="-917103210"/>
-		<file name="C:\WebServers\home\shop.loc\fuel\app\modules\users\views\userpanel.php" crc="-1331156925"/>
-		<file name="C:\WebServers\home\shop.loc\fuel\app\modules\users\views\loginform.php" crc="-1864842297"/>
+		<file name="C:\WebServers\home\shop.loc\fuel\app\modules\users\views\userpanel.php" crc="1193550143"/>
+		<file name="C:\WebServers\home\shop.loc\fuel\app\modules\users\views\loginform.php" crc="2059015970"/>
 		<file name="C:\WebServers\home\shop.loc\fuel\app\modules\users\config\base.ini" crc="-965829881"/>
-		<file name="C:\WebServers\home\shop.loc\fuel\app\modules\users\classes\model\users.php" crc="71786181"/>
+		<file name="C:\WebServers\home\shop.loc\fuel\app\modules\users\classes\model\users.php" crc="-390854822"/>
 		<file name="C:\WebServers\home\shop.loc\fuel\app\modules\users\classes\controller\main.php" crc="-230458521"/>
 		<file name="C:\WebServers\home\shop.loc\fuel\app\modules\users\classes\controller\ajax.php" crc="253442731"/>
+		<file name="C:\WebServers\home\shop.loc\fuel\app\logs\2013\04\29.php" crc="-26324143"/>
+		<file name="C:\WebServers\home\shop.loc\fuel\app\logs\2013\04\28.php" crc="-1195424054"/>
+		<file name="C:\WebServers\home\shop.loc\fuel\app\logs\2013\04\26.php" crc="43016334"/>
 		<file name="C:\WebServers\home\shop.loc\fuel\app\config\test\db.php" crc="959570125"/>
 		<file name="C:\WebServers\home\shop.loc\fuel\app\config\staging\db.php" crc="-446737132"/>
 		<file name="C:\WebServers\home\shop.loc\fuel\app\config\production\db.php" crc="1105145685"/>
 		<file name="C:\WebServers\home\shop.loc\fuel\app\config\development\db.php" crc="195527838"/>
-		<file name="C:\WebServers\home\shop.loc\fuel\app\config\routes.php" crc="-1233119107"/>
+		<file name="C:\WebServers\home\shop.loc\fuel\app\config\routes.php" crc="-1736485224"/>
 		<file name="C:\WebServers\home\shop.loc\fuel\app\config\db.php" crc="-579594188"/>
-		<file name="C:\WebServers\home\shop.loc\fuel\app\config\config.php" crc="1415635185"/>
+		<file name="C:\WebServers\home\shop.loc\fuel\app\config\config.php" crc="-1829456902"/>
 		<file name="C:\WebServers\home\shop.loc\fuel\app\config\base.ini" crc="-476400270"/>
-		<file name="C:\WebServers\home\shop.loc\fuel\app\classes\controller\public\index.php" crc="-1723752251"/>
-		<file name="C:\WebServers\home\shop.loc\fuel\app\classes\controller\cp\index.php" crc="-1326703641"/>
-		<file name="C:\WebServers\home\shop.loc\fuel\app\classes\controller\base\public.php" crc="-225936611"/>
+		<file name="C:\WebServers\home\shop.loc\fuel\app\classes\model\static.php" crc="-1584512679"/>
+		<file name="C:\WebServers\home\shop.loc\fuel\app\classes\controller\public\static.php" crc="172165977"/>
+		<file name="C:\WebServers\home\shop.loc\fuel\app\classes\controller\cp\page.php" crc="-1769928228"/>
+		<file name="C:\WebServers\home\shop.loc\fuel\app\classes\controller\cp\main.php" crc="-573294506"/>
+		<file name="C:\WebServers\home\shop.loc\fuel\app\classes\controller\cp\index.php" crc="1108703611"/>
+		<file name="C:\WebServers\home\shop.loc\fuel\app\classes\controller\base\public.php" crc="1969122431"/>
 		<file name="C:\WebServers\home\shop.loc\fuel\app\classes\controller\base\module.php" crc="-650563504"/>
 		<file name="C:\WebServers\home\shop.loc\fuel\app\classes\controller\base\main.php" crc="-1891245019"/>
 		<file name="C:\WebServers\home\shop.loc\fuel\app\classes\controller\base\controlpanel.php" crc="522884538"/>

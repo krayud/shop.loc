@@ -64,4 +64,14 @@ class Model_Users extends \Model_Crud {
    	return $answerArray;
    }   
   
+/**
+* Генерация блока для админки
+*/  
+	public static function GetAdminBlockData(){
+		$data["header"] = "Пользователи";
+		$data["links"] = array(
+			array("Список пользователей", "/users/list"),
+			);
+	  	return $data;
+	}
 }

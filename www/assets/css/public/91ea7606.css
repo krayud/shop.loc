@@ -75,3 +75,10 @@ font-family: Tahoma;
     padding: 0;
     text-transform: uppercase;
 }
+
+.page-content-title{
+font-size: 30px; 
+font-family: HeliosExtThin; 
+margin-bottom:30px;
+text-transform: uppercase;
+}

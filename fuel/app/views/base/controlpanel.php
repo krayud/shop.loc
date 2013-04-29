@@ -9,9 +9,9 @@
 	
 		<div class="row">
 		  <div class="span12" id="head">
-				<div id="logo"></div>
+				<a href="<?=Uri::base(false)."cp/";?>"><div id="logo"></div></a>
 				<div id="head-block">
-					  <a href="<?=Uri::Base(false)?>">На сайт</a>
+					  <a href="<?=Uri::Base(false)?>">Сайт</a>
 					  <a href="#">Ссылка</a>
 					  <a href="#">Ссылка</a>
 					  <a href="#">Ссылка</a>
@@ -22,19 +22,15 @@
 		
 		<div class="row">
 		  <div class="span3" id="sitebar">
-		  
-			<ul class="nav nav-list">
-			  <li class="nav-header">List header</li>
-			  <li><a href="#">Home</a></li>
-			   <li class="divider"></li>
-			  <li class="nav-header">List header</li>
-			  <li><a href="#">Home</a></li>
-			</ul>
-			
+		  	<ul class="nav nav-list">
+		  		<?
+					foreach($barModules as $module)
+						echo $module;
+				?>
+			</ul>	
 		  </div>
 			<div class="span9" id="content">
-				<div class="alert alert-success">
-				  <button type="button" class="close" data-dismiss="alert">×</button>
+				<div style="padding:20px;">
 				   <? echo $pageContent;?>
 				</div>
 			</div>
