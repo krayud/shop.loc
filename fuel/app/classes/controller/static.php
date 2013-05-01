@@ -15,6 +15,5 @@ class Controller_Static extends Controller_Base_Public
 			$this->ShowErrorPage("404");
 		
 		$this->template->pageInfo = $pageInfo;
-		$this->template->auto_filter(false);
     }
 }

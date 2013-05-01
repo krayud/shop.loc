@@ -1988,17 +1988,21 @@
 					</treenode>
 				</treenode>
 			</treenode>
-			<treenode node="Controller_Cp_Main;PHP:Class Name;C:\WebServers\home\shop.loc\fuel\app\classes\controller\cp\main.php;f0;2;1;13;;;;vpos;;vController_Base_Controlpanel;;c;;r;;d0,3;;b0,0;;m">
-				<treenode node="before;PHP:Function Name;C:\WebServers\home\shop.loc\fuel\app\classes\controller\cp\main.php;f8;4;2;12;;;;vpos;;v;;r;;d25,4;;b1,0;;m">
-					<treenode node="barModules;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\classes\controller\cp\main.php;f2;8;13;8;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="Controller_Cp_Main;PHP:Class Name;C:\WebServers\home\shop.loc\fuel\app\classes\controller\cp\main.php;f0;2;1;20;;;;vpos;;vController_Base_Controlpanel;;c;;r;;d0,3;;b0,0;;m">
+				<treenode node="before;PHP:Function Name;C:\WebServers\home\shop.loc\fuel\app\classes\controller\cp\main.php;f8;4;2;10;;;;vpos;;v;;r;;d25,4;;b1,0;;m">
+					<treenode node="barModules;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\classes\controller\cp\main.php;f2;7;13;7;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
-					<treenode node="this;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\classes\controller\cp\main.php;f2;11;7;11;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					<treenode node="this;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\classes\controller\cp\main.php;f26;7;31;7;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="GenerateSiteBarBlock;PHP:Function Name;C:\WebServers\home\shop.loc\fuel\app\classes\controller\cp\main.php;f9;17;2;19;;;;vpos;;v;;r;;d45,17;;b3,0;;mdata;;p">
+					<treenode node="data;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\classes\controller\cp\main.php;f39;17;44;17;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
 				</treenode>
 			</treenode>
-			<treenode node="Controller_Cp_Page;PHP:Class Name;C:\WebServers\home\shop.loc\fuel\app\classes\controller\cp\page.php;f0;2;1;9;;;;vpos;;vController_Cp_Main;;c;;r;;d0,3;;b0,0;;m">
-				<treenode node="action_new;PHP:Function Name;C:\WebServers\home\shop.loc\fuel\app\classes\controller\cp\page.php;f8;4;2;8;;;;vpos;;v;;r;;d1,5;;b1,0;;m">
-					<treenode node="this;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\classes\controller\cp\page.php;f2;6;7;6;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="Controller_Cp_Page;PHP:Class Name;C:\WebServers\home\shop.loc\fuel\app\classes\controller\cp\page.php;f0;2;1;10;;;;vpos;;vController_Cp_Main;;c;;r;;d0,3;;b0,0;;m">
+				<treenode node="action_new;PHP:Function Name;C:\WebServers\home\shop.loc\fuel\app\classes\controller\cp\page.php;f8;4;2;9;;;;vpos;;v;;r;;d1,5;;b1,0;;m">
+					<treenode node="this;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\classes\controller\cp\page.php;f13;6;18;6;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 					</treenode>
 				</treenode>
 			</treenode>
@@ -2017,6 +2021,12 @@
 				</treenode>
 			</treenode>
 			<treenode node="Controller_Rest;PHP:Class Name;C:\WebServers\home\shop.loc\fuel\core\classes\controller\rest.php;f9;4;38;4;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="Controller_Static;PHP:Class Name;C:\WebServers\home\shop.loc\fuel\app\classes\controller\static.php;f0;2;1;19;;;;vpos;;vController_Base_Public;;c;;r;;d0,3;;b0,0;;m">
+				<treenode node="action_page;PHP:Function Name;C:\WebServers\home\shop.loc\fuel\app\classes\controller\static.php;f11;5;5;18;;;;vpos;;v;;r;;d4,6;;b1,0;;mpageName;;p">
+					<treenode node="pageName;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\classes\controller\static.php;f32;5;41;5;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
 			</treenode>
 			<treenode node="Controller_Template;PHP:Class Name;C:\WebServers\home\shop.loc\fuel\core\classes\controller\template.php;f9;23;42;23;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
@@ -8228,7 +8238,7 @@
 				<treenode node="_soft_delete_cached;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\packages\orm\classes\model\soft.php;f18;35;38;35;;;;vpos;;v;;r;;d-1,-1;;b2,5;;m">
 				</treenode>
 			</treenode>
-			<treenode node="Model_Static;PHP:Class Name;C:\WebServers\home\shop.loc\fuel\app\classes\model\Codelobster0.php;f0;1;26;1;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="Model_Static;PHP:Class Name;C:\WebServers\home\shop.loc\fuel\app\classes\model\Codelobster0.php;f0;1;26;1;;C:\WebServers\home\shop.loc\fuel\app\classes\model\static.php;f0;1;26;1;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="Model_Users;PHP:Class Name;C:\WebServers\home\shop.loc\fuel\app\modules\users\classes\model\users.php;f0;3;25;3;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
@@ -14018,16 +14028,16 @@
 			</treenode>
 			<treenode node="get_user_id;PHP:Function Name;C:\WebServers\home\shop.loc\fuel\packages\auth\classes\auth\login\simpleauth.php;f8;443;2;451;;C:\WebServers\home\shop.loc\fuel\packages\auth\classes\auth\login\driver.php;f17;223;39;223;;;;vpos;;v;;r;;d1,444;;b1,0;;m">
 			</treenode>
-			<treenode node="GetAdminBlockData;PHP:Function Name;C:\WebServers\home\shop.loc\fuel\app\modules\users\classes\model\users.php;f15;69;2;75;;C:\WebServers\home\shop.loc\fuel\app\classes\model\Codelobster0.php;f16;18;3;25;;;;vpos;;v;;r;;d44,18;;b1,5;;m">
-				<treenode node="data;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\modules\users\classes\model\users.php;f2;70;7;70;;C:\WebServers\home\shop.loc\fuel\app\classes\model\Codelobster0.php;f3;19;8;19;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="GetAdminBlockData;PHP:Function Name;C:\WebServers\home\shop.loc\fuel\app\classes\model\Codelobster0.php;f16;18;3;25;;C:\WebServers\home\shop.loc\fuel\app\classes\model\static.php;f16;18;3;25;;C:\WebServers\home\shop.loc\fuel\app\modules\users\classes\model\users.php;f15;69;2;75;;;;vpos;;v;;r;;d43,69;;b1,5;;m">
+				<treenode node="data;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\classes\model\Codelobster0.php;f3;19;8;19;;C:\WebServers\home\shop.loc\fuel\app\classes\model\static.php;f3;19;8;19;;C:\WebServers\home\shop.loc\fuel\app\modules\users\classes\model\users.php;f2;70;7;70;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 				</treenode>
 			</treenode>
 			<treenode node="getLogger;PHP:Function Name;C:\WebServers\home\shop.loc\fuel\packages\log\Psr\Log\Test\LoggerInterfaceTest.php;f13;16;33;16;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="getLogs;PHP:Function Name;C:\WebServers\home\shop.loc\fuel\packages\log\Psr\Log\Test\LoggerInterfaceTest.php;f13;25;31;25;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="GetPageInfo;PHP:Function Name;C:\WebServers\home\shop.loc\fuel\app\classes\model\Codelobster0.php;f16;9;3;11;;;;vpos;;v;;r;;d46,9;;b1,5;;mpageUri;;p">
-				<treenode node="pageUri;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\classes\model\Codelobster0.php;f37;9;45;9;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="GetPageInfo;PHP:Function Name;C:\WebServers\home\shop.loc\fuel\app\classes\model\Codelobster0.php;f16;9;3;11;;C:\WebServers\home\shop.loc\fuel\app\classes\model\static.php;f16;9;3;11;;;;vpos;;v;;r;;d46,9;;b1,5;;mpageUri;;p">
+				<treenode node="pageUri;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\classes\model\Codelobster0.php;f37;9;45;9;;C:\WebServers\home\shop.loc\fuel\app\classes\model\static.php;f37;9;45;9;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 				</treenode>
 			</treenode>
 			<treenode node="GetUserByToken;PHP:Function Name;C:\WebServers\home\shop.loc\fuel\app\modules\users\classes\model\users.php;f18;10;2;12;;;;vpos;;v;;r;;d49,10;;b1,5;;mtoken;;p">
@@ -14930,7 +14940,7 @@
 			</treenode>
 			<treenode node="_table;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\core\classes\database\query\builder\update.php;f11;17;18;17;;C:\WebServers\home\shop.loc\fuel\core\classes\database\query\builder\join.php;f11;19;18;19;;C:\WebServers\home\shop.loc\fuel\core\classes\database\query\builder\insert.php;f11;17;18;17;;C:\WebServers\home\shop.loc\fuel\core\classes\database\query\builder\delete.php;f11;17;18;17;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
 			</treenode>
-			<treenode node="_table_name;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\modules\users\classes\model\users.php;f18;4;30;4;;C:\WebServers\home\shop.loc\fuel\app\classes\model\Codelobster0.php;f18;2;30;2;;;;vpos;;v;;r;;d-1,-1;;b2,5;;m">
+			<treenode node="_table_name;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\classes\model\Codelobster0.php;f18;2;30;2;;C:\WebServers\home\shop.loc\fuel\app\classes\model\static.php;f18;2;30;2;;C:\WebServers\home\shop.loc\fuel\app\modules\users\classes\model\users.php;f18;4;30;4;;;;vpos;;v;;r;;d-1,-1;;b2,5;;m">
 			</treenode>
 			<treenode node="_table_names_cached;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\packages\orm\classes\model.php;f18;82;38;82;;;;vpos;;v;;r;;d-1,-1;;b2,5;;m">
 			</treenode>
@@ -15044,7 +15054,7 @@
 			</treenode>
 			<treenode node="hasher;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\packages\auth\classes\auth\login\driver.php;f9;62;16;62;;;;vpos;;v;;r;;d-1,-1;;b3,0;;m">
 			</treenode>
-			<treenode node="header;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\views\base\cp\sitebar.php;f26;0;33;0;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="header;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\views\cp\helpers\sitebar-block.php;f26;0;33;0;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="http_status;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\core\classes\controller\rest.php;f11;35;23;35;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
 			</treenode>
@@ -15070,9 +15080,9 @@
 			</treenode>
 			<treenode node="line_num;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\core\views\errors\php_fatal_error.php;f62;41;71;41;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="link;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\views\base\cp\sitebar.php;f18;2;23;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="link;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\views\cp\helpers\sitebar-block.php;f18;2;23;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="links;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\views\base\cp\sitebar.php;f8;2;14;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="links;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\app\views\cp\helpers\sitebar-block.php;f8;2;14;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="loaded_files;PHP:Var Name;C:\WebServers\home\shop.loc\fuel\packages\parser\classes\view.php;f18;22;31;22;;;;vpos;;v;;r;;d-1,-1;;b2,5;;m">
 			</treenode>
@@ -22452,7 +22462,7 @@
 			</treenode>
 			<treenode node="docEl;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\public\4379948d.js;f6;5351;11;5351;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
-			<treenode node="document;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\public\4379948d.js;f14;1824;22;1824;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f12;179;20;179;;C:\WebServers\home\shop.loc\www\assets\js\bootstrap.js;f17;34;25;34;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f12;179;20;179;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			<treenode node="document;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\public\4379948d.js;f14;1824;22;1824;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui-1.9.2.js;f12;179;20;179;;C:\WebServers\home\shop.loc\www\assets\js\bootstrap.js;f17;34;25;34;;C:\WebServers\home\shop.loc\www\assets\js\jquery\jquery-ui.js;f12;179;20;179;;C:\WebServers\home\shop.loc\fuel\app\views\cp\page-new.php;f2;1;10;1;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
 			<treenode node="done;JS:JS Var Name;C:\WebServers\home\shop.loc\www\assets\js\public\4379948d.js;f1;3974;5;3974;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
 			</treenode>
@@ -23139,6 +23149,9 @@
 		<todofile name="C:\WebServers\home\shop.loc\fuel\app\classes\controller\public\static.php">
 			<todo name="TODO: обработать $pageName, выборка данных для страницы $pageName" pos="3;11"/>
 		</todofile>
+		<todofile name="C:\WebServers\home\shop.loc\fuel\app\classes\controller\static.php">
+			<todo name="TODO: обработать $pageName, выборка данных для страницы $pageName" pos="3;11"/>
+		</todofile>
 		<todofile name="C:\WebServers\home\shop.loc\fuel\packages\oil\classes\cell.php">
 			<todo name="TODO Make this magic" pos="3;241"/>
 		</todofile>
@@ -23202,7 +23215,7 @@
 		<file name="C:\WebServers\home\shop.loc\www\assets\css\public\7431cbeb.css" crc="-594876214"/>
 		<file name="C:\WebServers\home\shop.loc\www\assets\css\modules\users\forms.css" crc="1743194693"/>
 		<file name="C:\WebServers\home\shop.loc\www\assets\css\jquery\jquery-ui.css" crc="-302349153"/>
-		<file name="C:\WebServers\home\shop.loc\www\assets\css\cp\main.css" crc="1806676195"/>
+		<file name="C:\WebServers\home\shop.loc\www\assets\css\cp\main.css" crc="-107330895"/>
 		<file name="C:\WebServers\home\shop.loc\www\assets\css\bootstrap.css" crc="-1356185839"/>
 		<file name="C:\WebServers\home\shop.loc\www\index.php" crc="-1959055324"/>
 		<file name="C:\WebServers\home\shop.loc\www\.htaccess" crc="-775717149"/>
@@ -23665,37 +23678,38 @@
 		<file name="C:\WebServers\home\shop.loc\fuel\core\bootstrap.php" crc="1175228669"/>
 		<file name="C:\WebServers\home\shop.loc\fuel\core\base.php" crc="1914469855"/>
 		<file name="C:\WebServers\home\shop.loc\fuel\app\views\errors\404.php" crc="-1170621022"/>
+		<file name="C:\WebServers\home\shop.loc\fuel\app\views\cp\helpers\sitebar-block.php" crc="-66102549"/>
+		<file name="C:\WebServers\home\shop.loc\fuel\app\views\cp\page-new.php" crc="-914905043"/>
 		<file name="C:\WebServers\home\shop.loc\fuel\app\views\base\helpers\cssjsattach.php" crc="-1092910450"/>
-		<file name="C:\WebServers\home\shop.loc\fuel\app\views\base\cp\sitebar.php" crc="-66102549"/>
 		<file name="C:\WebServers\home\shop.loc\fuel\app\views\base\public.php" crc="659792481"/>
-		<file name="C:\WebServers\home\shop.loc\fuel\app\views\base\controlpanel.php" crc="641954061"/>
+		<file name="C:\WebServers\home\shop.loc\fuel\app\views\base\controlpanel.php" crc="-70082825"/>
 		<file name="C:\WebServers\home\shop.loc\fuel\app\tasks\robots.php" crc="-917103210"/>
 		<file name="C:\WebServers\home\shop.loc\fuel\app\modules\users\views\userpanel.php" crc="1193550143"/>
 		<file name="C:\WebServers\home\shop.loc\fuel\app\modules\users\views\loginform.php" crc="2059015970"/>
 		<file name="C:\WebServers\home\shop.loc\fuel\app\modules\users\config\base.ini" crc="-965829881"/>
-		<file name="C:\WebServers\home\shop.loc\fuel\app\modules\users\classes\model\users.php" crc="-390854822"/>
+		<file name="C:\WebServers\home\shop.loc\fuel\app\modules\users\classes\model\users.php" crc="300217479"/>
 		<file name="C:\WebServers\home\shop.loc\fuel\app\modules\users\classes\controller\main.php" crc="-230458521"/>
 		<file name="C:\WebServers\home\shop.loc\fuel\app\modules\users\classes\controller\ajax.php" crc="253442731"/>
-		<file name="C:\WebServers\home\shop.loc\fuel\app\logs\2013\04\29.php" crc="-26324143"/>
+		<file name="C:\WebServers\home\shop.loc\fuel\app\logs\2013\04\29.php" crc="787910823"/>
 		<file name="C:\WebServers\home\shop.loc\fuel\app\logs\2013\04\28.php" crc="-1195424054"/>
 		<file name="C:\WebServers\home\shop.loc\fuel\app\logs\2013\04\26.php" crc="43016334"/>
 		<file name="C:\WebServers\home\shop.loc\fuel\app\config\test\db.php" crc="959570125"/>
 		<file name="C:\WebServers\home\shop.loc\fuel\app\config\staging\db.php" crc="-446737132"/>
 		<file name="C:\WebServers\home\shop.loc\fuel\app\config\production\db.php" crc="1105145685"/>
 		<file name="C:\WebServers\home\shop.loc\fuel\app\config\development\db.php" crc="195527838"/>
-		<file name="C:\WebServers\home\shop.loc\fuel\app\config\routes.php" crc="-1736485224"/>
+		<file name="C:\WebServers\home\shop.loc\fuel\app\config\routes.php" crc="2128563055"/>
 		<file name="C:\WebServers\home\shop.loc\fuel\app\config\db.php" crc="-579594188"/>
 		<file name="C:\WebServers\home\shop.loc\fuel\app\config\config.php" crc="-1829456902"/>
 		<file name="C:\WebServers\home\shop.loc\fuel\app\config\base.ini" crc="-476400270"/>
-		<file name="C:\WebServers\home\shop.loc\fuel\app\classes\model\static.php" crc="-1584512679"/>
-		<file name="C:\WebServers\home\shop.loc\fuel\app\classes\controller\public\static.php" crc="172165977"/>
-		<file name="C:\WebServers\home\shop.loc\fuel\app\classes\controller\cp\page.php" crc="-1769928228"/>
-		<file name="C:\WebServers\home\shop.loc\fuel\app\classes\controller\cp\main.php" crc="-573294506"/>
+		<file name="C:\WebServers\home\shop.loc\fuel\app\classes\model\static.php" crc="-478412738"/>
+		<file name="C:\WebServers\home\shop.loc\fuel\app\classes\controller\cp\page.php" crc="-728049823"/>
+		<file name="C:\WebServers\home\shop.loc\fuel\app\classes\controller\cp\main.php" crc="-722707458"/>
 		<file name="C:\WebServers\home\shop.loc\fuel\app\classes\controller\cp\index.php" crc="1108703611"/>
 		<file name="C:\WebServers\home\shop.loc\fuel\app\classes\controller\base\public.php" crc="1969122431"/>
 		<file name="C:\WebServers\home\shop.loc\fuel\app\classes\controller\base\module.php" crc="-650563504"/>
 		<file name="C:\WebServers\home\shop.loc\fuel\app\classes\controller\base\main.php" crc="-1891245019"/>
 		<file name="C:\WebServers\home\shop.loc\fuel\app\classes\controller\base\controlpanel.php" crc="522884538"/>
+		<file name="C:\WebServers\home\shop.loc\fuel\app\classes\controller\static.php" crc="191839402"/>
 		<file name="C:\WebServers\home\shop.loc\fuel\app\bootstrap.php" crc="1864874547"/>
 		<file name="C:\WebServers\home\shop.loc\fuel\.htaccess" crc="1792548129"/>
 	</filescache>

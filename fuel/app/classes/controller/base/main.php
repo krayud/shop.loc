@@ -33,6 +33,7 @@ class Controller_Base_Main extends Controller_Template
         $this->template->generalJs = $this->_generalJs;
         $this->template->extraCss = $this->_extraCss;
         $this->template->extraJs = $this->_extraJs;
+		$this->template->auto_filter(false);
         return $response;
     }
 

@@ -19,9 +19,43 @@ class Model_Static extends \Model_Crud {
   public static function GetAdminBlockData(){
   	$data["header"] = "Статические страницы";
 	$data["links"] = array(
-		array("Добавить", "/page/new"),
+		array("Новая", "/page/new"),
 		array("Редактировать", "/page/edit"),
 		);
   	return $data;
   }
+  
+/**
+* Добавление новой страницы в БД
+* 
+*/
+  public static function AddNewPage($pageData){
+  	
+	if(Model_Static::find_one_by('uri', $pageData["uri"]) === null){
+		if($pageData["contentTitle"] == "") 
+			$pageData["contentTitle"] = null;
+		$newPage = Model_Static::forge()->set(array(
+		    'uri' => $pageData["uri"],
+			'display_link' => $pageData["display"],
+			'link_text' => $pageData["linkText"],
+		    'title' => $pageData["title"],
+			'content_title' => $pageData["contentTitle"],
+			'content' => $pageData["content"],
+		));
+		if($newPage->save())
+			return array('answerCode' => 0, 'answerText' => "Страница добавлена");
+	}
+	else 
+		return array('answerCode' => 2, 'answerText' => "Страница с таким адресом уже существует");
+  }
+  
+/**
+* Генерирует блок ссылок на статические страницы
+* 
+*/
+  public static function GenerateStaticLinksBlock(){
+ 		$links =  Model_Static::find_by('display_link', true);
+		return View::forge("public/helpers/static-pages-links", array("links" => $links));
+	}
+  
 }

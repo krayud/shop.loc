@@ -173,38 +173,15 @@ h2 {
 
                 <nav class="nav-container" style="float:right">
     <ul class="nav-wide" id="nav" >
-<li class="homepage level-top active"><a class="level-top" href=""><span>۩ </span></a></li>   
+<li class="homepage level-top active"><a class="level-top" title="Главная" href="<?=Uri::Base(false);?>"><span>۩ </span></a></li>   
      
 <li class="level0 nav-1"><a href="" class="level-top"><span>Наши услуги</span></a>
-<ul class="level0"><li class="tech"><ul class="tech 1">
-<li class="level1 nav-1-1 first"><a href=""><span>Организация свадьбы</span></a></li>
-<li class="level1 nav-1-2"><a href=""><span>Подача заявления в ЗАГС</span></a></li>
-<li class="level1 nav-1-3"><a href=""><span>Коммерческий ЗАГС</span></a></li>
-<li class="level1 nav-1-4"><a href=""><span>Выездная регистрация брака</span></a></li>
-<li class="level1 nav-1-5"><a href=""><span>Выкуп</span></a></li></ul></li>
+<ul class="level0">
+<?=$static_links_block;?>
+</ul>
 
-<li class="tech"><ul class="tech">
-<li class="level1 nav-1-6"><a href=""><span>Выездное обслуживание</span></a></li>
-<li class="level1 nav-1-7"><a href=""><span>Ведущие</span></a></li>
-<li class="level1 nav-1-8"><a href=""><span>Свадебный образ</span></a></li>
-<li class="level1 nav-1-9"><a href=""><span>Фото и видеосъёмка</span></a></li>
-<li class="level1 nav-1-10 last"><a href=""><span>Шоу-программа</span></a></li></ul></li>
 
-<li class="tech"><ul class="tech">
-<li class="level1 nav-1-6"><a href=""><span>Спецэффекты</span></a></li>
-<li class="level1 nav-1-7"><a href=""><span>Свадебное оформление</span></a></li>
-<li class="level1 nav-1-8"><a href=""><span>Свадебный букет</span></a></li>
-<li class="level1 nav-1-9"><a href=""><span>Аренда транспорта</span></a></li>
-<li class="level1 nav-1-10 last"><a href=""><span>Постановка свадебного танца</span></a></li></ul></li>
-
-<li class="tech"><ul class="tech">
-<li class="level1 nav-1-6"><a href=""><span>Романтические сюрпризы</span></a></li>
-<li class="level1 nav-1-7"><a href=""><span>Свадебные платья</span></a></li>
-<li class="level1 nav-1-7"><a href=""><span>Аксессуары</span></a></li>
-<li class="level1 nav-1-8"><a href=""><span>Мальчишник и девичник</span></a></li>
-<li class="level1 nav-1-9"><a href=""><span>Встреча из роддома</span></a></li>
-</ul></li>
-</ul></li>
+</li>
 
 
 
