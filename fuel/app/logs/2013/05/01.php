@@ -17,3 +17,19 @@ ERROR - 2013-05-01 20:34:09 --> 2 - Invalid argument supplied for foreach() in Z
 ERROR - 2013-05-01 20:34:51 --> 2 - Invalid argument supplied for foreach() in Z:\home\shop.loc\fuel\app\views\public\helpers\static-pages-links.php on line 4
 ERROR - 2013-05-01 20:35:05 --> 2 - Invalid argument supplied for foreach() in Z:\home\shop.loc\fuel\app\views\public\helpers\static-pages-links.php on line 6
 ERROR - 2013-05-01 20:38:14 --> 2 - Invalid argument supplied for foreach() in Z:\home\shop.loc\fuel\app\views\public\helpers\static-pages-links.php on line 5
+ERROR - 2013-05-01 22:58:02 --> Parsing Error - syntax error, unexpected ')' in Z:\home\shop.loc\fuel\app\classes\controller\cp\page.php on line 16
+ERROR - 2013-05-01 23:08:29 --> Parsing Error - syntax error, unexpected T_IF in Z:\home\shop.loc\fuel\app\views\cp\page-list.php on line 16
+ERROR - 2013-05-01 23:09:13 --> Parsing Error - syntax error, unexpected ')' in Z:\home\shop.loc\fuel\app\views\cp\page-list.php on line 16
+ERROR - 2013-05-01 23:26:21 --> 8 - Undefined variable: pageInfo in Z:\home\shop.loc\fuel\app\views\cp\page-editor.php on line 30
+ERROR - 2013-05-01 23:35:28 --> 8 - Undefined variable: pageInfo in Z:\home\shop.loc\fuel\app\views\cp\page-editor.php on line 35
+ERROR - 2013-05-01 23:52:00 --> 2 - Attempt to assign property of non-object in Z:\home\shop.loc\fuel\app\classes\model\static.php on line 60
+ERROR - 2013-05-01 23:52:14 --> 2 - Attempt to assign property of non-object in Z:\home\shop.loc\fuel\app\classes\model\static.php on line 60
+ERROR - 2013-05-01 23:54:02 --> 2 - Attempt to assign property of non-object in Z:\home\shop.loc\fuel\app\classes\model\static.php on line 60
+ERROR - 2013-05-01 23:54:27 --> 2 - Attempt to assign property of non-object in Z:\home\shop.loc\fuel\app\classes\model\static.php on line 60
+ERROR - 2013-05-01 23:54:31 --> 2 - Attempt to assign property of non-object in Z:\home\shop.loc\fuel\app\classes\model\static.php on line 60
+ERROR - 2013-05-01 23:55:33 --> 2 - Attempt to assign property of non-object in Z:\home\shop.loc\fuel\app\classes\model\static.php on line 62
+ERROR - 2013-05-01 23:55:39 --> 2 - Attempt to assign property of non-object in Z:\home\shop.loc\fuel\app\classes\model\static.php on line 62
+ERROR - 2013-05-01 23:56:01 --> 2 - Attempt to assign property of non-object in Z:\home\shop.loc\fuel\app\classes\model\static.php on line 62
+ERROR - 2013-05-01 23:56:09 --> 2 - Attempt to assign property of non-object in Z:\home\shop.loc\fuel\app\classes\model\static.php on line 62
+ERROR - 2013-05-01 23:56:15 --> 2 - Attempt to assign property of non-object in Z:\home\shop.loc\fuel\app\classes\model\static.php on line 62
+ERROR - 2013-05-01 23:56:49 --> 2 - Attempt to assign property of non-object in Z:\home\shop.loc\fuel\app\classes\model\static.php on line 63

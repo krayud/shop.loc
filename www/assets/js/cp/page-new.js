@@ -1,7 +1,6 @@
 $(document).ready(function(){
 var pageNewAjaxEnable = true;
 
-
 //Замена пробелов в поле для URI страницы
 	$("#editor-uri").change(function(){
 		var original = $("#editor-uri").val();
@@ -19,7 +18,6 @@ var pageNewAjaxEnable = true;
 $("#display-page-in-menu").change(function(){
 	var status = $("#display-page-in-menu").prop("checked");
 	if(status == false){
-		$("#editor-link-text").val("");
 		$("#editor-link-text").attr("disabled","disabled");
 	}
 	else
@@ -29,6 +27,7 @@ $("#display-page-in-menu").change(function(){
 	$("#editor-send-btn").click(function(){
 		tinyMCE.triggerSave(); // Сохранение исходного кода в textarea
 		var url = $("form[name=page-editor]").attr("action");
+		var editId = $("#editPageId").val();
 		var title = $("#editor-title").val();
 		var contentTitle = $("#editor-content-title").val();
 		var pageUri = $("#editor-uri").val();
@@ -39,7 +38,6 @@ $("#display-page-in-menu").change(function(){
 				display = 1;
 		if(linkText == "" && display == 0)
 			linkText = pageUri;
-		
 		if(url!= "" && title != "" && pageUri != "" && linkText != "" && content != ""){
 			var reg = /^([A-Za-z0-9-_]+)$/;
 			if(reg.test(pageUri)){
@@ -48,11 +46,20 @@ $("#display-page-in-menu").change(function(){
 					    url: url, 
 						type: "POST",           
 					    dataType : "json",
-						data:{pageUri:pageUri, display:display, linkText:linkText, 
+						data:{pageUri:pageUri,editId:editId, display:display, linkText:linkText, 
 							title:title, contentTitle:contentTitle, content:content},
 						beforeSend:beforeAddPage,
 						complete:afterAddPage,
-					    success: AddPageComplete,
+					    success: function(data){
+								alert(data.answerText);
+								if(editId == ''){
+									$("#editor-title").val("");
+									$("#editor-content-title").val("");
+									$("#editor-uri").val("");
+									$("#editor-link-text").val("");
+									tinyMCE.activeEditor.setContent('');
+								}
+						},
 						error: function(data){
 							alert("Произошла ошибка во время ajax запроса "+url);
 						}
@@ -75,15 +82,6 @@ $("#display-page-in-menu").change(function(){
 	function beforeAddPage(){
 		pageNewAjaxEnable = false;
 		ShowAjaxLoading(true);
-	}
-	function AddPageComplete(data){
-		alert(data.answerText);
-		
-	$("#editor-title").val("");
-	$("#editor-content-title").val("");
-	$("#editor-uri").val("");
-	$("#editor-link-text").val("");
-	tinyMCE.activeEditor.setContent('');
 	}
 	function afterAddPage(){
 		ShowAjaxLoading(false);

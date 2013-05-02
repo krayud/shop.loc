@@ -9,6 +9,7 @@ class Controller_Base_Controlpanel extends Controller_Base_Main
 		if($this->_userInfo == null || $this->_userInfo["level"] < 2){
 			$this->ShowErrorPage("404");
 		}
+		Cookie::set("filebrowserAccess","true"); // Открыть доступ к файловому менеджеру tinymce
 		array_push($this->_extraCss, "bootstrap", "cp/main");	//Стили только для страниц панели управления
 		array_push($this->_extraJs, "bootstrap");	//Скрипты только для страниц панели управления
 	}

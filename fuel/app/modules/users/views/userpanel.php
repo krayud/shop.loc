@@ -24,6 +24,7 @@ jQuery(document).ready(function(){
 		    success: function (data){
 					if(data.answerCode == 0){
 						delete_cookie(data.cookieName);
+						delete_cookie("filebrowserAccess");// Закрыть доступ к файловому менеджеру tinymce
 						location.reload(true);
 					}
 		    },

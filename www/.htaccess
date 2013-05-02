@@ -1,6 +1,7 @@
 # Multiple Environment config, set this to development, staging or production
 # SetEnv FUEL_ENV production
 AddDefaultCharset UTF-8
+php_value date.timezone Europe/Moscow
 <IfModule mod_rewrite.c>
 
     # Make sure directory listing is disabled
