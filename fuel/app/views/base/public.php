@@ -227,10 +227,7 @@ h2 {
 
 <div class="grid_9 col-main "><br><br>
 	<div style="padding-left:120px; padding-right:120px; margin-top:30px; "> 
-		<? if($pageInfo["content_title"] != null)
-			echo "<div class='page-content-title'>".$pageInfo['content_title']."</div>";
-		echo $pageInfo["content"];
-		?>
+		<?=$pageInfo["content"];?>
 	</div>
 </div>
 

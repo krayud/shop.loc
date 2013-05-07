@@ -1,3 +1,9 @@
+<script>
+
+	$(".delete-page-btn").click(function(){
+		alert(1);
+	});
+</script>
 <h4>Список всех страниц</h4>
 <table class="table table-bordered table-hover">
 	<thead>
@@ -18,7 +24,8 @@ foreach($pages as $page){
 	  		echo "<td>Да</td>";
 		else
 			echo "<td>Нет</td>";
-		echo "<td><a href='".Uri::base(false)."cp/page/edit/".$page["id"]."'>Изменить</a></td>";
+		printf("<td><a href='%s'>Изменить</a> | 
+					<a>Удалить</a></td>",Uri::base(false)."cp/page/edit/".$page["id"]);
 	echo "</tr>";
 }
 	

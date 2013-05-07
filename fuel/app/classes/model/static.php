@@ -63,6 +63,9 @@ class Model_Static extends \Model_Crud {
 			
 		$editedPage = Model_Static::find_one_by_id($pageData["editId"]);
 
+		if($editedPage["content"] == $pageData["content"])
+				return array('answerCode' => 3, 'answerText' => "Страница не была изменена");
+
 		$editedPage->uri = $pageData["uri"];
 		$editedPage->display_link = $pageData["display"];
 		
@@ -77,7 +80,27 @@ class Model_Static extends \Model_Crud {
 			return array('answerCode' => 0, 'answerText' => "Страница обновлена");
 		else
 			return array('answerCode' => 2, 'answerText' => "Ошибка во время обработки данных");
+  }
+  
+ /**
+* Обновление только контента у страницы с id = $pageData[id]
+* 
+*/
+  public static function UpdatePageContent($pageData){
+					
+		$editedPage = Model_Static::find_one_by_id($pageData["editId"]);
+		
+		if($editedPage["content"] == $pageData["content"])
+			return array('answerCode' => 1, 'answerText' => "Страница не была изменена");
+		
+		$editedPage->content = $pageData["content"];
+		
+		if($editedPage->save(false))
+			return array('answerCode' => 0, 'answerText' => "Страница обновлена");
+		else
+			return array('answerCode' => 2, 'answerText' => "Ошибка во время обработки данных");
   } 
+  
  
 /**
 * Генерирует блок ссылок на статические страницы

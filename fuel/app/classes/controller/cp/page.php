@@ -5,7 +5,7 @@ class Controller_Cp_Page extends Controller_Cp_Main
 // Форма добавления новой страницы
 	public function action_new()
 	{
-		array_push($this->_extraJs, "tiny_mce/tiny_mce", "cp/page-new");
+		array_push($this->_extraJs, "tiny_mce/tiny_mce", "tiny_mce/main_editor", "cp/page-new");
 		$this->template->pageTitle = "Новая страница";
 		$this->template->pageContent = View::forge("cp/page-editor");
 	}
@@ -18,7 +18,7 @@ class Controller_Cp_Page extends Controller_Cp_Main
 // Редактирование существующей страницы
 public function action_edit($pageId)
 	{
-		array_push($this->_extraJs, "tiny_mce/tiny_mce", "cp/page-new");
+		array_push($this->_extraJs, "tiny_mce/tiny_mce","tiny_mce/main_editor", "cp/page-new");
 		$this->template->pageTitle = "Редактирование страницы";
 		$pageInfo = Model_Static::GetPageInfoById($pageId);
 		if($pageInfo === null)
@@ -81,6 +81,26 @@ public function action_edit($pageId)
 			
 		$this->ShowErrorPage("404");
 	}
+/**
+* 
+* обновление контента страницы (быстрое редактирование)
+* 
+*/
+	public function action_updatecontent(){
+		if(Input::is_ajax()){
+			$resultJSON = null;
+				$pageData["editId"] = $this->TrimAndSqlEscape(Input::param("pageId"));
+				$pageData["content"] = $this->TrimAndSqlEscape(Input::param("content"));
+				
+				$resultJSON = Model_Static::UpdatePageContent($pageData);
+		
+			return json_encode($resultJSON);
+			exit();
+		}
+			
+		$this->ShowErrorPage("404");
+	}	
+	
 
 /**
 * 

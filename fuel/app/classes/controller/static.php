@@ -14,6 +14,12 @@ class Controller_Static extends Controller_Base_Public
 		if($pageInfo === null) // Если страница не найдена в БД
 			$this->ShowErrorPage("404");
 		
+		//Добавление кнопок редактирования на страницы, если пользователь админ/редактор....
+		if($this->_userInfo["level"] > 1){
+			$pageInfo["content"] = View::forge("public/helpers/static-page-content", $pageInfo, false);
+			array_push($this->_extraJs, "tiny_mce/tiny_mce", "tiny_mce/main_editor" , "public/fastedit-page");
+		}
+			
 		$this->template->pageInfo = $pageInfo;
     }
 }

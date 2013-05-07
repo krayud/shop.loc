@@ -6,7 +6,7 @@
 </li>
 <li>
 	<form name="logout-form" action="<?=Uri::base(false);?>users/ajax/logout">
-		<a id="logoutBtn" href="">Выход</a>
+		<a id="logoutBtn" href="#">Выход</a>
 	</form>
 </li>
 

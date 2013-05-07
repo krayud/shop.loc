@@ -25,7 +25,5 @@ function set_cookie( name, value, exp_days, path, domain, secure )
 
 function delete_cookie(cookie_name)
 {
-  var cookie_date = new Date ( );  // Текущая дата и время
-  cookie_date.setTime ( cookie_date.getTime() - 1 );
-  document.cookie = cookie_name += "=; expires=" + cookie_date.toGMTString();
+ set_cookie(cookie_name, null, new Date(0), "/", "", "");
 }
