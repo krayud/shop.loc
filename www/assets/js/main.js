@@ -1,3 +1,6 @@
+//Общие константы 
+var FASTEDITMODE = false; //доступно ли редактирование в данный момент 
+
 //set_cookie ( "username", "Вася Пупкин", 24, "","domain.com", "secure" ); +24 часа
 function set_cookie( name, value, exp_days, path, domain, secure )
 {

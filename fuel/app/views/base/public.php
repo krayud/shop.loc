@@ -226,9 +226,8 @@ h2 {
 
 
 <div class="grid_9 col-main "><br><br>
-	<div style="padding-left:120px; padding-right:120px; margin-top:30px; "> 
-		<?=$pageInfo["content"];?>
-	</div>
+	<div style="padding-left:120px; padding-right:120px; margin-top:30px; "></div>
+	<?=$pageInfo["content"];?>
 </div>
 
 <aside class="grid_3 sidebar sidebar-right">
@@ -292,7 +291,7 @@ http://idealnaya-svadba.com.ua/files/data/image/olga/8.jpg">
 
             </div>
             <div class="input-box">
-               <input type="text" name="email" id="newsletter" title="" class="input-text required-entry validate-email" />
+               <input type="text" name="email" id="newsletter"  title="" class="input-text required-entry validate-email" />
             </div>
             <div class="actions">
                 <button type="submit" title="Подписаться" class="button"><span><span>Подписаться</span></span></button>
@@ -425,10 +424,10 @@ E-mail: mmendelson@mail.ru
     <div class="title-divider"><span>&nbsp;</span></div>
     <div class="custom-footer-content">
  <br><center>
-<a href=""><img style="padding: 0px 15px 0px 0px;" onmouseover="this.src='assets/img/public/vks.png';" onmouseout="this.src='assets/img/public/vk.png';" src="assets/img/public/vk.png" width="30" height="30" alt=""></a>
-<a href=""><img style="padding: 0px 15px 0px 0px;" onmouseover="this.src='assets/img/public/oks.png';" onmouseout="this.src='assets/img/public/ok.png';" src="assets/img/public/ok.png" width="30" height="30" alt=""></a>
-<a href=""><img style="padding: 0px 15px 0px 0px;" onmouseover="this.src='assets/img/public/fs.png';" onmouseout="this.src='assets/img/public/f.png';" src="assets/img/public/f.png" width="30" height="30" alt=""></a>
-<a href=""><img style="padding: 0px 15px 0px 0px;" onmouseover="this.src='assets/img/public/ts.png';" onmouseout="this.src='assets/img/public/t.png';" src="assets/img/public/t.png" width="30" height="30" alt=""></a>
+<a href="<?=Uri::base(false);?>"><img style="padding: 0px 15px 0px 0px;" onmouseover="this.src='<?=Uri::base(false);?>assets/img/public/vks.png';" onmouseout="this.src='<?=Uri::base(false);?>assets/img/public/vk.png';" src="<?=Uri::base(false);?>assets/img/public/vk.png" width="30" height="30" alt=""></a>
+<a href="<?=Uri::base(false);?>"><img style="padding: 0px 15px 0px 0px;" onmouseover="this.src='<?=Uri::base(false);?>assets/img/public/oks.png';" onmouseout="this.src='<?=Uri::base(false);?>assets/img/public/ok.png';" src="<?=Uri::base(false);?>assets/img/public/ok.png" width="30" height="30" alt=""></a>
+<a href="<?=Uri::base(false);?>"><img style="padding: 0px 15px 0px 0px;" onmouseover="this.src='<?=Uri::base(false);?>assets/img/public/fs.png';" onmouseout="this.src='<?=Uri::base(false);?>assets/img/public/f.png';" src="<?=Uri::base(false);?>assets/img/public/f.png" width="30" height="30" alt=""></a>
+<a href="<?=Uri::base(false);?>"><img style="padding: 0px 15px 0px 0px;" onmouseover="this.src='<?=Uri::base(false);?>assets/img/public/ts.png';" onmouseout="this.src='<?=Uri::base(false);?>assets/img/public/t.png';" src="<?=Uri::base(false);?>assets/img/public/t.png" width="30" height="30" alt=""></a>
 </center>
       </div>
 
@@ -439,65 +438,10 @@ E-mail: mmendelson@mail.ru
 
 
 
-                                <div class="grid_2">
-    <h3>НАШИ УСЛУГИ <span></span></h3>
-    <div class="title-divider"><span>&nbsp;</span></div>
-    <div class="custom-footer-content">
-	<ul>
+ <?=$static_links_footer_block;?>
 
 
-
-	    <li><a href="">Организация свадьбы</a></li>
-	    <li><a href="">Подача заявления в ЗАГС</a></li>
-	    <li><a href="">Коммерческий ЗАГС</a></li>
-	    <li><a href="">Выездная регистрация брака</a></li>
-	    <li><a href="">Выкуп</a></li>
-	    <li><a href="">Выездное обслуживание</a></li>
-
-	</ul>	
-    </div>
-</div>
-
-<div class="grid_2">
-    <h3> <span></span></h3>
-<p style="padding-top:7px;"></p>
-    <div class="title-divider1"><span>&nbsp;</span></div>
-    <div class="custom-footer-content">
-	<ul>
-
-	    <li><a href="">Аренда транспорта</a></li>
-	    <li><a href="">Постановка свадебного танца</a></li>
-	    <li><a href="">Романтические сюрпризы</a></li>
-	    <li><a href="">Платья и аксессуары</a></li>
-	    <li><a href="">Мальчишник и девичник</a></li>
-	    <li><a href="">Встреча из роддома</a></li>
-
-	</ul>
-    </div>
-</div>
-
-
-<div class="grid_2">
-    <h3> <span></span></h3>
-<p style="padding-top:7px;"></p>
-    <div class="title-divider1"><span>&nbsp;</span></div>
-    <div class="custom-footer-content">
-	<ul>
-	    <li><a href="">Ведущие</a></li>
-	    <li><a href="">Свадебный образ</a></li>
-	    <li><a href="">Фото и видеосъёмка</a></li>
-	    <li><a href="">Шоу-программа</a></li>	    
-		<li><a href="">Спецэффекты</a></li>
-	    <li><a href="">Свадебное оформление</a></li>
-
-
-
-	</ul>
-    </div>
-</div>
-
-<div style="width:250px; padding-right:10px;" class="grid_3 alpha">
-    <!--<div id="messages_product_view"></div> -->   
+<div style="width:250px; padding-right:10px; float:right;"  class="grid_3 alpha">   
     <h3>ВОЗНИКЛИ ВОПРОСЫ?<span></span></h3>
     <div class="contacts-footer-content">
         <form action="" id="contactForm" method="post">
@@ -548,9 +492,7 @@ E-mail: mmendelson@mail.ru
         <div class="container_12">
             <div class="grid_12">
             <ul>
-<li><a href="">Социальная сеть</a></li>
-<li><a href="">Главная</a></li>
-<li><a href="">Наши услуги</a></li>
+<li><a href="<?=Uri::base(false);?>">Главная</a></li>
 <li><a href="">Магазин</a></li>
 </ul>            <ul class="links">
                         <li class="first"><a href="">Школа невест</a></li>

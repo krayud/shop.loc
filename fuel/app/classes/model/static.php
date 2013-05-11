@@ -103,19 +103,24 @@ class Model_Static extends \Model_Crud {
   
  
 /**
-* Генерирует блок ссылок на статические страницы
-* 
+* Возвращает список статических страниц в зависимости от фильтра
+* $filter = all|visible|hidden - все|отображаемые ссыки|ссылки не отображаются
 */
-  public static function GenerateStaticLinksBlock(){
- 		$links =  Model_Static::find_by('display_link', true);
-		return View::forge("public/helpers/static-pages-links", array("links" => $links));
-	}
-/**
-* Генерирует список всех страниц для 
-*/
-  public static function GeneratePagesList(){
- 		$pages =  Model_Static::find_all();
-		return View::forge("cp/page-list", array("pages" => $pages));
+  public static function GetStaticPagesList($filter){
+  		switch($filter){
+		  	case "all":
+				return Model_Static::find_all();
+		  	break;
+			case "visible":
+				return Model_Static::find_by('display_link', true);
+		  	break;
+			case "hidden":
+				return Model_Static::find_by('display_link', false);
+		  	break;
+		  	default:
+				return null;
+		  	break;
+		  } 
 	}	
 
 }

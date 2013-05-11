@@ -2,42 +2,48 @@ jQuery(document).ready(function(){
 	
 	var cms_content_div = "#cms-content-div";
 	var cms_content_editor = "#cms-content-editor";
-	var timeShow = 0;
-	var fastEditPage = false;
+	var timeShow = 200;
 	
-	jQuery("#fast-edit-btn").click(function(){
-		fastEditPage = !fastEditPage;
-		if(fastEditPage){
-			HidePageContentAndShowEditor();
-			jQuery(this).text("Назад");
-		}
-		else{
-			HideEditorAndShowPageContent();
-			jQuery(this).text("Быстрое редактирование");
-		}
-			
-		return false;
+	//Показывать облать редактирования при наведении
+	jQuery("#cms-content-div").mouseenter(function(){
+		if(FASTEDITMODE)
+			jQuery(this).addClass("fast-edit-area");
+	});
+	jQuery("#cms-content-div").mouseleave(function(){
+		jQuery(this).removeClass("fast-edit-area");
+	});
+	jQuery("#cms-content-div").mouseup(function(){
+		if(FASTEDITMODE)
+		HidePageContentAndShowEditor();
 	});
 
-	jQuery("#fast-edit-btn-cancel").click(function(){
-		HideEditorAndShowPageContent();
-		return false;
-	});
 	
 	function HidePageContentAndShowEditor(){
-		jQuery(cms_content_div).slideUp(timeShow,function(){
-			jQuery(cms_content_editor).slideDown(timeShow);
+		var ContentText = jQuery(cms_content_div).html();
+		tinyMCE.execCommand('mceRemoveControl', false, 'fastEditContent');
+		jQuery("#fastEditContent").val(ContentText);
+		tinyMCE.execCommand('mceAddControl', false, 'fastEditContent');
+			
+		jQuery(cms_content_div).fadeOut(timeShow,function(){
+			jQuery(cms_content_editor).fadeIn(timeShow);
 		});
 	}
 	
 	function HideEditorAndShowPageContent(){
-		jQuery(cms_content_editor).slideUp(timeShow,function(){
-			jQuery(cms_content_div).slideDown(timeShow);
+		
+		jQuery(cms_content_editor).fadeOut(timeShow,function(){
+			jQuery(cms_content_div).fadeIn(timeShow);
 		});
 	}
 
+//Кнопка отмены (назад)
+jQuery("#fast-edit-btn-cancel").click(function(){
+		HideEditorAndShowPageContent();
+		return false;
+	});
+
 //Сохранение изменений в контенте
-	jQuery("#fastSaveBtn").click(function(){
+	jQuery("#fast-edit-save-btn").click(function(){
 		tinyMCE.triggerSave(); // Сохранение исходного кода в textarea
 		var fastEditUrl = jQuery("#fastEditForm").attr("action");
 		var fastEditId = jQuery("#fastEditPageId").val();

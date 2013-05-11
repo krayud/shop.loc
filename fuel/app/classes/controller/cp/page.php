@@ -5,25 +5,31 @@ class Controller_Cp_Page extends Controller_Cp_Main
 // Форма добавления новой страницы
 	public function action_new()
 	{
-		array_push($this->_extraJs, "tiny_mce/tiny_mce", "tiny_mce/main_editor", "cp/page-new");
+		array_push($this->_extraJs, "tiny_mce/tiny_mce", 
+									"tiny_mce/common-editor", 
+									"cp/static/page-send-form");
 		$this->template->pageTitle = "Новая страница";
-		$this->template->pageContent = View::forge("cp/page-editor");
+		$this->template->pageContent = View::forge("cp/static/page-editor");
 	}
 //Список всех страниц	
 	public function action_list()
 	{
 		$this->template->pageTitle = "Список страниц";
-		$this->template->pageContent = Model_Static::GeneratePagesList();
+		$pages = Model_Static::GetStaticPagesList("all");
+		$this->template->pageContent = View::forge("cp/static/page-list", array("pages" => $pages));
+		
 	}
 // Редактирование существующей страницы
 public function action_edit($pageId)
 	{
-		array_push($this->_extraJs, "tiny_mce/tiny_mce","tiny_mce/main_editor", "cp/page-new");
+		array_push($this->_extraJs, "tiny_mce/tiny_mce",
+									"tiny_mce/common-editor", 
+									"cp/static/page-send-form");
 		$this->template->pageTitle = "Редактирование страницы";
 		$pageInfo = Model_Static::GetPageInfoById($pageId);
 		if($pageInfo === null)
 			$this->ShowErrorPage("404");
-		$this->template->pageContent = View::forge("cp/page-editor", array("pageInfo" => $pageInfo));
+		$this->template->pageContent = View::forge("cp/static/page-editor", array("pageInfo" => $pageInfo));
 	}	
 	
 /**
@@ -101,15 +107,4 @@ public function action_edit($pageId)
 		$this->ShowErrorPage("404");
 	}	
 	
-
-/**
-* 
-* Тримирует и экранирует данные
-* 
-*/
-	private function TrimAndSqlEscape($var){
-		$var = trim($var);
-		$var = stripslashes($var);
-		return $var;
-	}
 }
