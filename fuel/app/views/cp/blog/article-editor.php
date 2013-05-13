@@ -1,28 +1,31 @@
 <script>
 tinyMCE.execCommand("mceAddControl", true, "article-text");
 
-
 $(document).ready(function(){
-	LDUploader.init({
-		form : "#upForm", //Форма, к которой привязывается скрипт
-		inputName : "userfile", //Имя поля с файлом
-		action : "/assets/js/lduploader/upload.php",
-		extensions : "jpg, gif, png", //Допустимые расширения файлов
-		charsetToSave : "windows-1251", //Кодировка, в которой будет сохранён файл
-		realName : "false", // Использовать реальное имя файла = true, сгенерировать имя (ф-я time()) = false
-		defaultName : "<?=time();?>", //Сохранить файл с этим именем. Работает или realName или defaultName!!!
-		uploadPath : "/assets/upload/blog/", // Каталог загрузки (Относительно корня сайта! '/' в конце обязателен!)
-		before : function(){
-			//Перез загрузкой
-		},
-		callback : function(answer){
-			//Конец загрузки			
-			if(answer.code == 0)
-				SetMiniSrc(answer.fileInfo.src);
-			else
-				alert(answer.text);
-		},
-	});
+    LDUploader.init({
+            form : "#upForm",
+            inputName : "userfile",
+            uploaderPath : "/assets/js/lduploader/",
+            extensions : "jpg, gif, png", 
+            charsetToSave : "windows-1251",
+			resize : "300, 200",
+            normalInputStyle : "false",
+            realName : "false",
+            defaultName : "<?=time();?>",
+			uploadPath : "/assets/upload/blog/",
+            before : function(){
+                //Перез загрузкой
+				$("#img-loading-ajax").addClass("ajax-loading-visible");
+            },
+            callback : function(answer){
+                //Конец загрузки            
+                if(answer.code == 0)
+                    SetMiniSrc(answer.fileInfo.src);
+                else
+                    alert(answer.text);
+				$("#img-loading-ajax").removeClass("ajax-loading-visible");
+            },
+        });
 	
 function SetMiniSrc(src){
 	$(".article-mini-img, .article-big-img").attr("src",src);
@@ -51,7 +54,12 @@ else{// если добавляется новая запись
 			<?=Asset::img("cp/empty_mini_small.gif", array('class' => 'article-mini-img'));?><br/>
 			<form id="upForm">
 			    <input name="userfile" size="1" type="file"><br/>
-			    <input type="submit" value="Загрузить" />
+
+				<div style="float:left;"> 
+					 <input type="submit" value="Загрузить" />
+				</div>
+				<div id="img-loading-ajax" class="ajax-loading"></div>
+				<div class="clear"></div>
 			</form>
 		</div>
 		<div id="right-div">

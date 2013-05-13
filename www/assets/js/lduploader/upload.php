@@ -8,11 +8,13 @@ $charsetToSave = $settings["charsetToSave"]; // Кодировка, в кото�
 $uploadPath = $settings["uploadPath"];
 $defaultName = $settings["defaultName"];
 $extensions = $settings["extensions"];
+$resize = $settings["resize"];
 
 $uploaddir = $_SERVER['DOCUMENT_ROOT'].DIRECTORY_SEPARATOR.$uploadPath; //Папка для загрузки
 
 $pathInfo = pathinfo($_FILES[$inputName]['name']); 
-$ext = $pathInfo['extension']; // Определение расширения файла
+$ext = strtolower($pathInfo['extension']); // Определение расширения файла
+
 if(strstr($extensions, $ext))
 {
 	$basename = basename($pathInfo['basename'], ".".$ext); // Имя файла без разширения
@@ -45,7 +47,15 @@ if(strstr($extensions, $ext))
 
 
 
-	if (move_uploaded_file($_FILES[$inputName]['tmp_name'], $fullPath))
+	if (move_uploaded_file($_FILES[$inputName]['tmp_name'], $fullPath)){
+
+			//Подключение файла для ресайза картинок если нужно
+			if($resize != "false"){
+				$sizes = explode(",", $resize);
+				require_once "resize.php";
+				resizeImg($fullPath, $fullPath, $sizes[0], $sizes[1]);
+			}
+
 			$answer = array("code" => 0, "text" => "Файл загружен", "fileInfo" => array(
 				"name" => $basename,
 				"ext" => $ext,
@@ -53,6 +63,7 @@ if(strstr($extensions, $ext))
 				"src" => $src,
 				)
 			);
+	}
 	else
 			$answer = array("code" => 1, "text" => "Ошибка функции move_uploaded_file");
 }
