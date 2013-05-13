@@ -1,4 +1,6 @@
 <?php
+header('Content-Type: text/html; charset=utf-8');
+
 function resizeImg($from, $to, $targetW, $targetH){
 	$standatrW = $targetW;
 	$standatrH = $targetH;
@@ -67,10 +69,10 @@ function resizeImg($from, $to, $targetW, $targetH){
 				//Сместить влево для вырезания центра картинки
 				$marginLeft = ($w - $standatrW)/2;
 				imagecopyresampled($dst, $src, -1*($marginLeft), 0, 0, 0, $w, $standatrH, $iw, $ih);
-
 			}
 			else{
-				imagecopyresampled($dst, $src, 0, 0, 0, 0, $standatrW, $new_h, $iw, $ih);
+				$marginTop = ($ih - $standatrH) / 2;
+				imagecopyresampled($dst, $src, 0, 0, 0, $marginTop, $standatrW, $new_h, $iw, $ih);
 			}
 
 		}//Если только ширина больше
@@ -109,3 +111,6 @@ function resizeImg($from, $to, $targetW, $targetH){
 	}
 	return 0;
 }
+
+resizeImg("pic.jpg", "pic_mini.jpg", "300", "200");
+?>
