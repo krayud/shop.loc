@@ -10,8 +10,12 @@ class Controller_Base_Controlpanel extends Controller_Base_Main
 			$this->ShowErrorPage("404");
 		}
 		Cookie::set("filebrowserAccess","true"); // Открыть доступ к файловому менеджеру tinymce
-		array_push($this->_extraCss, "bootstrap", "cp/main");	//Стили только для страниц панели управления
-		array_push($this->_extraJs, "bootstrap");	//Скрипты только для страниц панели управления
+		array_push($this->_extraCss, "bootstrap", 
+									 "cp/template/main",
+									 "cp/common"
+									 );	//Стили только для страниц панели управления
+									 
+		
 	}
-	
+
 }

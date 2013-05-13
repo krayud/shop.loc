@@ -20,10 +20,10 @@ class Model_Static extends \Model_Crud {
 * Генерация и возврат блока "статические страницы" для сайтбара в панели управления
 */
   public static function GetAdminBlockData(){
-  	$data["header"] = "Статические страницы";
+  	$data["header"] = "<i class='icon-file'></i>Страницы";
 	$data["links"] = array(
-		array("Создать новую", "/page/new"),
-		array("Все станицы", "/page/list"),
+		array("<i class='icon-pencil'></i>Добавить страницу", "/page/new"),
+		array("<i class='icon-eye-open'></i>Обзор всех страниц", "/page/list"),
 		);
   	return $data;
   }

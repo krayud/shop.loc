@@ -68,8 +68,8 @@ else{// если добавляется новая запись
 		</div>
 		<div class="clear"></div>
 	</div>
-	<br/>
 <form name="article-editor"  action="<?=$url;?>">
+
 	<input id="editArticleId" type="hidden" value="<?=$editArticleId;?>"/>
 	<label>Раздел:</label>
 	<select id="blog-section">

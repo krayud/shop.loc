@@ -22,11 +22,11 @@ public static function GetBlogSections(){
 * Генерация блока для панели управления
 */
 public static function GetAdminBlockData(){
-	$data["header"] = "Модуль блога";
+	$data["header"] = "<i class='icon-edit'></i>Блог";
 	$data["links"] = array(
-		array("Новая запись", "/blog/new"),
-		array("Категории", "/blog/cats"),
-		array("Все записи", "/blog/list"),
+		array("<i class='icon-pencil'></i>добавить запись", "/blog/new"),
+		array("<i class='icon-tags'></i>Категории", "/blog/cats"),
+		array("<i class='icon-eye-open'></i>Обзор всех записей", "/blog/list"),
 		);
   	return $data;
 }

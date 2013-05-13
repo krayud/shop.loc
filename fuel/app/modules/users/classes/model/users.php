@@ -68,9 +68,11 @@ class Model_Users extends \Model_Crud {
 * Генерация блока для админки
 */  
 	public static function GetAdminBlockData(){
-		$data["header"] = "Пользователи";
+		$data["header"] = "<i class='icon-comment'></i>Социальная сеть";
 		$data["links"] = array(
-			array("Список пользователей", "/users/list"),
+		
+			array("<i class='icon-user'></i>Пользователи", "/users/list"),
+			array("<i class='icon-th-large'></i>Группы", "/users/list"),
 			);
 	  	return $data;
 	}
