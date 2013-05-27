@@ -10,9 +10,37 @@ var pageNewAjaxEnable = true;
 		$("#editor-uri").val(newStr);
 	});
 	
+	 var translateArray = {
+		'а':'a','б':'b','в':'v','г':'g',
+		'д':'d','е':'e','ё':'e','ж':'zh',
+		'з':'z','и':'i','й':'y','к':'k',
+		'л':'l','м':'m','н':'n','о':'o',
+		'п':'p','р':'r','с':'s','т':'t',
+		'у':'u','ф':'f','х':'kh','ц':'ts',
+		'ч':'ch','ш':'sh','щ':'sch','ъ':'',
+		'ы':'y','ь':"",'э':'e','ю':'yu',
+		'я':'ya', '.':'', ' ':'_', ',':'',
+		'/':'_', '\\':'_', '?':'', '!':'',
+        };
+	
+	function translateString(str){
+		str = str.toLowerCase();
+		newStr = '';
+			for(i = 0; i < str.length; i++){
+				newChar = translateArray[str[i]];
+				if(newChar != undefined)
+					newStr += newChar;
+				else
+					newStr += str[i];
+			}
+		return newStr;
+	}
+	
 //Копирование текста из "Текст ссылки" в "Заголовок в браузере" 
-	$("#editor-link-text").keyup(function(){
-		$("#editor-title").val($("#editor-link-text").val());
+	$("#editor-title").keyup(function(){
+		title = $("#editor-title").val();
+		$("#editor-link-text").val(title);
+		$("#editor-uri").val(translateString(title));
 	});
 
 $("#display-page-in-menu").change(function(){

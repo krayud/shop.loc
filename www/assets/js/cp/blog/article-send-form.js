@@ -18,7 +18,6 @@ var articleEditorAjaxEnable = true;
 		var img = $("#big-img-src").val();
 		var description = $("#article-description").val();
 		var text = $("#article-text").val();
-		
 		if(url!= "" && section != 0  && cat != 0 && title != "" && description != "" && text != ""){
 				if(articleEditorAjaxEnable){
 					$.ajax({

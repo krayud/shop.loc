@@ -1,0 +1,43 @@
+#news-slider-block{
+  margin:0px auto;
+  width:960px;
+  text-align:center;
+}
+
+#ld-news-slider{
+	width:960px;
+	overflow:hidden;
+    float: left;
+}
+
+#ldslides{
+	width:4800px;
+	margin:0px;
+}
+.ldslide{
+	width:240px;
+	float:left;
+}
+
+.ldslide  img{
+	max-width:220px;
+	max-height:146px;
+	margin-bottom: 10px;
+}
+.slideWrapper{
+	padding: 0px 10px 0px 10px;
+	text-align: left;
+}
+
+.ldslide  p{
+	text-align: justify;
+}
+
+.slideTitle{
+	font-size: 11pt;
+	font-family: HeliosExtThin;
+	text-align: left;
+}
+.slideTitle a{
+	text-decoration:none;
+}

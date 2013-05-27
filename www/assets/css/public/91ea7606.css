@@ -48,17 +48,17 @@
 
 /* Boilerplate Print CSS =========================END============================ */
    @font-face {
-    font-family: HeliosCond; /* Имя шрифта */
-    src: url(http://marinamendelson.artdimension.ru/img_files/helioscond.ttf); /* Путь к файлу со шрифтом */
-    src: url(http://marinamendelson.artdimension.ru/img_files/helioscond.svg); /* Путь к файлу со шрифтом */
-    src: url(http://marinamendelson.artdimension.ru/img_files/helioscond.otf); /* Путь к файлу со шрифтом */
+    font-family: HeliosCond; /* И¬пїЅ пїЅпїЅиґІа Є/
+    src: url(http://marinamendelson.artdimension.ru/img_files/helioscond.ttf); /* ПіпїЅпїЅ к ґа©«пїЅ пїЅо ёпїЅиґІо¬ */
+    src: url(http://marinamendelson.artdimension.ru/img_files/helioscond.svg); /* ПіпїЅпїЅ к ґа©«пїЅ пїЅо ёпїЅиґІо¬ */
+    src: url(http://marinamendelson.artdimension.ru/img_files/helioscond.otf); /* ПіпїЅпїЅ к ґа©«пїЅ пїЅо ёпїЅиґІо¬ */
    }
 
    @font-face {
-    font-family: HeliosExtThin; /* Имя шрифта */
-    src: url(http://marinamendelson.artdimension.ru/img_files/helioset.ttf); /* Путь к файлу со шрифтом */
-    src: url(http://marinamendelson.artdimension.ru/img_files/helioset.svg); /* Путь к файлу со шрифтом */
-    src: url(http://marinamendelson.artdimension.ru/img_files/helioset.otf); /* Путь к файлу со шрифтом */
+    font-family: HeliosExtThin; /* И¬пїЅ пїЅпїЅиґІа Є/
+    src: url(http://marinamendelson.artdimension.ru/img_files/helioset.ttf); /* ПіпїЅпїЅ к ґа©«пїЅ пїЅо ёпїЅиґІо¬ */
+    src: url(http://marinamendelson.artdimension.ru/img_files/helioset.svg); /* ПіпїЅпїЅ к ґа©«пїЅ пїЅо ёпїЅиґІо¬ */
+    src: url(http://marinamendelson.artdimension.ru/img_files/helioset.otf); /* ПіпїЅпїЅ к ґа©«пїЅ пїЅо ёпїЅиґІо¬ */
 
    }
 
@@ -80,5 +80,6 @@ font-family: Tahoma;
 font-size: 30px; 
 font-family: HeliosExtThin; 
 margin-bottom:30px;
+line-height: 1.2;
 text-transform: uppercase;
 }

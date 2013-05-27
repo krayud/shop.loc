@@ -5,8 +5,8 @@ clear:both;
 width:16px;
 height:16px;
 background-image:url("../../img/cp/ajax.gif");
-display: none;
+visibility: hidden;
 }
 .ajax-loading-visible{
-display:block;
+visibility: visible;
 }
