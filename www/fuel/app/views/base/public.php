@@ -232,50 +232,9 @@ h2 {
 
 <aside class="grid_3 sidebar sidebar-right">
 
-<section class="block-list block-compare">
+<?=$trendsSideBar;?>
 
-    <header>
-        <h2>Тренды</h2>
-    </header>
-
-
-    <div class="block-content">
-<p class="empty">
-</p>
-
-<center><h2><b>Мужчина и твоя идеальная свадьба. Как совместить несовместимое.</b></h2></center>
-<br>
-<img src="
-http://idealnaya-svadba.com.ua/files/data/image/olga/8.jpg">
-<br><br>
-<p class="empty" align="justify">
-
-<span style="font-size: 16px; font-family: Helios; ">
-<i>В последнее время всё чаще в наше агентство по организации свадеб стали обращаться мужчины... Новая модная тенденция или нечто другое???</i>
-</span></p>
-        </div>
-</section>
-
-
-<section class="block-list block-compare">
-    <header>
-        <h2>Отзывы</h2>
-    </header>
-    <div class="block-content">
-<p class="empty">
-</p>
-
-<center><span style="font-size: 17px; font-family: HeliosExtThin; "><b>Ольга и Алексей</b></span></center>
-<br>
-<img src="http://idealnaya-svadba.com.ua/files/data/image/otzyvy/22_0002.jpg">
-<br><br><p align="justify">
-<span style="font-size: 15px; font-family: Tahoma; ">
-<i>Изначально я очень скептически относилась к свадебным агентствам, но по итогу могу с уверенностью сказать «Марина Мендельсон» - свадебное агентство премиум класса</i>
-</span></p>
-        </div>
-</section>
-
-
+<?=$reviewsSideBar;?> 
 
 <section class="block-subscribe">
     <header>

@@ -9,6 +9,8 @@ class Model_Blog extends \Model_Crud {
 //Болги на сайте (именя папок с modules и название блога должны совпадать)
 private static $incBlogs = array(
 	array("news", "Новости"),
+    array("trends", "Тренды"),
+    array("reviews", "Отзывы"),
 );
 
 /**
@@ -140,16 +142,36 @@ public static function DeleteCats($section, $cat){
 */
   public static function GetArticlesList(){
     //TODO: сделать автоматическую генерация всех записей исходя из данных  $incBlogs
-    $articles = \DB::select()->from('news')
+    $articlesNews = \DB::select()->from('news')
   		->join('news_cats')
   		->on('news.cat', '=', 'news_cats.cats_id')
+  		->order_by('id', 'DESC')
+  		->execute()->as_array();
+
+    $articlesTrends = \DB::select()->from('trends')
+  		->join('trends_cats')
+  		->on('trends.cat', '=', 'trends_cats.cats_id')
+  		->order_by('id', 'DESC')
+  		->execute()->as_array();
+
+    $articlesReviews = \DB::select()->from('reviews')
+  		->join('reviews_cats')
+  		->on('reviews.cat', '=', 'reviews_cats.cats_id')
   		->order_by('id', 'DESC')
   		->execute()->as_array();
 
     $result = array(
         "news" => array("section" => "news",
                         "sectionTitle" => "Новости",
-                        "articles" => $articles),
+                        "articles" => $articlesNews),
+
+        "trends" => array("section" => "trends",
+                        "sectionTitle" => "Тренды",
+                        "articles" => $articlesTrends),
+
+        "reviews" => array("section" => "reviews",
+                        "sectionTitle" => "Отзывы",
+                        "articles" => $articlesReviews),
         //тут добавить другие разделы блона
     );
 

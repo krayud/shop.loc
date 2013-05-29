@@ -20,7 +20,7 @@
     	}
     }
     else
-    	echo "<p style='text-align:left;'>Записей не найдено </p><br";
+    	echo "<p style='text-align:left;'>Записей не найдено </p><br>";
 
     ?>
     </div>

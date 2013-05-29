@@ -2,6 +2,7 @@ $(document).ready(function(){
 var blog_section = "#blog-section";
 var blog_category = "#blog-category";
 
+
 //Взять значение при каждом новом выборе
 $(blog_section).change(function(){
 	var value = $(blog_section=" option:selected").val();
