@@ -61,6 +61,8 @@ $("#display-page-in-menu").change(function(){
 		var pageUri = $("#editor-uri").val();
 		var linkText = $("#editor-link-text").val();
 		var content = $("textarea").val();
+		var page_group = $("#page-group").val();
+		
 		var display = 0;
 			if($("#display-page-in-menu").prop("checked"))
 				display = 1;
@@ -70,12 +72,13 @@ $("#display-page-in-menu").change(function(){
 			var reg = /^([A-Za-z0-9-_]+)$/;
 			if(reg.test(pageUri)){
 				if(pageNewAjaxEnable){
+				
 					$.ajax({
 					    url: url, 
 						type: "POST",           
 					    dataType : "json",
 						data:{pageUri:pageUri,editId:editId, display:display, linkText:linkText, 
-							title:title, contentTitle:contentTitle, content:content},
+							title:title, contentTitle:contentTitle, page_group:page_group, content:content},
 						beforeSend:beforeAddPage,
 						complete:afterAddPage,
 					    success: function(data){

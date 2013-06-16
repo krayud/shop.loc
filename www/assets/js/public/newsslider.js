@@ -1,11 +1,11 @@
 jQuery(document).ready(function(){
 
 	var sliderBlockSize = 240;
-	var countSliders = jQuery('#ldslides > .ldslide').size();
+	var countSliders = jQuery('#ld-news-slider .ldslide').size();
 	var slidersOnVisibility = 4;
 	var currentSlide = 0;
 	var direction = "left"; // Начинать прокручивать влево
-	var sliderSpeed = 2000;
+	var sliderSpeed = 2400;
 	var sliderInterval = 7000;
 
 
@@ -16,7 +16,7 @@ jQuery(document).ready(function(){
 
 	function rewindSlideTo(toSlide){
 		newMargin = toSlide * sliderBlockSize * -1;
-		jQuery("#ld-news-slider #ldslides").animate({"marginLeft" : newMargin+"px"}, sliderSpeed);
+		jQuery("#ld-news-slider .ldslides").animate({"marginLeft" : newMargin+"px"}, sliderSpeed);
 	}
 
 	function newsSlide(){
@@ -36,42 +36,6 @@ jQuery(document).ready(function(){
 	}
 
 	var newsSliderIntervar = startAutoSlide();
-
-    /*
-    //изменение стрелок при наведении
-    jQuery("#news-slide-back, #news-slide-forward").mouseenter(function(){
-         jQuery(this).css("backgroundPosition","0px 0px");
-    });
-     //изменение стрелок при уходе мыши
-     jQuery("#news-slide-back, #news-slide-forward").mouseleave(function(){
-         jQuery(this).css("backgroundPosition","-50px 0px");
-    });
-
-
-	//нажатие назад
-	jQuery("#news-slide-back").click(function(){
-		if(currentSlide > 0){
-			clearInterval(newsSliderIntervar);
-			rewindSlideTo(--currentSlide);
-			newsSliderIntervar = startAutoSlide();
-		}
-
-	});
-	//нажатие вперед
-   	jQuery("#news-slide-forward").click(function(){
-
-		if(currentSlide < countSliders - slidersOnVisibility){
-
-			clearInterval(newsSliderIntervar);
-
-			rewindSlideTo(++currentSlide);
-
-			newsSliderIntervar = startAutoSlide();
-
-		}
-			
-	});
-     */
 
 	//Остановка при наведении
 	jQuery("#news-slider-block").mouseenter(function(){

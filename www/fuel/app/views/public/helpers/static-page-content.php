@@ -2,11 +2,6 @@
 tinyMCE.execCommand("mceAddControl", true, "fastEditContent");
 </script>
 
-<? 
-if($content_title != null)
-	echo "<div class='page-content-title'>".$content_title."</div>";
-?>
-
 <div id="cms-content-editor" style="display: none;">
 [	<a href="#" id="fast-edit-btn-cancel">Назад</a>
 	<a href="#" id="fast-edit-save-btn">Сохранить</a>

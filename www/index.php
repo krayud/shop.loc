@@ -9,12 +9,11 @@
  * @copyright  2010 - 2013 Fuel Development Team
  * @link       http://fuelphp.com
  */
-
 /**
  * Set error reporting and display errors settings.  You will want to change these when in production.
  */
-error_reporting(-1);
-ini_set('display_errors', 1);
+//error_reporting(-1);
+//ini_set('display_errors', 1);
 
 /**
  * Website document root

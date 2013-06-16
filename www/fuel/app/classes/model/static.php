@@ -7,13 +7,33 @@ class Model_Static extends \Model_Crud {
 * @param uri страницы
 */
   public static function GetPageInfo($pageUri){
-  	return Model_Static::find_one_by('uri', $pageUri);
+  	$pageInfo = Model_Static::find_one_by('uri', $pageUri);
+	
+	
+	if($pageInfo["group"] != 0){
+		$queryLink = DB::select()->from('static_pages');
+			$queryLink->where("static_pages.group", $pageInfo["group"]);
+		$linkedPages = $queryLink->execute()->as_array();
+		$pageInfo["linkedPages"] = $linkedPages; 
+	}
+	else
+		$pageInfo["linkedPages"] = null; 
+	
+	
+	return $pageInfo;
   }
 /**
 * Возвращает данные о странице по её id
 */
   public static function GetPageInfoById($pageId){
  		return Model_Static::find_one_by('id', $pageId); 
+	}
+ 
+/**
+* Возвращает список всех групп для страниц
+*/
+  public static function GetStaticGroups(){
+ 		return DB::select()->from("static_groups")->execute()->as_array();
 	}
   
 /**
@@ -24,10 +44,51 @@ class Model_Static extends \Model_Crud {
 	$data["links"] = array(
 		array("<i class='icon-pencil'></i>Добавить страницу", "/page/new"),
 		array("<i class='icon-eye-open'></i>Обзор всех страниц", "/page/list"),
+		array("<i class='icon-pencil'></i>Радактор групп", "/page/groups"),
 		);
   	return $data;
   }
   
+  
+  
+/**
+* Добавление новой группы для статических страниц
+*/
+  public static function AddNewGroup($newGroupName){
+  	
+	
+	$selectSameGroup = DB::select()->from("static_groups")->where('title',$newGroupName)->execute();
+	$num_rows = count($selectSameGroup);
+	
+	if($num_rows != 0)
+		return array('answerCode' => 2, 'answerText' => "Такая группа уже существует");
+	else{
+		list($insert_id, $rows_affected) = DB::insert("static_groups")->columns(array('title'))->values(array($newGroupName))->execute();
+ 
+ 
+ return array('answerCode' => 0, 'answerText' => "Группа добавлена", "insertedId" => $insert_id);
+		 
+	}
+		
+  }
+
+/**
+* Удаление группы для статических страниц
+*/
+  public static function DeleteGroup($group){
+
+	DB::update("static_pages")
+	->value('group', 0)
+	->where("group", $group)
+	->execute();
+
+	DB::delete("static_groups")->where("id", $group)->execute();
+	
+ 	return array('answerCode' => 0, 'answerText' => "Группа удалена");
+  } 
+ 
+ 
+ 
 /**
 * Добавление новой страницы в БД
 */
@@ -38,6 +99,7 @@ class Model_Static extends \Model_Crud {
 			$pageData["contentTitle"] = null;
 		$newPage = Model_Static::forge()->set(array(
 		    'uri' => $pageData["uri"],
+			'group' => $pageData["page_group"],
 			'display_link' => $pageData["display"],
 			'link_text' => $pageData["linkText"],
 		    'title' => $pageData["title"],
@@ -64,6 +126,7 @@ class Model_Static extends \Model_Crud {
 		$editedPage = Model_Static::find_one_by_id($pageData["editId"]);
 	
 		$editedPage->uri = $pageData["uri"];
+		$editedPage->group = $pageData["page_group"];
 		$editedPage->display_link = $pageData["display"];
 		$editedPage->link_text = $pageData["linkText"];
 		$editedPage->title = $pageData["title"];

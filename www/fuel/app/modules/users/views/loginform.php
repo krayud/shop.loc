@@ -6,8 +6,9 @@
 	<label for="login-login">Логин (email адрес)</label><br/>
 	  	<input id="login-login" type="text"/><br/>
 	<label for="login-password">Пароль</label><br/>
-	  	<input id="login-password" type="password"/><br/>
-	<center><input id="login-btn" type="submit" value="Войти" /></center>
+	  	<input id="login-password" type="password"/><br/><br/>
+	<center><button id="login-btn" type="submit" 
+	  title="Отправить" class="button"><span><span>Войти</span></span></button></center>
 	</form>
 </div>
 
@@ -18,8 +19,10 @@
 	  <label for="reg-password">Пароль (не менее 6 символов)</label><br/>
 	  	<input id="reg-password" type="password" value=""/><br/>
 	  <label for="reg-password-re">Повтор пароля</label><br/>
-	  	<input id="reg-password-re" type="password" value=""/><br/>
-	  <center><input id="reg-btn" type="submit" value="Зарегистрироваться" /></center>
+	  	<input id="reg-password-re" type="password" value=""/><br/><br/>
+	  
+	  <center><button id="reg-btn" type="submit" 
+	  title="Отправить" class="button"><span><span>Отправить</span></span></button></center>
 	</form>
 </div>
 

@@ -4,9 +4,15 @@ class Controller_Cp_Main extends Controller_Base_Controlpanel
 {
 	public function before(){
 		parent::before();
+		
+		Module::load("polling");
+		Module::load("questions");
+		
 		//Генерация сайтбара
 		$barModules["static"] = $this->GenerateSiteBarBlock(Model_Static::GetAdminBlockData());
 		$barModules["blog"] = $this->GenerateSiteBarBlock(Model_Blog::GetAdminBlockData());
+		$barModules["polling"] = $this->GenerateSiteBarBlock(\Polling\Model_Polling::GetAdminBlockData());
+		$barModules["questions"] = $this->GenerateSiteBarBlock(\Questions\Model_Questions::GetAdminBlockData());
 		$barModules["users"] = $this->GenerateSiteBarBlock(\Users\Model_Users::GetAdminBlockData());
 		$this->template->barModules = $barModules;
 	}

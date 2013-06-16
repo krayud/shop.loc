@@ -20,10 +20,6 @@
  * @link http://code.google.com/p/minify/
  */
 
-// Uncomment when debugging.
-// error_reporting(E_ALL | E_STRICT);
-ini_set('display_errors', 'on');
-
 
 // cut and paste from: http://us2.php.net/manual/en/function.sys-get-temp-dir.php
 if ( !function_exists('sys_get_temp_dir') )
@@ -272,6 +268,8 @@ class Minify {
    *   Minify::TYPE_CSS or Minify::TYPE_JS)
    * @param array|string $files filename or array of filenames to be minified
    */
+   
+   
   function __construct($type = TYPE_JS, $files = array()) {
     if ($type !== TYPE_JS && $type !== TYPE_CSS) {
       die('Invalid argument ($type): '.

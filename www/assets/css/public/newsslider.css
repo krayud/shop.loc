@@ -1,16 +1,16 @@
-#news-slider-block{
+.slider-block{
   margin:0px auto;
   width:960px;
   text-align:center;
 }
 
-#ld-news-slider{
+.ld-slider{
 	width:960px;
 	overflow:hidden;
     float: left;
 }
 
-#ldslides{
+.ldslides{
 	width:4800px;
 	margin:0px;
 }

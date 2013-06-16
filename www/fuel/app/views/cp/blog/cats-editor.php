@@ -14,8 +14,7 @@ $(document).ready(function(){
     $("#delete-select-cats-btn").click(function(){
         var section = $('#blog-section option:selected').val();
         var cat = $('#blog-category option:selected').val();
-        var confirmyes = confirm("Удалить категорию?");
-        if(section != 0 && cat > 0 && CatAjax && confirmyes){
+        if(section != 0 && cat > 0 && CatAjax && confirm("Удалить категорию?")){
           var url = "<?=Uri::base(false);?>"+"cp/blog/deletecats";
         	$.ajax({
     		    url: url,
@@ -43,28 +42,32 @@ $(document).ready(function(){
     //Добавление категории
     $("#add-new-cats-btn").click(function(){
        var section = $('#blog-section option:selected').val();
-       var newCatname = prompt("Название категории:");
-       if(newCatname != "" && CatAjax){
-         var url = "<?=Uri::base(false);?>"+"cp/blog/addcat";
-        	$.ajax({
-    		    url: url,
-    			type: "POST",
-    		    dataType : "json",
-    			data:{section:section, newCatname:newCatname},
-    			beforeSend:beforeStartAjax,
-                complete:afterAjax,
-    		    success: function(data){
-    		            if(data.answerCode == 0){
-    		              $("#blog-category").append("<option value='"+data.insertedId+"'>"+newCatname+"</option>");
-    		            }
-    		            else
-                            alert(data.answerText);
-    			},
-    			error: function(data){
-    				alert("Произошла ошибка во время ajax запроса "+url);
-    			}
-    		});
-       }
+      
+	   if(section != 0){
+	   	var newCatname = prompt("Название категории:");
+		
+	       if(newCatname != "" && newCatname != null && CatAjax){
+	         var url = "<?=Uri::base(false);?>"+"cp/blog/addcat";
+	        	$.ajax({
+	    		    url: url,
+	    			type: "POST",
+	    		    dataType : "json",
+	    			data:{section:section, newCatname:newCatname},
+	    			beforeSend:beforeStartAjax,
+	                complete:afterAjax,
+	    		    success: function(data){
+	    		            if(data.answerCode == 0){
+	    		              $("#blog-category").append("<option value='"+data.insertedId+"'>"+newCatname+"</option>");
+	    		            }
+	    		            else
+	                            alert(data.answerText);
+	    			},
+	    			error: function(data){
+	    				alert("Произошла ошибка во время ajax запроса "+url);
+	    			}
+	    		});
+	       }
+	   }
      return false;
     });
 

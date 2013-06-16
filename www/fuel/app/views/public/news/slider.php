@@ -1,5 +1,5 @@
-<div id="ld-news-slider">
-    <div id="ldslides" >
+<div id="ld-news-slider" class="ld-slider">
+    <div class="ldslides" >
     <?
     if($articles != null)
     {

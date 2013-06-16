@@ -26,6 +26,17 @@ else{// если добавляется новая страница
 	<input id="editor-uri" style="width:645px;" type="text" value="<?=$pageInfo['uri'];?>">
 	<br/>
 	
+	<label>Добавить страницу в группу:</label>
+	<select id="page-group">
+		<option value='0'>Нет</option>
+	 <?foreach($groups as $group)
+	 		if($pageInfo["group"] == $group["id"])
+	 			printf("<option value='%s' selected>%s</option>", $group["id"],$group["title"]);
+			else
+				printf("<option value='%s'>%s</option>", $group["id"],$group["title"]);
+	 ?>
+	</select>
+	
 	<label class="checkbox">
       <input id="display-page-in-menu" type="checkbox" <? if($pageInfo['display_link'] == 1 || $pageInfo === null) echo "checked";?>> Показывать ссылку на страницу в блоке меню
     </label>

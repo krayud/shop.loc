@@ -844,7 +844,7 @@ header#header .links1 li a{padding:0; text-transform:uppercase; font-size:0.9em;
 
 
    #mmlogo {
-    position: absolute; /* Относительное позиционирование */
+    position: absolute; /* ОІн®±иІҐлј­оҐ п®§и¶Ёо­ЁпїЅоў нЁҐ */
     padding-top: 20px;
     resize:both;
    } 
@@ -852,7 +852,7 @@ header#header .links1 li a{padding:0; text-transform:uppercase; font-size:0.9em;
    #mmlogo { z-index: 999; }
 
    #mmm {
-    position: relative; /* Относительное позиционирование */
+    position: relative; /* ОІн®±иІҐлј­оҐ п®§и¶Ёо­ЁпїЅоў нЁҐ */
     padding-top: 15px;
    } 
 
@@ -882,7 +882,6 @@ header#header .header-wrapper{
   padding:0;
   zoom:1!important;
   z-index:998;
-  background:rgba(255, 255, 255, 0.8);
   position: relative;
 }
 header#header .header-wrapper.menu-over{

@@ -27,9 +27,9 @@ h2 {
     font-family: HeliosExtThin; 
     src: url(http://marinamendelson.artdimension.ru/img_files/helioset.ttf);
    }
+   
+}
 </style>
-
-
 <!-- End Font Replacement -->
 
 <script type="text/javascript">
@@ -130,7 +130,9 @@ h2 {
     <div class="container_12 top-container">
         <div class="grid_12">
 
-<div id="mmlogo"><?=Asset::img('public/logo0000.png');?></div>
+<div id="mmlogo">
+ <a title="Главная страница" href='<?=Uri::base(false);?>'><?=Asset::img('public/logo0000.png');?></a>
+ </div>
 
 
 <div style="float:right">
@@ -173,7 +175,7 @@ h2 {
 
                 <nav class="nav-container" style="float:right">
     <ul class="nav-wide" id="nav" >
-<li class="homepage level-top active"><a class="level-top" title="Главная" href="<?=Uri::Base(false);?>"><span>۩ </span></a></li>   
+<li class="homepage level-top"><a class="level-top" title="Главная" href="<?=Uri::Base(false);?>"><span>۩ </span></a></li>   
      
 <li class="level0 nav-1"><a href="" class="level-top"><span>Наши услуги</span></a>
 <ul class="level0">
@@ -199,7 +201,9 @@ h2 {
             <div class="clear"></div>
         </div>
     </div>
-            <div class="header-slider-container">  
+	
+<? if(Uri::segment(1) == ""):?>
+<div class="header-slider-container">  
     <div class="iosSlider">	
 	<div class="slider">
 		<div class="item right-caption" id="item1">
@@ -212,7 +216,9 @@ h2 {
 	    <div class="prev unselectable"></div>
 	</div>
     </div>
-</div>      
+</div>
+<?endif;?>
+      
 </header>
 
 
@@ -227,6 +233,7 @@ h2 {
 
 <div class="grid_9 col-main "><br><br>
 	<div style="padding-left:120px; padding-right:120px; margin-top:30px; "></div>
+	<? if(isset($pageInfo["contentHeader"])) echo $pageInfo["contentHeader"];?>
 	<?=$pageInfo["content"];?>
 </div>
 
@@ -261,40 +268,16 @@ h2 {
 </section>
 
 
-
+<? if ($polling != ""):?>
 <section class="block-poll">
-    <header>
-        <h2>Свадебное голосование</h2>
-    </header>
-    <form id="pollForm" action="" method="post" onsubmit="return validatePollAnswerIsSelected();">
-        <div class="block-content">
-            <p class="block-subtitle">Как вы планируете провести медовый месяц?</p>
-                        <ul id="poll-answers">
-                                <li>
-                    <input type="radio" name="vote" class="radio poll_vote" id="vote_1" value="1" />
-                    <span class="label"><label for="vote_1">Классический отдых за границей</label></span>
-                </li>
-                                <li>
-                    <input type="radio" name="vote" class="radio poll_vote" id="vote_2" value="2" />
-                    <span class="label"><label for="vote_2">Планируем экзотическое путешествие</label></span>
-                </li>
-                                <li>
-                    <input type="radio" name="vote" class="radio poll_vote" id="vote_3" value="3" />
-                    <span class="label"><label for="vote_3">На море в России или Украине</label></span>
-                </li>
-                                <li>
-                    <input type="radio" name="vote" class="radio poll_vote" id="vote_4" value="4" />
-                    <span class="label"><label for="vote_4">Не поедем в свадебное путешествие</label></span>
-                </li>
-                            </ul>
-            <script type="text/javascript">decorateList('poll-answers');</script>
-                        <div class="actions">
-                <button type="submit" title="Отправить" class="button"><span><span>Отправить</span></span></button>
-            </div>
-        </div>
-    </form>
+<header>
+    <h2>Свадебное голосование</h2>
+</header>
+<div class="block-content" id="polling-content">
+	<?=$polling;?>
+</div>
 </section>
-
+<? endif;?>
 
                             </aside>
 
@@ -304,8 +287,51 @@ h2 {
     </div>
 </div>
 
+<div id="services-slider-block" class="slider-block">
+<div id="ld-services-slider" class="ld-slider">
+    <div class="ldslides" >
 
-<div id="news-slider-block">
+    		<div class='ldslide'>
+	    		<div class='slideWrapper'>
+					<a href='#'><img src='http://s3.goodfon.ru/wallpaper/previews/389844-n.jpg'/></a><br/>
+					<span class='slideTitle'><a href='#'>Название</a></span><br/>
+				</div>
+    	   </div>
+		   
+		   <div class='ldslide'>
+	    		<div class='slideWrapper'>
+					<a href='#'><img src='http://s1.goodfon.ru/wallpaper/previews/382811-n.jpg'/></a><br/>
+					<span class='slideTitle'><a href='#'>Название</a></span><br/>
+				</div>
+    	   </div>
+		   
+		   <div class='ldslide'>
+	    		<div class='slideWrapper'>
+					<a href='#'><img src='http://s5.goodfon.ru/wallpaper/previews/367618-n.jpg'/></a><br/>
+					<span class='slideTitle'><a href='#'>Название</a></span><br/>
+				</div>
+    	   </div>
+		   
+		   <div class='ldslide'>
+	    		<div class='slideWrapper'>
+					<a href='#'><img src='http://s4.goodfon.ru/wallpaper/previews/412016-n.jpg'/></a><br/>
+					<span class='slideTitle'><a href='#'>Название</a></span><br/>
+				</div>
+    	   </div>
+		   
+		   <div class='ldslide'>
+	    		<div class='slideWrapper'>
+					<a href='#'><img src='http://s3.goodfon.ru/wallpaper/previews-middle/458274.jpg'/></a><br/>
+					<span class='slideTitle'><a href='#'>Название</a></span><br/>
+				</div>
+    	   </div>
+
+    </div>
+</div>
+<div class="clear"></div>
+</div>
+
+<div id="news-slider-block" class="slider-block">
   <h2><a href="<?=Uri::base(false)?>news">Новости</a></h2>
     <div id="newsTitleDeliver"><div >&nbsp;</div></div><br/>
 
@@ -341,6 +367,8 @@ E-mail: mmendelson@mail.ru
 <a href="<?=Uri::base(false);?>"><img style="padding: 0px 15px 0px 0px;" onmouseover="this.src='<?=Uri::base(false);?>assets/img/public/oks.png';" onmouseout="this.src='<?=Uri::base(false);?>assets/img/public/ok.png';" src="<?=Uri::base(false);?>assets/img/public/ok.png" width="30" height="30" alt=""></a>
 <a href="<?=Uri::base(false);?>"><img style="padding: 0px 15px 0px 0px;" onmouseover="this.src='<?=Uri::base(false);?>assets/img/public/fs.png';" onmouseout="this.src='<?=Uri::base(false);?>assets/img/public/f.png';" src="<?=Uri::base(false);?>assets/img/public/f.png" width="30" height="30" alt=""></a>
 <a href="<?=Uri::base(false);?>"><img style="padding: 0px 15px 0px 0px;" onmouseover="this.src='<?=Uri::base(false);?>assets/img/public/ts.png';" onmouseout="this.src='<?=Uri::base(false);?>assets/img/public/t.png';" src="<?=Uri::base(false);?>assets/img/public/t.png" width="30" height="30" alt=""></a>
+<br/><br/>
+<?=$questionForm;?>
 </center>
       </div>
 
@@ -352,47 +380,11 @@ E-mail: mmendelson@mail.ru
 
 
  <?=$static_links_footer_block;?>
+ 
 
 
 <div style="width:250px; padding-right:10px; float:right;"  class="grid_3 alpha">   
-    <h3>ВОЗНИКЛИ ВОПРОСЫ?<span></span></h3>
-    <div class="contacts-footer-content">
-        <form action="" id="contactForm" method="post">
-            <ul class="form-list">
-                <li class="fields">
-                    <div class="field">
-                        <label for="name" class="required"><em>*</em>Ваше имя</label>
-                        <div class="input-box">
-                            <input name="name" id="name" placeholder="Ваше имя" title="Ваше имя" value class="input-text required-entry" type="text">
-                        </div>
-                    </div>
-                    <div class="field">
-                        <label for="email" class="required"><em>*</em>Email</label>
-                        <div class="input-box">
-                            <input name="email" id="email" placeholder="Email" title="Email" value class="input-text required-entry validate-email" type="text">
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <label for="telephone">Контактный телефон</label>
-                    <div class="input-box">
-                        <input name="telephone" id="telephone" placeholder="Контактный телефон" title="Контактный телефон" value class="input-text" type="text">
-                    </div>
-                </li>
-                <li class="wide">
-                    <label for="comment" class="required"><em>*</em>Ваш вопрос</label>
-                    <div class="input-box">
-                        <textarea name="comment" id="comment" placeholder="Ваш вопрос" title="Ваш вопрос" class="required-entry input-text" cols="5" rows="3"></textarea>
-                    </div>
-                </li>
-            </ul>           
-            <div class="buttons-set">
-                <p class="required">* Required Fields</p>
-                <input type="text" name="hideit" id="hideit" value style="display:none !important;">
-                <button type="submit" title="Отправить" class="button"><span><span>Отправить</span></span></button>
-            </div>
-        </form>
-    </div>
+
 </div>
 
 <div class="clear"></div>

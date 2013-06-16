@@ -1,0 +1,23 @@
+.polling-result{
+	width: 300px;
+}
+
+.polling-bg{
+	height: 20px;
+	background-color: #d2d2d2;
+}
+
+.polling-line{
+	height: 20px;
+	background-color:#ff0030;
+	text-align: center;
+
+}
+.polling-percents{
+	height: 20px;
+	font-size: 15px;
+	color:#fff;
+	text-align: center;
+	position: relative;
+	top: -20px;
+}

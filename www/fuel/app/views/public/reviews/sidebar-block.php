@@ -16,7 +16,7 @@
 ?>
 <center><h2><b><a href="<?=Uri::base(false)?>trends/article/id/<?=$article['id'];?>"><? echo $article['title'];?></a></b></h2></center>
 <br>
-<img src="<?=Uri::base(false).$article['img'];?>">
+<img style="max-width: 300px; max-height: 200px;" src="<?=Uri::base(false).$article['img'];?>">
 <br><br>
 <p class="empty" align="justify">
 

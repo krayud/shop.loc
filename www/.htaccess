@@ -2,6 +2,10 @@
 # SetEnv FUEL_ENV production
 AddDefaultCharset UTF-8
 php_value date.timezone Europe/Moscow
+
+php_flag display_errors on
+php_value error_reporting E_ERROR 
+
 <IfModule mod_rewrite.c>
 
     # Make sure directory listing is disabled
