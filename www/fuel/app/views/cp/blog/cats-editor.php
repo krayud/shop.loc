@@ -14,6 +14,7 @@ $(document).ready(function(){
     $("#delete-select-cats-btn").click(function(){
         var section = $('#blog-section option:selected').val();
         var cat = $('#blog-category option:selected').val();
+
         if(section != 0 && cat > 0 && CatAjax && confirm("Удалить категорию?")){
           var url = "<?=Uri::base(false);?>"+"cp/blog/deletecats";
         	$.ajax({
@@ -81,7 +82,7 @@ $(document).ready(function(){
 	<select id="blog-section">
 		<option value='0'></option>
         <? foreach($blogSections as $section)
-            printf("<option value='%s'>%s</option>",$section['0'], $section['1']);
+            printf("<option value='%s'>%s</option>",$section['section_id'], $section['section_title']);
         ?>
 	</select>
     <input id='ajaxCatLoadUrl' type='hidden' value='<?=Uri::base(false);?>cp/blog/ajaxGetCatList'/>

@@ -1,4 +1,4 @@
-<h1>Все тренды:</h1>
+<div class='page-content-title'>Все тренды:</div>
 <?
 if($articles != null)
 {
@@ -18,8 +18,8 @@ if($articles != null)
 				Uri::base(false)."trends/article/id/".$article["id"],
 				$article["title"],
 				date('d.m.Y',$article['date']),
-				Uri::base(false)."trends/cat/".$article["cats_id"],
-				$article["cats_title"],   
+				Uri::base(false)."trends/cat/".$article["cat_id"],
+				$article["cat_title"],   
 				Uri::base(false).$article["img"],
 				$article["description"]
 			  );

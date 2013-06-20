@@ -20,7 +20,7 @@ function AppendInputStyleJSCSS(basePath){
   tag_head[0].appendChild(tag_js);
 }
 
-var LDUploader = {
+LDUploader = {
     init: function(data){
       this.form = data.form;
       this.inputName = data.inputName;

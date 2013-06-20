@@ -60,7 +60,7 @@ function resizeImg($from, $to, $targetW, $targetH){
 
 			//Находим новую высоту
 			$new_h=ceil($ih/$koe);
-
+				
 			//Если высота получилась меньше $standatrH - ширину оригинала и вырезаем из него картинку размерами $standatrWх$standatrH
 			if($new_h < $standatrH){
 				$newKoef = $standatrH / $new_h;
@@ -71,7 +71,7 @@ function resizeImg($from, $to, $targetW, $targetH){
 				imagecopyresampled($dst, $src, -1*($marginLeft), 0, 0, 0, $w, $standatrH, $iw, $ih);
 			}
 			else{
-				$marginTop = ($ih - $standatrH) / 2;
+				$marginTop = ($new_h - $standatrH) / 2;
 				imagecopyresampled($dst, $src, 0, 0, 0, $marginTop, $standatrW, $new_h, $iw, $ih);
 			}
 
@@ -112,5 +112,5 @@ function resizeImg($from, $to, $targetW, $targetH){
 	return 0;
 }
 
-resizeImg("pic.jpg", "pic_mini.jpg", "300", "200");
+//resizeImg("1.jpg", "pic_mini.jpg", "300", "200");
 ?>

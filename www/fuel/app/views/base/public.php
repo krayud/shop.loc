@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 <? require_once("helpers/cssjsattach.php"); ?>
@@ -141,7 +141,7 @@ h2 {
 		<li class="first"><a href="" title="">Блог</a></li>
 		<li class="first"><a href="" title="">Бутик</a></li>
 		<li><a href="" title="">Школа невест</a></li>
-		<li><a href="" title="">Семейный архив</a></li>
+		<li><a href="<?=Uri::base(false)?>weddings" title="">Семейный архив</a></li>
 		<li class=" last"><a href="" title="" >Wishlist</a></li>
 	</ul>
 
@@ -288,48 +288,56 @@ h2 {
 </div>
 
 <div id="services-slider-block" class="slider-block">
+<div id="news-slider-block" class="slider-block">
+  <h2><a href="<?=Uri::base(false)?>news">Наши услуги</a></h2>
+    <div id="newsTitleDeliver"><div >&nbsp;</div></div><br/>
+
 <div id="ld-services-slider" class="ld-slider">
     <div class="ldslides" >
 
-    		<div class='ldslide'>
-	    		<div class='slideWrapper'>
-					<a href='#'><img src='http://s3.goodfon.ru/wallpaper/previews/389844-n.jpg'/></a><br/>
-					<span class='slideTitle'><a href='#'>Название</a></span><br/>
-				</div>
-    	   </div>
+<div class='ldslide'>
+<div class='slideWrapper'>
+<a href='#'>
+<img style="float: right" onmouseover="this.src='http://marinamendelson.artdimension.ru/img_files/services/1-1.jpg';" onmouseout="this.src='http://marinamendelson.artdimension.ru/img_files/services/1-0.jpg';" src="http://marinamendelson.artdimension.ru/img_files/services/1-0.jpg" />
+</a><br/>
+<span class='slideTitle'><a href='#'>Организация свадьбы</a></span><br/>
+</div>
+</div>
 		   
-		   <div class='ldslide'>
-	    		<div class='slideWrapper'>
-					<a href='#'><img src='http://s1.goodfon.ru/wallpaper/previews/382811-n.jpg'/></a><br/>
-					<span class='slideTitle'><a href='#'>Название</a></span><br/>
-				</div>
-    	   </div>
+
+<div class='ldslide'>
+<div class='slideWrapper'>
+<a href='#'>
+<img style="float: right" onmouseover="this.src='http://marinamendelson.artdimension.ru/img_files/services/2-1.jpg';" onmouseout="this.src='http://marinamendelson.artdimension.ru/img_files/services/2-0.jpg';" src="http://marinamendelson.artdimension.ru/img_files/services/2-0.jpg" />
+</a><br/>
+<span class='slideTitle'><a href='#'>Подача заявления в ЗАГС</a></span><br/>
+</div>
+</div>		   
+
 		   
-		   <div class='ldslide'>
-	    		<div class='slideWrapper'>
-					<a href='#'><img src='http://s5.goodfon.ru/wallpaper/previews/367618-n.jpg'/></a><br/>
-					<span class='slideTitle'><a href='#'>Название</a></span><br/>
-				</div>
-    	   </div>
-		   
-		   <div class='ldslide'>
-	    		<div class='slideWrapper'>
-					<a href='#'><img src='http://s4.goodfon.ru/wallpaper/previews/412016-n.jpg'/></a><br/>
-					<span class='slideTitle'><a href='#'>Название</a></span><br/>
-				</div>
-    	   </div>
-		   
-		   <div class='ldslide'>
-	    		<div class='slideWrapper'>
-					<a href='#'><img src='http://s3.goodfon.ru/wallpaper/previews-middle/458274.jpg'/></a><br/>
-					<span class='slideTitle'><a href='#'>Название</a></span><br/>
-				</div>
-    	   </div>
+<div class='ldslide'>
+<div class='slideWrapper'>
+<a href='#'>
+<img style="float: right" onmouseover="this.src='http://marinamendelson.artdimension.ru/img_files/services/3-1.jpg';" onmouseout="this.src='http://marinamendelson.artdimension.ru/img_files/services/3-0.jpg';" src="http://marinamendelson.artdimension.ru/img_files/services/3-0.jpg" />
+</a><br/>
+<span class='slideTitle'><a href='#'>Выездная регистрация</a></span><br/>
+</div>
+</div>		   
+
+
+<div class='ldslide'>
+<div class='slideWrapper'>
+<a href='#'>
+<img style="float: right" onmouseover="this.src='http://marinamendelson.artdimension.ru/img_files/services/4-1.jpg';" onmouseout="this.src='http://marinamendelson.artdimension.ru/img_files/services/4-0.jpg';" src="http://marinamendelson.artdimension.ru/img_files/services/4-0.jpg" />
+</a><br/>
+<span class='slideTitle'><a href='#'>Ведущие</a></span><br/>
+</div>
+</div>	
 
     </div>
 </div>
 <div class="clear"></div>
-</div>
+</div></div><br>
 
 <div id="news-slider-block" class="slider-block">
   <h2><a href="<?=Uri::base(false)?>news">Новости</a></h2>

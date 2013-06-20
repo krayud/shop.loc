@@ -30,6 +30,7 @@ class Controller_Base_Public extends Controller_Base_Main
 		Module::load('news');
         Module::load('trends');
         Module::load('reviews');
+		Module::load('weddings');
 		Module::load("questions");
 		Module::load("polling");
 		

@@ -1,44 +1,85 @@
 <?
 /**
 * Для создания нового раздела блога необходимо оздать соответствующую папку в modules  и унаследовать данный 
-клас, добавить в $incBlogs новый элемент с именем нового раздела блога
+клас, добавить в БД - blog_section новую запись с назанием раздела и именем модуля
 */
 class Model_Blog extends \Model_Crud {
 
 
+private static $_sectionsName_id = null;
+
+//Построение списка id модулей и их названий
+public static function CreateSectionsIdList(){
+	
+	if(self::$_sectionsName_id === null)
+	{
+		$result = DB::select()->from("blog_sections")->execute()->as_array();		
+		foreach($result as $section)
+			self::$_sectionsName_id[$section["module_name"]] = $section["section_id"];
+	}
+
+}
+
+//Все разделы блога могут полчить свой id в БД
+public static function GetThisSectionId($moduleName){
+	return self::$_sectionsName_id[$moduleName];
+}
+
+
+/*
 //Болги на сайте (именя папок с modules и название блога должны совпадать)
 private static $incBlogs = array(
 	array("news", "Новости"),
     array("trends", "Тренды"),
     array("reviews", "Отзывы"),
 );
+*/
 
 /**
 * Возвращает список подключенныех разделов блога и их названия
 */
 public static function GetBlogSections(){
-	return static::$incBlogs;
+	return DB::select()->from("blog_sections")->execute()->as_array();
 }
 
 /**
-*  Получение информации о записи по её разделу и id
+*  Получение информации о записи по её id
 **/
+public static function GetArticleById($id){
 
-public static function GetArticleBySectionAndId($section, $id){
-
-	$data = DB::select()->from($section)
+	$data = DB::select()->from("blog")
 			->where("id", $id)
 			->execute()->as_array();
 		return $data;
 }
 
 /**
+*  Получение всех записей в разделе (Можно переопределить в наследниках)
+**/
+public static function GetSectionMainPageData($sectionName){
+	
+	$sectionId = self::GetThisSectionId($sectionName);
+	$result = \DB::select()->from('blog')
+		->join("blog_cats")
+		->on("blog_cats.cat_id", "=","blog.cat_id")
+		->where("blog.section_id","=",$sectionId)
+		->order_by('id', 'DESC')
+		->execute()->as_array();
+	return $result;
+
+ }
+ 
+/**
 * Выборка всех категорий из секции
 * @param  $section - секция блога, в которой выбираются категории
 *
 */
 public static function GetCatsInSection($section){
-	return DB::select()->from($section.'_cats')->execute()->as_array();
+	$cats = DB::select()->from("blog_cats")
+	->where("parent_section_id","=",$section)
+	->execute()->as_array();
+
+	return $cats;
 }
 
 /**
@@ -59,21 +100,23 @@ public static function GetAdminBlockData(){
 */
 public static function AddNewArticle($articleData){
 
-	DB::insert($articleData["section"])->columns(array(
+	DB::insert("blog")->columns(array(
+		'section_id',
+		'cat_id',
 	    'title',
 		'img',
 		'description',
 		'text',
 		'date',
-		'cat',
 		'display_in_mini_block'
 	))->values(array(
+		$articleData["section"],
+		$articleData["cat"],
 	    $articleData["title"],
 		$articleData["img"],
 		$articleData["description"],
 		$articleData["text"],
 		time(),
-		$articleData["cat"],
 		$articleData["display_in_mini_block"],
 	))->execute();
 return array('answerCode' => 0, 'answerText' => "Запись добавлена");
@@ -84,12 +127,13 @@ return array('answerCode' => 0, 'answerText' => "Запись добавлена
 */
 public static function UpdateArticle($articleData){
 
-	DB::update($articleData["section"])->set(array(
+	DB::update("blog")->set(array(
+	'section_id' => $articleData["section"],
+	'cat_id' => $articleData["cat"],
     'title' => $articleData["title"],
     'img' => $articleData["img"],
     'description' => $articleData["description"],
     'text' => $articleData["text"],
-    'cat' => $articleData["cat"],
     'display_in_mini_block' => $articleData["display_in_mini_block"],
 ))->where("id", $articleData["editId"])->execute();
 
@@ -99,9 +143,9 @@ return array('answerCode' => 0, 'answerText' => "Запись обновлена
 /**
 * Удаление записи в блоге
 */
-public static function DeleteArticle($section, $id){
+public static function DeleteArticle($id){
 
-   DB::delete($section)->where("id", $id)->execute();
+   DB::delete("blog")->where("id", $id)->execute();
         return array('answerCode' => 0, 'answerText' => "Запись удалена");
 }
 
@@ -110,10 +154,18 @@ public static function DeleteArticle($section, $id){
 */
 public static function AddCat($section, $newCatname){
 
-      $result = DB::select('*')->from($section."_cats")->where("cats_title",$newCatname)->execute();
+      $result = DB::select('*')->from("blog_cats")
+	  ->where("cat_title",$newCatname)
+	  ->execute();
+	  
       $num_rows = count($result);
-      if($num_rows == 0)  {
-        list($insert_id, $rows_affected) = DB::insert($section."_cats")->columns(array('cats_title'))->values(array($newCatname))->execute();
+	  
+      if($num_rows == 0){
+        list($insert_id, $rows_affected) = DB::insert("blog_cats")
+		->columns(array('cat_title', 'parent_section_id'))
+		->values(array($newCatname, $section))
+		->execute();
+		
          return array('answerCode' => 0, 'answerText' => "Категория добавлена", "insertedId" => $insert_id);
       }
       else
@@ -126,10 +178,17 @@ public static function AddCat($section, $newCatname){
 */
 public static function DeleteCats($section, $cat){
 
-      $result = DB::select('*')->from($section)->where("cat",$cat)->execute();
+      $result = DB::select('*')->from("blog")
+	  ->where("section_id", "=", $section)
+	  ->and_where("cat_id", "=", $cat)
+	  ->execute();
+	  
       $num_rows = count($result);
       if($num_rows == 0)  {
-              DB::delete($section."_cats")->where("cats_id", $cat)->execute();
+              DB::delete("blog_cats")
+			  ->where("parent_section_id", $section)
+			  ->and_where("cat_id", "=", $cat)
+			  ->execute();
          return array('answerCode' => 0, 'answerText' => "Категория удалена");
       }
       else
@@ -142,41 +201,14 @@ public static function DeleteCats($section, $cat){
 */
   public static function GetArticlesList(){
     //TODO: сделать автоматическую генерация всех записей исходя из данных  $incBlogs
-    $articlesNews = \DB::select()->from('news')
-  		->join('news_cats')
-  		->on('news.cat', '=', 'news_cats.cats_id')
+
+    $result = \DB::select()->from('blog')
+  		->join('blog_cats')
+  		->on('blog_cats.cat_id', '=', 'blog.cat_id')
+		->join('blog_sections')
+		->on('blog_sections.section_id', '=', 'blog.section_id')
   		->order_by('id', 'DESC')
   		->execute()->as_array();
-
-    $articlesTrends = \DB::select()->from('trends')
-  		->join('trends_cats')
-  		->on('trends.cat', '=', 'trends_cats.cats_id')
-  		->order_by('id', 'DESC')
-  		->execute()->as_array();
-
-    $articlesReviews = \DB::select()->from('reviews')
-  		->join('reviews_cats')
-  		->on('reviews.cat', '=', 'reviews_cats.cats_id')
-  		->order_by('id', 'DESC')
-  		->execute()->as_array();
-
-    $result = array(
-        "news" => array("section" => "news",
-                        "sectionTitle" => "Новости",
-                        "articles" => $articlesNews),
-
-        "trends" => array("section" => "trends",
-                        "sectionTitle" => "Тренды",
-                        "articles" => $articlesTrends),
-
-        "reviews" => array("section" => "reviews",
-                        "sectionTitle" => "Отзывы",
-                        "articles" => $articlesReviews),
-        //тут добавить другие разделы блона
-    );
-
-    // $result["sector"] = "новости";
-     //$result["articles"] = $articles;
 
       return $result;
 	}

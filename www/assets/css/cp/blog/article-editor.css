@@ -23,6 +23,12 @@ max-height:90px;
 	width:620px;
 }
 
+
+#article-photos, #article-video,#article-review{
+	width: 645px;
+	height: 200px;
+}
+
 .ajax-loading{
 	float:left; 
 	margin:7px 0px 0px 10px;

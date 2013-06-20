@@ -7,10 +7,12 @@ class Controller_Cp_Main extends Controller_Base_Controlpanel
 		
 		Module::load("polling");
 		Module::load("questions");
+		Module::load("weddings");
 		
 		//Генерация сайтбара
 		$barModules["static"] = $this->GenerateSiteBarBlock(Model_Static::GetAdminBlockData());
 		$barModules["blog"] = $this->GenerateSiteBarBlock(Model_Blog::GetAdminBlockData());
+		$barModules["weddings"] = $this->GenerateSiteBarBlock(\Weddings\Model_Weddings::GetAdminBlockData());
 		$barModules["polling"] = $this->GenerateSiteBarBlock(\Polling\Model_Polling::GetAdminBlockData());
 		$barModules["questions"] = $this->GenerateSiteBarBlock(\Questions\Model_Questions::GetAdminBlockData());
 		$barModules["users"] = $this->GenerateSiteBarBlock(\Users\Model_Users::GetAdminBlockData());

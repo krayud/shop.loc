@@ -18,11 +18,11 @@
 <br>
 <img style="max-width: 300px; max-height: 200px;" src="<?=Uri::base(false).$article['img'];?>">
 <br><br>
-<p class="empty" align="justify">
-
-<span style="font-size: 16px; font-family: Helios; ">
-<i><?=$article['text'];?></i>
-</span></p>
+<p class="empty">
+	<span style="font-family: Helios;">
+		<p style="text-align: justify;"><?=$article['description'];?></p>
+	</span>
+</p>
 <? } ?>
         </div>
 </section>

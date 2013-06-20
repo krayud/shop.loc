@@ -4,7 +4,7 @@ var articleEditorAjaxEnable = true;
 
 	$("#editor-send-btn").click(function(){
 		tinyMCE.triggerSave(); // Сохранение исходного кода в textarea
-		
+
 		var url = $("form[name=article-editor]").attr("action");
 		var editId = $("#editArticleId").val();
 		var section = $("#blog-section option:selected").val();
@@ -29,17 +29,10 @@ var articleEditorAjaxEnable = true;
 						beforeSend:beforeAddPage,
 						complete:afterAddPage,
 					    success: function(data){
-								alert(data.answerText);
 								if(data.answerCode == 0)
 									location.reload();
-								/*if(editId == ''){
-									$("#editor-title").val("");
-									$("#editor-content-title").val("");
-									$("#editor-uri").val("");
-									$("#editor-link-text").val("");
-									tinyMCE.activeEditor.setContent('');
-								}
-								*/
+								else
+									alert(data.answerText);
 						},
 						error: function(data){
 							alert("Произошла ошибка во время ajax запроса "+url);
@@ -49,7 +42,7 @@ var articleEditorAjaxEnable = true;
 		}
 		else
 			alert("Заполните необходимые поля");
-		
+
 	});
 	function ShowAjaxLoading(display){
 		if(display == true)

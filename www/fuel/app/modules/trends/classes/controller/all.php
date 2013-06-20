@@ -7,7 +7,7 @@ class Controller_All extends \Controller_Base_Public{
 	
 	array_push($this->_extraCss, "cp/blog/all");
 	$pageInfo["title"] = "Все тренды";
-	$pageData = Model_Trends::GetMainPageData();
+	$pageData = Model_Trends::GetSectionMainPageData("trends");
 	$pageInfo["content"] = \View::forge("all", array("articles" => $pageData));
 	$this->template->pageInfo = $pageInfo;
   }

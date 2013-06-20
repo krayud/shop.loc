@@ -11,3 +11,11 @@ visibility: hidden;
 .ajax-loading-visible{
 visibility: visible;
 }
+
+.weddings-description{
+	float:left; margin:25px 0px 0px 10px;
+}
+
+.weddings-description a{
+	text-decoration: none;
+}

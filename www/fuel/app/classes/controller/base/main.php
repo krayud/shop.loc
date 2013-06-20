@@ -21,10 +21,13 @@ class Controller_Base_Main extends Controller_Template
         parent::before();
         Config::load($this->_baseConfigFile,'baseConfig'); // Подгрузка файла основных настроек системы
         $this->LoadLang();
-		//Загрузка модулей и их инициализация
+		//Загрузки модулей и инициализации
 		$this->_modules["users"] = $this->GetModule('users','main'); //Создание объекта типа users
 		$this->_modules["users"]->Init(); //Инициализация
 		$this->_userInfo = $this->_modules["users"]->GetUserInfo();
+		
+		//Построение списка id - moduleName для блога
+		Model_Blog::CreateSectionsIdList();
     }
 
     public function after($response){

@@ -7,7 +7,7 @@ class Controller_All extends \Controller_Base_Public{
 	
 	array_push($this->_extraCss, "cp/blog/all");
 	$pageInfo["title"] = "Все отзывы";
-	$pageData = Model_Reviews::GetMainPageData();
+	$pageData = Model_Reviews::GetSectionMainPageData("reviews");
 	$pageInfo["content"] = \View::forge("all", array("articles" => $pageData));
 	$this->template->pageInfo = $pageInfo;
   }

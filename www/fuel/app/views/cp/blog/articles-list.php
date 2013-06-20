@@ -1,3 +1,8 @@
+<h4>Список всех записей в блоге</h4>
+<?
+if($articles != null){
+?>
+
 <script>
   $(document).ready(function(){
      var DeleteArticleEnable = true;
@@ -39,35 +44,38 @@
 
 });
 </script>
-<h4>Список всех записей в блоге</h4>
+
 <div class="ajax-loading" id="article-list-ajax"></div><br/>
 <table class="table table-bordered table-hover">
 	<thead>
     <tr>
-      <th>ID</th>
-      <th>Заголовок</th>
-      <th>Изображение</th>
-      <th>Краткое описание</th>
+      <th style="width: 30px;">ID</th>
+      <th style="width: 200px;">Заголовок</th>
+      <th style="width: 140px;">Изображение</th>
+      <th style="width: 500px;">Краткое описание</th>
       <th>Раздел</th>
       <th>Категория</th>
-	  <th>Настройки</th>
+	  <th style="width: 160px;">Настройки</th>
     </tr>
   </thead>
   <tbody>
   <?
-foreach($articles as $sector)
-    foreach($sector["articles"] as $article)
+
+    foreach($articles as $article)
     {
     	echo "<tr>";
           echo "<td>".$article["id"]."</td>";
-          echo "<td>".$article["title"]."</td>";
+		 printf("<td><a href='%s'>%s</a></td>",
+		 		Uri::base(false).$article["module_name"]."/article/id/".$article["id"],
+				$article["title"]
+		 );
           echo "<td><img style='max-width:135px; max-height:90px;' src='".Uri::base(false).$article["img"]."'/></td>";
     	  echo "<td>".$article["description"]."</td>";
-          echo "<td>".$sector["sectionTitle"]."</td>";
-          echo "<td>".$article["cats_title"]."</td>";
+          echo "<td>".$article["section_title"]."</td>";
+          echo "<td>".$article["cat_title"]."</td>";
           echo "<td>";
-          printf("<a href='%s'>Изменить</a>",Uri::base(false)."cp/blog/edit/".$sector["section"]."/".$article["id"]);
-          printf(" | <a href='#' id='%s' class='delete-article-btn'>Удалить</a>", Uri::base(false)."cp/blog/delete/".$sector["section"]."/".$article["id"]);
+          printf("<a href='%s'>Изменить</a>",Uri::base(false)."cp/blog/edit/".$article["id"]);
+          printf(" | <a href='#' id='%s' class='delete-article-btn'>Удалить</a>", Uri::base(false)."cp/blog/delete/".$article["id"]);
           echo "</td>";
         echo "</tr>";
     }
@@ -75,3 +83,8 @@ foreach($articles as $sector)
 ?>
   </tbody>
 </table>
+<?
+}
+else
+	echo "<p>В блоге нет ни одной записи</p>";
+?>

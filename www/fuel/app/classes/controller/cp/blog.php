@@ -52,13 +52,13 @@ public function action_ajaxGetCatList()
 	}
 
 // Форма редактирования записи в блоге
-	public function action_edit($section = null, $articleId = null)
+	public function action_edit($articleId = null)
 	{
-	    if($articleId === null || $section === null)
+	    if($articleId === null)
 			$this->ShowErrorPage("404");
 
-         $articleInfo = Model_Blog::GetArticleBySectionAndId($section, $articleId);
-         $articleInfo[0]["section"] = $section; // Добавляет раздел к остальной информации о записи
+         $articleInfo = Model_Blog::GetArticleById($articleId);
+
          if($articleInfo == null)
 			$this->ShowErrorPage("404");
 
@@ -73,7 +73,7 @@ public function action_ajaxGetCatList()
 		$this->template->pageTitle = "Редактирование записи в блоге";
 
 		$blogSections = Model_Blog::GetBlogSections();
-        $cats = Model_Blog::GetCatsInSection($section);
+        $cats = Model_Blog::GetCatsInSection($articleInfo[0]["section_id"]);
 		$this->template->pageContent = View::forge("cp/blog/article-editor",
 													array("blogSections" => $blogSections,
                                                             "articleInfo" => $articleInfo,
@@ -111,14 +111,14 @@ public function action_ajaxGetCatList()
 * Удаление записи в блоге через ajax
 *
 */
-	public function action_delete($section = null, $id = null){
+	public function action_delete($id = null){
 		if(Input::is_ajax()){
 			$resultJSON = null;
 
-            if($section == null || $id == null)
+            if($id == null)
                 $this->ShowErrorPage("404");
 
-			$resultJSON = Model_Blog::DeleteArticle($section, $id);
+			$resultJSON = Model_Blog::DeleteArticle($id);
 			return json_encode($resultJSON);
 			exit();
 		}

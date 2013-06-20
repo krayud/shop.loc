@@ -14,7 +14,8 @@ class Controller_Article extends \Controller_Base_Public{
 		$this->ShowErrorPage("404");
 	
 	$pageInfo["title"] = $article[0]['title'];
-	$pageInfo["content"] = \View::forge("fullarticle", array("articleInfo" => $article), false);
+	$pageInfo["content"] = \View::forge("fullarticle", array("articleInfo" => $article,
+										"userInfo" => $this->_userInfo), false);
 	$this->template->pageInfo = $pageInfo;
   }
 }

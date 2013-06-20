@@ -26,7 +26,7 @@ $(document).ready(function(){
 				$("#img-loading-ajax").removeClass("ajax-loading-visible");
             },
         });
-	
+
 function SetMiniSrc(src){
 	$(".article-mini-img, .article-big-img").attr("src",src);
 	$("#big-img-src").val(src);
@@ -81,11 +81,17 @@ else{// если добавляется новая запись
 	<label>Раздел:</label>
 	<select id="blog-section">
 		<option value='0'></option>
-	 <?foreach($blogSections as $section)
-        if($articleInfo != null && $section[0] == $articleInfo["section"])
-	 		printf("<option value='%s' selected>%s</option>", $section[0],$section[1]);
+	 <?
+	 foreach($blogSections as $section)
+        if($articleInfo != null && $section["section_id"] == $articleInfo["section_id"])
+	 		printf("<option value='%s' selected>%s</option>", 
+					$section["section_id"],
+					$section["section_title"]
+			);
         else
-            printf("<option value='%s'>%s</option>", $section[0],$section[1]);
+            printf("<option value='%s'>%s</option>", 
+					$section["section_id"],
+					$section["section_title"]);
 	 ?>
 	</select>
 	<input id='ajaxCatLoadUrl' type='hidden' value='<?=Uri::base(false);?>cp/blog/ajaxGetCatList'/>
@@ -96,10 +102,16 @@ else{// если добавляется новая запись
         if(isset($cats))
         foreach($cats as $cat)
         {
-          if($articleInfo != null && $cat["cats_id"] == $articleInfo["cat"])
-              printf("<option value='%s' selected>%s</option>",$cat["cats_id"], $cat["cats_title"]);
+          if($articleInfo != null && $cat["cat_id"] == $articleInfo["cat_id"])
+              printf("<option value='%s' selected>%s</option>",
+					  $cat["cat_id"], 
+					  $cat["cat_title"]
+				);
           else
-              printf("<option value='%s'>%s</option>",$cat["cats_id"], $cat["cats_title"]);
+              printf("<option value='%s'>%s</option>",
+					  $cat["cat_id"], 
+					  $cat["cat_title"]
+				);
         }
         else
             printf("<option value='0'></option>");

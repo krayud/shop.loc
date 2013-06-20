@@ -6898,6 +6898,31 @@ header#header .nav-container.mobile,
  * Skin
  */
 
+.mini-block-title a{
+	text-decoration: none;
+}
+
+.cat-data{
+	font-style: italic;
+}
+
+.cat-data a{
+	text-decoration: none;
+}
+
+.page-content-header{
+	font-size:15px;
+}
+
+.page-content-header .a_active{
+	color: red;
+}
+
+.page-content-header a{
+	text-decoration: none;
+	margin: 0px 3px 0px 3px;
+}
+
 #news-slider-block h2{
     margin-bottom:14px;
     font-size:2em;

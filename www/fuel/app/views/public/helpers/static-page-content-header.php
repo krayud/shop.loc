@@ -1,13 +1,21 @@
 <? 
 if($linkedPages != null){
-	echo "<div>";
-	foreach($linkedPages as $link)
-		if($link["id"] == $id)
-			printf("<span style='color:red;'>%s</span> &nbsp&nbsp", $link["link_text"]);
-			
+	echo "<div class='page-content-header'>";
+	
+	//foreach($linkedPages as $link)
+	$pageCount = count($linkedPages);
+	for($i = 0; $i < $pageCount; $i++){
+		if($linkedPages[$i]["id"] == $id)
+			printf("<a href='%s' class='a_active'>%s</a> ",
+						Uri::base(false)."page/".$linkedPages[$i]["uri"],
+						 $linkedPages[$i]["link_text"]);
 		else
-			printf("<a href='%s'>%s</a> &nbsp&nbsp", 
-					Uri::base(false)."page/".$link["uri"], $link["link_text"]);
+			printf("<a href='%s'>%s</a> ", 
+					Uri::base(false)."page/".$linkedPages[$i]["uri"], $linkedPages[$i]["link_text"]);
+					
+		if($i != $pageCount -1)
+		echo " • ";
+	}
 					
 	echo "</div><br/>";
 }
