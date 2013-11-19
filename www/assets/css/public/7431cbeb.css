@@ -167,9 +167,7 @@ body.page-popup{background-color:#fff; padding:18px;}
 
 a {  
     text-decoration:none;
-    -moz-transition: all 200ms ease; -webkit-transition: all 200ms ease; -o-transition: all 200ms ease; transition: all 200ms ease;
     color:#909090;
-	text-decoration:underline;
 }
 a:hover {
     text-decoration:none;

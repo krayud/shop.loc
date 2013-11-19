@@ -1,4 +1,4 @@
-select, #article-title, #article-description{
+select, #article-title, #article-description, #article-review{
 	width: 645px;
 	max-width:645px;
 }
@@ -24,7 +24,7 @@ max-height:90px;
 }
 
 
-#article-photos, #article-video,#article-review{
+#article-photos, #article-video{
 	width: 645px;
 	height: 200px;
 }

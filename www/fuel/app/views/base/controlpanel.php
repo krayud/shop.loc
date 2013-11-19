@@ -63,24 +63,6 @@
 		print($moduleBar);
 	?>
 
-
-
-<li>
-<a href=""><i class="icon-shopping-cart"></i>Интернет-магазин</a>
-<ul>
-<li>
-<a href="#"><i class="icon-pencil"></i>Добавить товар</a>
-</li>
-<li>
-<a href="#"><i class="icon-align-justify"></i>Категории</a>
-</li>
-<li>
-<a href="#"><i class="icon-th"></i>Обзор всех товаров</a>
-</li>
-</ul>
-</li>
-
-
 <li>
 <a href=""><i class="icon-move"></i>Расширения</a>
 <ul>

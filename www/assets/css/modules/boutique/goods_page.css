@@ -1,0 +1,74 @@
+#goods-block{
+
+}
+#goods-photo{
+	float: left;
+	width: 340px;
+	padding-right: 10px;
+}
+
+#goods-big-photo{
+	width: 340px;
+}
+
+#goods-mini-block{
+	margin: 10px 0px 10px 0px;
+	width: 340px;
+}
+
+.goods-mini-img{
+	float: left;
+    max-height: 50px;
+	margin-right:10px;
+	padding: 3px;
+	border: solid 1px #ddd;
+	cursor: pointer;
+}
+
+.goods-mini-img:hover{
+	border: solid 1px pink;
+}
+
+#goods-info{
+	float: left;
+	width: 550px;
+	padding: 0px 10px;
+}
+
+#goods-title{
+	font-size: 18px;
+	margin-bottom: 15px;
+	color: #474747;
+}
+
+#goods-price, #goods-price-old-price{
+	float: left;
+	padding-top: 5px;
+	font-size: 20px;
+	color: #ED9A50;
+}
+#goods-price-old-price{
+   	float: left;
+	padding-top: 5px;
+	font-size: 12px;
+	color: red;
+}
+
+#goods-price-unit{
+	top: -10px;
+	position: relative;
+	font-size: 13px;
+}
+
+
+.goods-basket-btn{
+	float:right;
+	cursor: pointer;
+}
+
+#goods-description{
+	margin-top: 10px;
+	text-align: justify;
+}
+
+

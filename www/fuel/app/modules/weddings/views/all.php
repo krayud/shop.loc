@@ -16,7 +16,7 @@ if($articles != null)
 				<div class='clear'></div>
 				",
 				Uri::base(false).$article["img"],
-				Uri::base(false)."weddings/article/id/".$article["id"],
+				Uri::base(false)."weddings/id/".$article["id"],
 				$article["title"] 
 			  );
 		echo "</div>";	

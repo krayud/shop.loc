@@ -52,4 +52,5 @@ class Controller_Main extends \Controller_Base_Module{
 		return $this->_GenerateLoginForm();
 	
   }
+ 
 }

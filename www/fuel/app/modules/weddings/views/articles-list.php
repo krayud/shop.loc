@@ -44,15 +44,14 @@ if($articles != null){
 });
 </script>
 
-<div class="ajax-loading" id="article-list-ajax"></div><br/>
+<div class="ajax-loading" id="article-list-ajax"></div>
+<br/>
 <table class="table table-bordered table-hover">
 	<thead>
     <tr>
       <th style="width: 30px;">ID</th>
       <th style="width: 200px;">Заголовок</th>
       <th style="width: 140px;">Изображение</th>
-      <th style="width: 500px;">Ссылки на фотографии</th>
-      <th>Ссылки на видео</th>
 	  <th style="width: 160px;">Настройки</th>
     </tr>
   </thead>
@@ -68,8 +67,6 @@ if($articles != null){
 				$article["title"]
 		 );
           echo "<td><img style='max-width:135px; max-height:90px;' src='".Uri::base(false).$article["img"]."'/></td>";
-    	  echo "<td>".$article["photo"]."</td>";
-          echo "<td>".$article["video"]."</td>";
           echo "<td>";
           printf("<a href='%s'>Изменить</a>",
 		  		Uri::base(false)."cp/weddings/edit/".$article["id"]);

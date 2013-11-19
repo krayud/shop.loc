@@ -5,29 +5,29 @@ class Controller_Ajax extends \Controller_Base_Module{
 	
 /**
 * Метод регистрации пользователя через ajax
-* 
+*
 */
 	public function action_reg(){
-	
+
 		if(\Input::is_ajax())
-		{	
+		{
 			$login = $_POST["login"];
 			$password = $_POST["password"];
-			
+
 			$login = self::ClearInputData($login);
 			$password = self::ClearInputData($password);
-		
+
 			$resultJSON = null;
 			if(strlen($password) >= 6 && filter_var($login, FILTER_VALIDATE_EMAIL))
 				$resultJSON = Model_Users::Registration($login, $password);
 			else
 				$resultJSON = array('answerCode' => 1, 'answerText' => 'Неверно заполнена форма ');
-			
+
 			return json_encode($resultJSON);
 		}
 		else
 			$this->ShowErrorPage("404");
-		
+
 	}
 /**
 * Метод авторизации пользователя через ajax
@@ -64,7 +64,7 @@ class Controller_Ajax extends \Controller_Base_Module{
 	public function action_logout(){
 	
 		if(\Input::is_ajax())
-		{	
+		{
 			\Config::load("users::base.ini", "base");
 			$cookieName = \Config::get("base.cookie.userTokenName");
 			$resultJSON = array('answerCode' => 0, 'cookieName' => $cookieName);
@@ -73,7 +73,7 @@ class Controller_Ajax extends \Controller_Base_Module{
 		else
 			$this->ShowErrorPage("404");
 		
-	}	
+	}
 
 /**
 * Очистка входящих данных от лишних пробелов, тегов, sql запросов

@@ -138,11 +138,10 @@ h2 {
 <div style="float:right">
 <div class="menu-button"></div>
 	<ul class="links">
-		<li class="first"><a href="" title="">Блог</a></li>
-		<li class="first"><a href="" title="">Бутик</a></li>
 		<li><a href="" title="">Школа невест</a></li>
+		<li class="first"><a href="<?=Uri::base(false)?>blog" title="">Блог</a></li>
 		<li><a href="<?=Uri::base(false)?>weddings" title="">Семейный архив</a></li>
-		<li class=" last"><a href="" title="" >Wishlist</a></li>
+
 	</ul>
 
 <br>
@@ -176,8 +175,11 @@ h2 {
                 <nav class="nav-container" style="float:right">
     <ul class="nav-wide" id="nav" >
 <li class="homepage level-top"><a class="level-top" title="Главная" href="<?=Uri::Base(false);?>"><span>۩ </span></a></li>   
-     
-<li class="level0 nav-1"><a href="" class="level-top"><span>Наши услуги</span></a>
+     <li class="level0 nav-4 last level-top"><a href="" class="level-top"><span>О нас</span></a></li>   
+<li class="level0 nav-5 last level-top"><a href="" class="level-top"><span>Подготовка к свадьбе</span></a></li>   
+<li class="level0 nav-5 last level-top"><a href="" class="level-top"><span>Отзывы</span></a></li>  
+<li class="level0 nav-5 last level-top"><a href="" class="level-top"><span>Наши молодожёны</span></a></li>  
+<li class="level0 nav-1"><a href="" class="level-top"><span>Услуги</span></a>
 <ul class="level0">
 <?=$static_links_block;?>
 </ul>
@@ -187,13 +189,13 @@ h2 {
 
 
 
-<li class="level0 nav-4 last level-top"><a href="" class="level-top"><span>Школа невест</span></a></li>   
 
 
 
-<li class="level0 nav-5 last level-top"><a href="" class="level-top"><span>Интересные статьи</span></a></li>   
 
-<li class="level0 nav-6 last level-top"><a href="" class="level-top"><span>Наши работы</span></a></li>   
+
+
+
 
 </nav>
                                <div class="clear"></div>
@@ -367,21 +369,20 @@ E-mail: mmendelson@mail.ru
 </center>
 </p></div> </div> 
 <br>
-    <h3>МЫ В СОЦИАЛЬНЫХ СЕТЯХ<span></span></h3>
-    <div class="title-divider"><span>&nbsp;</span></div>
-    <div class="custom-footer-content">
- <br><center>
-<a href="<?=Uri::base(false);?>"><img style="padding: 0px 15px 0px 0px;" onmouseover="this.src='<?=Uri::base(false);?>assets/img/public/vks.png';" onmouseout="this.src='<?=Uri::base(false);?>assets/img/public/vk.png';" src="<?=Uri::base(false);?>assets/img/public/vk.png" width="30" height="30" alt=""></a>
-<a href="<?=Uri::base(false);?>"><img style="padding: 0px 15px 0px 0px;" onmouseover="this.src='<?=Uri::base(false);?>assets/img/public/oks.png';" onmouseout="this.src='<?=Uri::base(false);?>assets/img/public/ok.png';" src="<?=Uri::base(false);?>assets/img/public/ok.png" width="30" height="30" alt=""></a>
-<a href="<?=Uri::base(false);?>"><img style="padding: 0px 15px 0px 0px;" onmouseover="this.src='<?=Uri::base(false);?>assets/img/public/fs.png';" onmouseout="this.src='<?=Uri::base(false);?>assets/img/public/f.png';" src="<?=Uri::base(false);?>assets/img/public/f.png" width="30" height="30" alt=""></a>
-<a href="<?=Uri::base(false);?>"><img style="padding: 0px 15px 0px 0px;" onmouseover="this.src='<?=Uri::base(false);?>assets/img/public/ts.png';" onmouseout="this.src='<?=Uri::base(false);?>assets/img/public/t.png';" src="<?=Uri::base(false);?>assets/img/public/t.png" width="30" height="30" alt=""></a>
-<br/><br/>
-<?=$questionForm;?>
-</center>
-      </div>
+
 
                                </div>
 
+<div class="grid_2" style="width:260px;">
+    <h3>МЫ В СОЦИАЛЬНЫХ СЕТЯХ<span></span></h3>
+    <div class="title-divider"><span>&nbsp;</span></div>
+    <div class="custom-footer-content">
+
+<style> /*--------Social Sharing Widget ------*/ .socialsharing a { display:block; height:50px;width:50px;padding:1px 7px;float:left; background:transparent url(http://marinamendelson.artdimension.ru/images/socialbutt.png) no-repeat; -webkit-transition: ease-in 0.2s all; -moz-transition: ease-in 0.2s all; -o-transition: ease-in 0.2s all; -ms-transition: ease-in 0.2s all; transition: ease-in 0.2s all; cursor:pointer; } .socialsharing a.googleplus { background-position: 0px -58px; } .socialsharing a.googleplus:hover { background-position: 0px 0px; } .socialsharing a.twitter { background-position: 0px -290px; } .socialsharing a.twitter:hover { background-position: 0px -232px; } .socialsharing a.facebook { background-position: 0px -406px; } .socialsharing a.facebook:hover { background-position: 0px -348px; } .socialsharing a.rss { background-position: 0px -174px; } .socialsharing a.rss:hover { background-position: 0px -116px; } </style> <br /> <div class="socialsharing" > <a class="rss" href="" rel="external nofollow" target="_blank"></a> <a class="googleplus" href="" rel="external nofollow" target="_blank"></a> <a class="facebook" href="" rel="external nofollow" target="_blank"></a> <a class="twitter" href="" rel="external nofollow" target="_blank"></a> </div>
+<br/><br/><br/><br/><?=$questionForm;?>
+
+    </div>
+</div>
 
 
 

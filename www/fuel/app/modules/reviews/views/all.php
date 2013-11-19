@@ -15,7 +15,7 @@ if($articles != null)
 				<div class='mini-block-description'><p>%s</p></div>
 				<div class='clear'></div>
 				",
-				Uri::base(false)."reviews/article/id/".$article["id"],
+				Uri::base(false)."reviews/id/".$article["id"],
 				$article["title"],
 				date('d.m.Y',$article['date']),
 				Uri::base(false)."reviews/cat/".$article["cat_id"],

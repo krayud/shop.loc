@@ -1,0 +1,86 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+#slider-content ul{
+	list-style: none;
+}
+
+#slider{
+	width: 900px;
+	height: 600px;
+}
+
+#slider-content{
+	width: 900px;
+	height: 600px;
+        margin-left: -8%;
+	text-align: center;
+	position:relative;
+}
+
+#slider-content ul li{
+	width: 900px;
+	height: 600px;
+	position: absolute;
+	opacity: 0;
+	z-index: 1;
+}
+
+#slider-content ul img{
+	max-width: 900px;
+	max-height: 600px;
+}
+
+#previous-btn, #forward-btn{
+	width: 80px;
+	height: 120px;
+	position: absolute;
+	top: 240px;
+	opacity: 0.0;
+	cursor: pointer;
+	z-index: 3;
+}
+
+#previous-btn{
+	left: 0px;
+	background: url("arrows.png") 0px 0px;
+}
+#previous-btn:hover{
+	background: url("arrows.png")  0px -120px;
+}
+#forward-btn{
+	right: 0px;
+	background: url("arrows.png") 80px 0px;
+}
+#forward-btn:hover{
+	background: url("arrows.png") 80px -120px;
+}
+
+#autoplay_btn{
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    background: url("playstop.png") 0px 0px;
+}
+.autoplay_btn_play{
+    background: url("playstop.png") 0px -32px !important;
+}
+
+.mini-btn{
+	background-color: #ccc;
+	width: 15px;
+	height: 15px;
+	cursor: pointer;
+	float: left;
+	margin-right: 5px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+.mini-btn:hover{
+	background-color: #999;
+}
+
+.mini-selected{
+	background-color: #999;
+}

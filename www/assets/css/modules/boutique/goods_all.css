@@ -1,0 +1,50 @@
+.goods_cell{
+	padding: 5px;
+	float: left;
+	margin: 10px;
+	width: 200px;
+	text-align: center;
+    background-color: #fafafa;
+    border: 1px solid #f3f3f3;
+}
+
+.goods_cell:hover{
+		background-color: #fefefe;
+}
+
+.goods_title{
+	font-size:15px;
+	height: 50px;
+	overflow: hidden;
+	margin: 10px;
+}
+
+.goods_img{
+	max-width: 200px;
+	max-height: 300px;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+.goods_price, .goods_price_old{
+	margin-bottom: 10px;
+}
+.goods_price_old{
+  font-size: 12px;
+  color:red;
+}
+
+.goods_basketbtn{
+	margin-bottom: 10px;
+}
+
+.goods_price{
+	font-size: 16px;
+	color: #ED9A50;
+}
+
+.goods-price-unit{
+	font-size: 12px;
+	top: -7px;
+	position: relative;
+}

@@ -16,7 +16,17 @@ $unzipPath = $unzipImgTo; // Путь распоковки (отдельная �
 		else
 			mkdir($unzipPath,0777);
 
-		$zip->extractTo($unzipPath);
+	   //Перекодирование имени файла при распаковке, если необходимо
+		for($i = 0; $i < $zip->numFiles; $i++)
+		{
+			$fileName = $zip->getNameIndex($i);
+			if(mb_detect_encoding($fileName) == "UTF-8")
+				$newName = $fileName;
+			else
+				$newName = iconv('cp866', 'utf8', $zip->getNameIndex($i));
+			copy("zip://".$archivPath."#".$fileName, $unzipPath.$newName);
+		}
+
 		$zip->close();
 
 		return ForeachFromAllFiles($unzipPath);
@@ -31,30 +41,49 @@ function ForeachFromAllFiles($unzipPath, $mode = "imgFilter")
 {
 	if($mode == "imgFilter")
 	{
-			if ($handle = opendir($unzipPath)) {
+        /*
+		if ($handle = opendir($unzipPath)) {
 			    $count = 0;
 				$urls = "";
-			    while (false !== ($file = readdir($handle))) 
-			    { 
+			    while (false !== ($file = readdir($handle)))
+			    {
 			    	if($file !="." && $file !="..")
 			    	{
 						RenameOrDeleteFile($file, $count, $unzipPath, $urls);
 			    	}
 			    }
-			    closedir($handle); 
-			    return array("code" => 0, 
-								"countimg" => $count, 
+			    closedir($handle);
+			    return array("code" => 0,
+								"countimg" => $count,
 								"imgurls" => $urls,
 							);
 			}
 			else
+            */
+        $filesArr = scandir($unzipPath);
+		if($filesArr != false)
+		{
+			$count = 0;
+			$urls = "";
+			foreach($filesArr as $file)
+				if($file !="." && $file !="..")
+			    	{
+					RenameOrDeleteFile($file, $count, $unzipPath, $urls);
+			    	}
+          return array("code" => 0,
+						"countimg" => $count,
+						"imgurls" => $urls,
+					);
+		}
+		else
 				return array("code" => 2, "text" => "Не удалось открыть каталог: ".$unzipPath);
+
 	}
 	elseif($mode == "clearDir")
 	{
 			if ($handle = opendir($unzipPath)) {
-			    while (false !== ($file = readdir($handle))) 
-			    { 
+			    while (false !== ($file = readdir($handle)))
+			    {
 			    	if($file !="." && $file !="..")
 			    	{
 			    		$fileName  = $unzipPath.$file;
@@ -62,7 +91,7 @@ function ForeachFromAllFiles($unzipPath, $mode = "imgFilter")
 				    		unlink($fileName);
 				    }
 			    }
-			    closedir($handle); 
+			    closedir($handle);
 			}
 			else
 				return array("code" => 3, "text" => "Не удалось открыть каталог: ".$unzipPath);
@@ -76,7 +105,7 @@ function RenameOrDeleteFile($file, &$count, $path, &$urls){
 	$oldName = $path."/".$file;
 
 	$subject = "abcdef"; 
- 	$pattern = '/^gif|jepeg|jpg|png|bmp/'; //Допустимые форматы изображений 
+ 	$pattern = '/^gif|jepeg|jpg|png|bmp/'; //Допустимые форматы изображений
 
 	if(preg_match($pattern, $ext))//Проверка расширения
 	{

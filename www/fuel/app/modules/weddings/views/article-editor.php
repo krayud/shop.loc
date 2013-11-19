@@ -134,8 +134,8 @@ else{// если добавляется новая запись
 	    <textarea id="article-video"><?=$articleInfo['video']?></textarea>
 		<br/>
 		
-		<label>Отзыв:</label>
-	    <textarea id="article-review"><?=$articleInfo['review']?></textarea>
+		<label>Идентификатор отзыва:</label>
+	    <input type="text" id="article-review" value="<?=$articleInfo['review']?>"></input>
 		
 	</div>
 	

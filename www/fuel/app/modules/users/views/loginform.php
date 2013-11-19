@@ -1,5 +1,5 @@
-<li class="first"><a id="open-loginDialog-btn" href="" title="Войти на сайт">Вход</a></li>
-<li><a id="open-regDialog-btn" href="" title="Зарегистрироваться на сайте" >Регистрация</a></li>
+<li class="first"><a class="open-loginDialog-btn" href="" title="Войти на сайт">Вход</a></li>
+<li><a class="open-regDialog-btn" href="" title="Зарегистрироваться на сайте" >Регистрация</a></li>
 
 <div id="dialog-modal-login" title="Вход на сайт">
 	<form name="login-form" action="<?=Uri::base(false);?>users/ajax/auth">
@@ -7,7 +7,7 @@
 	  	<input id="login-login" type="text"/><br/>
 	<label for="login-password">Пароль</label><br/>
 	  	<input id="login-password" type="password"/><br/><br/>
-	<center><button id="login-btn" type="submit" 
+	<center><button id="login-btn" type="submit"
 	  title="Отправить" class="button"><span><span>Войти</span></span></button></center>
 	</form>
 </div>
@@ -29,17 +29,17 @@
 <script>
 jQuery(document).ready(function(){ 
 		
-		jQuery( "#dialog-modal-login, #dialog-modal-reg").dialog({
+		jQuery("#dialog-modal-login, #dialog-modal-reg").dialog({
 		  autoOpen: false,
 		  width: 250,
 	      modal: true
 	    });
 
-		jQuery("#open-regDialog-btn").click(function(){
+		jQuery(".open-regDialog-btn").click(function(){
 			jQuery( "#dialog-modal-reg" ).dialog("open");
 			return false;
 		});
-		jQuery("#open-loginDialog-btn").click(function(){
+		jQuery(".open-loginDialog-btn").click(function(){
 			jQuery( "#dialog-modal-login" ).dialog("open");
 			return false;
 		});

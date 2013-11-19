@@ -1,6 +1,13 @@
 <script>
 	jQuery(document).ready(function(){
 		
+		
+	jQuery(function(){
+		jQuery(".lbimg").lightBox();
+	});
+
+		
+		
 	function HideAndShow(hideElement, ShowElement, time){
 		jQuery(hideElement).fadeOut(time, function(){
 			jQuery(ShowElement).fadeIn(time);
@@ -9,26 +16,16 @@
 
 
 		jQuery("#photo_btn").click(function(){
-			HideAndShow("#video, #review","#photo",500);
+			HideAndShow("#video","#photo",500);
 			jQuery("#video_btn").removeClass("a_active");
-			jQuery("#review_btn").removeClass("a_active");
 			jQuery("#photo_btn").addClass("a_active");
 			return false;	
 		});
 		
 		jQuery("#video_btn").click(function(){
-			HideAndShow("#photo, #review","#video",500);
+			HideAndShow("#photo","#video",500);
 			jQuery("#photo_btn").removeClass("a_active");
-			jQuery("#review_btn").removeClass("a_active");
 			jQuery("#video_btn").addClass("a_active");
-			return false;
-		});
-		
-		jQuery("#review_btn").click(function(){
-			HideAndShow("#photo, #video","#review",500);
-			jQuery("#photo_btn").removeClass("a_active");
-			jQuery("#video_btn").removeClass("a_active");
-			jQuery("#review_btn").addClass("a_active");
 			return false;
 		});
 	});
@@ -55,7 +52,7 @@ if($articleInfo != null)
 	if($countvideo > 0)
 		echo "• <a href='#' id='video_btn'>Видео</a> ";
 	if($articleInfo[0]['review'] != "")
-		echo "• <a href='#' id='review_btn'>Отзывы</a> ";	
+		echo "• <a href='".Uri::base(false)."reviews/id/".$articleInfo[0]['review']."' id='review_btn'>Отзывы</a> ";	
 	echo "</div><br/>";
 ?>
 <div id="photo-video" style="text-align: center;">
@@ -70,19 +67,27 @@ if($articleInfo != null)
 	<?endif;?>
 	
 	<?if($countPhoto > 0):?>
-	<div id="photo">	
+	<div id="photo">
+	
+		<div id="slider">
+                    
+		  <div id="slider-mini"></div>
+                  <div id="autoplay_btn"></div>
+		  <div id="slider-content">
+		    <ul>
+		      
+		    
 		<?
 			for($i = 0; $i < $countPhoto; $i++)
-				printf("<img style='max-width:700px;' src='%s'></img> <br/><br/>",$photo[$i])
+				printf("<li><img src='%s'/></li>", $photo[$i]);	
+
 		?>
-	</div>
-	<?endif;?>
-	
-	<?if($articleInfo[0]['review'] != ""):?>
-	<div style="display: none; text-align: justify;" id="review">	
-		<?
-			echo $articleInfo[0]['review'];
-		?>
+			 </ul>
+		     <div id="previous-btn"></div>
+		     <div id="forward-btn"></div>
+                     
+		  </div>
+		</div>	
 	</div>
 	<?endif;?>
 	

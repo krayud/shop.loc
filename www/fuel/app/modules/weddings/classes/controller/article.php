@@ -4,10 +4,17 @@ namespace Weddings;
 class Controller_Article extends \Controller_Base_Public{
 
   public function action_id($articleId = null){
-	//array_push($this->_extraCss, "cp/blog/all");
-	
+  		
 	if($articleId == null)
 		$this->ShowErrorPage("404");
+	
+	
+	array_push($this->_extraCss, "modules/weddings/article_page",
+								"ldslider/style"
+							);
+								
+	array_push($this->_extraJs, "ldslider/script"
+								);
 	
 	$article = Model_Weddings::GetArticleById($articleId);
 	if($article == null)

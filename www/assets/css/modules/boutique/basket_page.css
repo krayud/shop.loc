@@ -1,0 +1,55 @@
+.basket_content{
+	width:800px;
+}
+.good_row{
+	padding: 5px;
+	float: left;
+}
+
+.good_content_left{
+	width: 160px;
+	text-align: center;
+	float: left;
+}
+
+.good_content_right{
+	float: left;
+	margin-left: 10px;
+}
+
+.good_title{
+  margin-bottom: 5px;
+}
+
+.good_title a{
+    color:#CC4B72;
+    font-size: 15px;
+
+    font-weight: bold;
+    text-decoration:dotted;
+}
+.good_title a:hover{
+  color:#888;
+}
+.good_count_input{
+	width: 30px;
+}
+
+.del_btn{
+  color: #CC3333;
+  font-size: 10px;
+  cursor: pointer;
+}
+.del_btn:hover{
+  text-decoration: underline;
+}
+
+.goods_img{
+	max-width: 160px;
+	max-height: 160px;
+}
+.total_sum_basket{
+  color: #339966;
+  font-size: 15px;
+  font-weight: bold;
+}

@@ -1,0 +1,18 @@
+select{
+	width: 660px;
+	max-width:660px;
+}
+
+input, textarea{
+	width: 645px;
+	max-width:645px;
+}
+
+textarea{
+	height: 150px;
+}
+
+.ajax-loading{
+	float:left; 
+	margin:7px 0px 0px 10px;
+}

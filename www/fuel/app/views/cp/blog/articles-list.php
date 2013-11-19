@@ -45,7 +45,8 @@ if($articles != null){
 });
 </script>
 
-<div class="ajax-loading" id="article-list-ajax"></div><br/>
+<div class="ajax-loading" id="article-list-ajax"></div>
+<br/>
 <table class="table table-bordered table-hover">
 	<thead>
     <tr>
